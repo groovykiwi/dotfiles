@@ -19,21 +19,26 @@ Optional arguments:
   -h,         Displays this message. \n"
 else
 	echo "[.] Removing bloat"
-	sudo pacman -R nitrogen palemoon
+	sudo pacman -R nitrogen palemoon picom
+
 	echo "[.] Updating existing packages"
  	sudo pacman -Syuu
+
  	echo "[.] Installing packages"
  	sudo pacman -S xcb-util-xrm tumbler xfce4-screenshooter python-pywal imagemagick feh slop neofetch brave pulseaudio rofi playerctl wmctrl xfce4-power-manager polybar redshift
- 	pamac build spotify espanso oomox
-
+ 	
  	#Picom Fork with kawase blur and rounder corners
 	cd $HOME/Downloads && git clone https://github.com/ibhagwan/picom-ibhagwan-git && cd picom-ibhagwan-git && makepkg -si
 
+ 	pamac build spotify espanso oomox
+
+ 	
  	# Misc
 
  	#Disable dunst autostart via systemd so that it's started by i3 with Xresources colors
  	systemctl --user disable dunst
 	systemctl --user stop dunst
+
 
 	echo "Install dotfiles? "
 	read answer

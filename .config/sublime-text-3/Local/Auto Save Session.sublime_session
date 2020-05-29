@@ -325,19 +325,10 @@
 					}
 				},
 				{
-					"file": "pywal",
+					"file": "/home/nate/dotfiles/scripts/layout.sublime-project",
 					"settings":
 					{
-						"buffer_size": 2957,
-						"encoding": "UTF-8",
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/home/nate/dotfiles/config",
-					"settings":
-					{
-						"buffer_size": 3493,
+						"buffer_size": 63,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
@@ -346,7 +337,7 @@
 					"file": "/home/nate/dotfiles/packages",
 					"settings":
 					{
-						"buffer_size": 1144,
+						"buffer_size": 1159,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
@@ -464,15 +455,13 @@
 			},
 			"expanded_folders":
 			[
-				"/home/nate/scripts",
-				"/home/nate/.config",
-				"/home/nate/.config/dunst",
-				"/home/nate/.config/polybar",
-				"/home/nate/dotfiles",
-				"/home/nate/.config/wal/templates"
+				"/home/nate/dotfiles"
 			],
 			"file_history":
 			[
+				"/home/nate/dotfiles/packages",
+				"/home/nate/dotfiles/config",
+				"/home/nate/scripts/pywal",
 				"/home/nate/scripts/autoscript",
 				"/home/nate/dotfiles/install.sh",
 				"/home/nate/.config/wal/templates/colors.Xresources",
@@ -609,68 +598,39 @@
 						},
 						{
 							"buffer": 1,
-							"file": "pywal",
+							"file": "/home/nate/dotfiles/scripts/layout.sublime-project",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 2957,
+								"buffer_size": 63,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										749,
-										749
+										63,
+										63
 									]
 								],
 								"settings":
 								{
-									"syntax": "Packages/ShellScript/Bash.sublime-syntax"
+									"syntax": "Packages/zzz A File Icon zzz/aliases/JSON (Sublime).sublime-syntax"
 								},
 								"translation.x": 0.0,
-								"translation.y": 92.0,
+								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 3,
+							"stack_index": 1,
 							"type": "text"
 						},
 						{
 							"buffer": 2,
-							"file": "/home/nate/dotfiles/config",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 3493,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										1274,
-										1274
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/ShellScript/Bash.sublime-syntax",
-									"translate_tabs_to_spaces": false
-								},
-								"translation.x": 0.0,
-								"translation.y": 300.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 0,
-							"type": "text"
-						},
-						{
-							"buffer": 3,
 							"file": "/home/nate/dotfiles/packages",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 1144,
+								"buffer_size": 1159,
 								"regions":
 								{
 									"col_DD0000FF":
@@ -702,20 +662,20 @@
 								"selection":
 								[
 									[
-										302,
-										302
+										1064,
+										1064
 									]
 								],
 								"settings":
 								{
 									"syntax": "Packages/ShellScript/Bash.sublime-syntax",
-									"word_wrap": true
+									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 120.0,
+								"translation.y": 240.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 1,
+							"stack_index": 0,
 							"type": "text"
 						}
 					]
