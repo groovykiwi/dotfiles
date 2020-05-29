@@ -316,15 +316,6 @@
 			"buffers":
 			[
 				{
-					"file": "/home/nate/dotfiles/dependencies",
-					"settings":
-					{
-						"buffer_size": 878,
-						"encoding": "UTF-8",
-						"line_ending": "Unix"
-					}
-				},
-				{
 					"file": "/home/nate/dotfiles/config",
 					"settings":
 					{
@@ -352,13 +343,10 @@
 					}
 				},
 				{
-					"contents": "# dotfiles\n\nTo install the whole setup :\n```\ncd ~\ngit clone https://github.com/groovykiwi/dotfiles/\ncd dotfiles\nchmod +x packages config\n./packages\n\n```\n\nIt will ask you to run the config script once all the packages are installed. However, you can run it manually if you want a special type of install. Check `./config -h`\n\nAll the dotfiles are symlinked to the ~/dotfiles folder for an easy management.\n\nThe install scripts are made to be ran on a fresh install of Manjaro i3 Edition but should work fine on any Arch based system.",
 					"file": "/home/nate/dotfiles/README.md",
-					"file_size": 542,
-					"file_write_time": 132352587626802168,
 					"settings":
 					{
-						"buffer_size": 532,
+						"buffer_size": 703,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
@@ -482,6 +470,7 @@
 			],
 			"file_history":
 			[
+				"/home/nate/dotfiles/dependencies",
 				"/home/nate/dotfiles/scripts/layout.sublime-project",
 				"/home/nate/dotfiles/packages",
 				"/home/nate/dotfiles/config",
@@ -589,39 +578,11 @@
 			"groups":
 			[
 				{
-					"selected": 4,
+					"selected": 3,
 					"sheets":
 					[
 						{
 							"buffer": 0,
-							"file": "/home/nate/dotfiles/dependencies",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 878,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										751,
-										751
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/Text/Plain text.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 4,
-							"type": "text"
-						},
-						{
-							"buffer": 1,
 							"file": "/home/nate/dotfiles/config",
 							"semi_transient": false,
 							"settings":
@@ -668,14 +629,14 @@
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 0.0,
+								"translation.y": 780.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 2,
+							"stack_index": 1,
 							"type": "text"
 						},
 						{
-							"buffer": 2,
+							"buffer": 1,
 							"file": "/home/nate/dotfiles/.config/polybar/config",
 							"semi_transient": false,
 							"settings":
@@ -853,7 +814,7 @@
 							"type": "text"
 						},
 						{
-							"buffer": 3,
+							"buffer": 2,
 							"file": "/home/nate/dotfiles/packages",
 							"semi_transient": false,
 							"settings":
@@ -903,24 +864,24 @@
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 1,
+							"stack_index": 2,
 							"type": "text"
 						},
 						{
-							"buffer": 4,
+							"buffer": 3,
 							"file": "/home/nate/dotfiles/README.md",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 532,
+								"buffer_size": 703,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										137,
-										137
+										703,
+										703
 									]
 								],
 								"settings":
