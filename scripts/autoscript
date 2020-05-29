@@ -8,7 +8,7 @@ if [ -e $script_file ]; then
 else
 	echo "#!/bin/bash" > $script_file
 	chmod +x $script_file
-	printf "Open the script? "
+	printf "Open the script in Sublime? "
 	read answer
 	if [ "$answer" == "y" ]; then
 		subl $script_file

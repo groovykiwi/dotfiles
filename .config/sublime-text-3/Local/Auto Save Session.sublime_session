@@ -319,7 +319,7 @@
 					"file": "/home/nate/dotfiles/dependencies",
 					"settings":
 					{
-						"buffer_size": 953,
+						"buffer_size": 878,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
@@ -334,19 +334,20 @@
 					}
 				},
 				{
-					"file": "/home/nate/dotfiles/install.sh",
+					"file": "/home/nate/dotfiles/config",
 					"settings":
 					{
-						"buffer_size": 2345,
+						"buffer_size": 3493,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
 				},
 				{
-					"file": "autoscript",
+					"file": "/home/nate/dotfiles/packages",
 					"settings":
 					{
-						"buffer_size": 309,
+						"buffer_size": 1144,
+						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
 				}
@@ -472,6 +473,8 @@
 			],
 			"file_history":
 			[
+				"/home/nate/scripts/autoscript",
+				"/home/nate/dotfiles/install.sh",
 				"/home/nate/.config/wal/templates/colors.Xresources",
 				"/home/nate/.config/i3/config",
 				"/home/nate/.config/picom.conf",
@@ -490,7 +493,6 @@
 				"/home/nate/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
 				"/home/nate/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
 				"/home/nate/scripts/gitclonesub",
-				"/home/nate/scripts/autoscript",
 				"/home/nate/scripts/lolban",
 				"/home/nate/scripts/simpler-cm-rgb",
 				"/home/nate/scripts/vol-up",
@@ -574,7 +576,7 @@
 			"groups":
 			[
 				{
-					"selected": 1,
+					"selected": 2,
 					"sheets":
 					[
 						{
@@ -583,15 +585,15 @@
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 953,
+								"buffer_size": 878,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										266,
-										266
+										751,
+										751
 									]
 								],
 								"settings":
@@ -602,7 +604,7 @@
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 3,
+							"stack_index": 2,
 							"type": "text"
 						},
 						{
@@ -618,36 +620,90 @@
 								"selection":
 								[
 									[
-										1677,
-										1677
+										749,
+										749
 									]
 								],
 								"settings":
 								{
 									"syntax": "Packages/ShellScript/Bash.sublime-syntax"
 								},
-								"translation.x": 965.0,
-								"translation.y": 585.0,
+								"translation.x": 0.0,
+								"translation.y": 92.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 0,
+							"stack_index": 3,
 							"type": "text"
 						},
 						{
 							"buffer": 2,
-							"file": "/home/nate/dotfiles/install.sh",
+							"file": "/home/nate/dotfiles/config",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 2345,
+								"buffer_size": 3493,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										676,
-										676
+										1274,
+										1274
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/ShellScript/Bash.sublime-syntax",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 300.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "/home/nate/dotfiles/packages",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 1144,
+								"regions":
+								{
+									"col_DD0000FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												45,
+												55
+											]
+										],
+										"scope": "col_DD0000FF"
+									},
+									"col_DD0000FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_DD0000FF_circle.png",
+										"regions":
+										[
+											[
+												37,
+												37
+											]
+										],
+										"scope": "col_gutter"
+									}
+								},
+								"selection":
+								[
+									[
+										302,
+										302
 									]
 								],
 								"settings":
@@ -656,38 +712,10 @@
 									"word_wrap": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 1020.0,
+								"translation.y": 120.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 1,
-							"type": "text"
-						},
-						{
-							"buffer": 3,
-							"file": "autoscript",
-							"semi_transient": true,
-							"settings":
-							{
-								"buffer_size": 309,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										261,
-										261
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/ShellScript/Bash.sublime-syntax"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 2,
 							"type": "text"
 						}
 					]
@@ -729,7 +757,7 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,0,0,0,0,20,47,950,1060,1920,1080",
+			"position": "0,0,0,0,0,20,47,1900,1060,1920,1080",
 			"project": "layout.sublime-project",
 			"replace":
 			{
