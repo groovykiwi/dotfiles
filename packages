@@ -43,7 +43,7 @@ else
 	echo "Install dotfiles? "
 	read answer
 	if [ "$answer" == "y" ]; then
-		./config
+		$HOME/dotfiles/config
 	else
 		:
 	fi
