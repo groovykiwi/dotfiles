@@ -337,17 +337,19 @@
 					"file": "/home/nate/dotfiles/packages",
 					"settings":
 					{
-						"buffer_size": 1702,
+						"buffer_size": 1707,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
 				},
 				{
+					"contents": "# dotfiles\n\nTo install the whole setup :\n```\ncd ~\ngit clone https://github.com/groovykiwi/dotfiles/\ncd dotfiles\nchmod +x packages config\n./packages\n\n```\n\nIt will ask you to run the config script once all the packages are installed. However, you can run it manually if you want a special type of install. Check `./config -h`\n\nAll the dotfiles are symlinked to the ~/dotfiles folder for an easy management.\n\nThe install scripts are made to be ran on a fresh install of Manjaro i3 Edition but should work fine on any Arch based system.\n\nThe color scheme are generated using [pywal](https://github.com/dylanaraps/pywal) and made permanent with a custom script I wrote. Instead of using `wal` use `pywal`, check `pywal -h` for more information. \nThis means that if you want to make changes to .Xresources, refer to `.config/wal/templates/colors.Xresources` instead.\n\n## Screenshots\n![Picture](https://github.com/groovykiwi/dotfiles/blob/master/git-stuff/ibm-ss.png)\n![Picture](https://github.com/groovykiwi/dotfiles/blob/master/git-stuff/plant-ss.png)\n",
 					"file": "/home/nate/dotfiles/README.md",
+					"file_size": 1047,
+					"file_write_time": 132352609998968596,
 					"settings":
 					{
-						"buffer_size": 718,
-						"encoding": "UTF-8",
+						"buffer_size": 1047,
 						"line_ending": "Unix"
 					}
 				}
@@ -466,7 +468,9 @@
 			[
 				"/home/nate/dotfiles",
 				"/home/nate/dotfiles/.config",
-				"/home/nate/dotfiles/.config/polybar"
+				"/home/nate/dotfiles/.config/polybar",
+				"/home/nate/dotfiles/.config/wal",
+				"/home/nate/dotfiles/.config/wal/templates"
 			],
 			"file_history":
 			[
@@ -578,7 +582,7 @@
 			"groups":
 			[
 				{
-					"selected": 3,
+					"selected": 2,
 					"sheets":
 					[
 						{
@@ -590,31 +594,6 @@
 								"buffer_size": 3695,
 								"regions":
 								{
-									"col_DD0000FF":
-									{
-										"flags": 16,
-										"regions":
-										[
-											[
-												99,
-												109
-											]
-										],
-										"scope": "col_DD0000FF"
-									},
-									"col_DD0000FF_icon":
-									{
-										"flags": 16,
-										"icon": "Packages/User/Color Highlight.cache/col_DD0000FF_circle.png",
-										"regions":
-										[
-											[
-												91,
-												91
-											]
-										],
-										"scope": "col_gutter"
-									}
 								},
 								"selection":
 								[
@@ -632,7 +611,7 @@
 								"translation.y": 780.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 1,
+							"stack_index": 2,
 							"type": "text"
 						},
 						{
@@ -644,156 +623,6 @@
 								"buffer_size": 4451,
 								"regions":
 								{
-									"col_00000001":
-									{
-										"flags": 16,
-										"regions":
-										[
-											[
-												276,
-												285
-											]
-										],
-										"scope": "col_00000001"
-									},
-									"col_00000001_icon":
-									{
-										"flags": 16,
-										"icon": "Packages/User/Color Highlight.cache/col_00000001_circle.png",
-										"regions":
-										[
-											[
-												262,
-												262
-											]
-										],
-										"scope": "col_gutter"
-									},
-									"col_000000FF":
-									{
-										"flags": 16,
-										"regions":
-										[
-											[
-												313,
-												320
-											]
-										],
-										"scope": "col_000000FF"
-									},
-									"col_000000FF_icon":
-									{
-										"flags": 16,
-										"icon": "Packages/User/Color Highlight.cache/col_000000FF_circle.png",
-										"regions":
-										[
-											[
-												286,
-												286
-											]
-										],
-										"scope": "col_gutter"
-									},
-									"col_AAAAAAFF":
-									{
-										"flags": 16,
-										"regions":
-										[
-											[
-												2965,
-												2972
-											]
-										],
-										"scope": "col_AAAAAAFF"
-									},
-									"col_AAAAAAFF_icon":
-									{
-										"flags": 16,
-										"icon": "Packages/User/Color Highlight.cache/col_AAAAAAFF_circle.png",
-										"regions":
-										[
-											[
-												2940,
-												2940
-											]
-										],
-										"scope": "col_gutter"
-									},
-									"col_ABABABAB":
-									{
-										"flags": 16,
-										"regions":
-										[
-											[
-												1359,
-												1368
-											]
-										],
-										"scope": "col_ABABABAB"
-									},
-									"col_ABABABAB_icon":
-									{
-										"flags": 16,
-										"icon": "Packages/User/Color Highlight.cache/col_ABABABAB_circle.png",
-										"regions":
-										[
-											[
-												1336,
-												1336
-											]
-										],
-										"scope": "col_gutter"
-									},
-									"col_FF0000FF":
-									{
-										"flags": 16,
-										"regions":
-										[
-											[
-												366,
-												373
-											]
-										],
-										"scope": "col_FF0000FF"
-									},
-									"col_FF0000FF_icon":
-									{
-										"flags": 16,
-										"icon": "Packages/User/Color Highlight.cache/col_FF0000FF_circle.png",
-										"regions":
-										[
-											[
-												343,
-												343
-											]
-										],
-										"scope": "col_gutter"
-									},
-									"col_FFFFFFFF":
-									{
-										"flags": 16,
-										"regions":
-										[
-											[
-												335,
-												342
-											]
-										],
-										"scope": "col_FFFFFFFF"
-									},
-									"col_FFFFFFFF_icon":
-									{
-										"flags": 16,
-										"icon": "Packages/User/Color Highlight.cache/col_FFFFFFFF_circle.png",
-										"regions":
-										[
-											[
-												322,
-												322
-											]
-										],
-										"scope": "col_gutter"
-									}
 								},
 								"selection":
 								[
@@ -819,40 +648,15 @@
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 1702,
+								"buffer_size": 1707,
 								"regions":
 								{
-									"col_DD0000FF":
-									{
-										"flags": 16,
-										"regions":
-										[
-											[
-												99,
-												109
-											]
-										],
-										"scope": "col_DD0000FF"
-									},
-									"col_DD0000FF_icon":
-									{
-										"flags": 16,
-										"icon": "Packages/User/Color Highlight.cache/col_DD0000FF_circle.png",
-										"regions":
-										[
-											[
-												91,
-												91
-											]
-										],
-										"scope": "col_gutter"
-									}
 								},
 								"selection":
 								[
 									[
-										252,
-										252
+										1390,
+										1390
 									]
 								],
 								"settings":
@@ -861,10 +665,10 @@
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 0.0,
+								"translation.y": 120.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 2,
+							"stack_index": 0,
 							"type": "text"
 						},
 						{
@@ -873,15 +677,15 @@
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 718,
+								"buffer_size": 1047,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										548,
-										548
+										405,
+										405
 									]
 								],
 								"settings":
@@ -892,7 +696,7 @@
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 0,
+							"stack_index": 1,
 							"type": "text"
 						}
 					]

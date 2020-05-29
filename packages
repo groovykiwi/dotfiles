@@ -40,7 +40,7 @@ else
 	sudo pacman -Syu sublime-text
 
 	#Takes a long time to compile so they are at the end
- 	pamac build expressvpn spotify espanso oomox
+ 	pamac build cava expressvpn spotify espanso oomox
 
  	
  	# Misc
