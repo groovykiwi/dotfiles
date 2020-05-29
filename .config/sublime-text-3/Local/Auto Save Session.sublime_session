@@ -352,10 +352,13 @@
 					}
 				},
 				{
+					"contents": "# dotfiles\n\nTo install the whole setup :\n```\ncd ~\ngit clone https://github.com/groovykiwi/dotfiles/\ncd dotfiles\nchmod +x packages config\n./packages\n\n```\n\nIt will ask you to run the config script once all the packages are installed. However, you can run it manually if you want a special type of install. Check `./config -h`\n\nAll the dotfiles are symlinked to the ~/dotfiles folder for an easy management.\n\nThe install scripts are made to be ran on a fresh install of Manjaro i3 Edition but should work fine on any Arch based system.",
 					"file": "/home/nate/dotfiles/README.md",
+					"file_size": 542,
+					"file_write_time": 132352587626802168,
 					"settings":
 					{
-						"buffer_size": 542,
+						"buffer_size": 532,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
@@ -909,15 +912,15 @@
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 542,
+								"buffer_size": 532,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										147,
-										147
+										137,
+										137
 									]
 								],
 								"settings":
