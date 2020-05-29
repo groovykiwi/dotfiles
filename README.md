@@ -16,6 +16,8 @@ All the dotfiles are symlinked to the ~/dotfiles folder for an easy management.
 
 The install scripts are made to be ran on a fresh install of Manjaro i3 Edition but should work fine on any Arch based system.
 
+The color scheme are generated using [pywal](https://github.com/dylanaraps/pywal) and made permanent with a custom script I wrote. Instead of using `wal` use `pywal `, check `pywal -h` for more information. 
+
 ## Screenshots
 ![Picture](https://github.com/groovykiwi/dotfiles/blob/master/git-stuff/ibm-ss.png)
 ![Picture](https://github.com/groovykiwi/dotfiles/blob/master/git-stuff/plant-ss.png)
