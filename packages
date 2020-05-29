@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#Colors for when I eventually add them to the verbose
 NC='\033[0m' # No Color
 ACCENT='\033[1;31m'
 
@@ -28,7 +29,7 @@ else
  	sudo pacman -Syuu
 
  	echo "[.] Installing packages"
- 	sudo pacman -S xcb-util-xrm tumbler xfce4-screenshooter python-pywal imagemagick feh slop neofetch brave pulseaudio rofi playerctl wmctrl xfce4-power-manager polybar redshift
+ 	sudo pacman -S glances xcb-util-xrm tumbler xfce4-screenshooter python-pywal imagemagick feh slop neofetch brave pulseaudio rofi playerctl wmctrl xfce4-power-manager polybar redshift
  	
  	#Picom Fork with kawase blur and rounder corners
 	cd $HOME/Downloads && git clone https://github.com/ibhagwan/picom-ibhagwan-git && cd picom-ibhagwan-git && makepkg -si
@@ -39,7 +40,7 @@ else
 	sudo pacman -Syu sublime-text
 
 	#Takes a long time to compile so they are at the end
- 	pamac build spotify espanso oomox
+ 	pamac build expressvpn spotify espanso oomox
 
  	
  	# Misc
@@ -52,7 +53,7 @@ else
 	echo "Install dotfiles? "
 	read answer
 	if [ "$answer" == "y" ]; then
-		$HOME/dotfiles/config
+		$HOME/dotfiles/config -r -f
 	else
 		:
 	fi

@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#Colors for when I eventually add them to the verbose
 NC='\033[0m' # No Color
 ACCENT='\033[1;31m'
 
