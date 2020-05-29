@@ -319,7 +319,7 @@
 					"file": "/home/nate/dotfiles/dependencies",
 					"settings":
 					{
-						"buffer_size": 850,
+						"buffer_size": 946,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
@@ -328,7 +328,7 @@
 					"file": "pywal",
 					"settings":
 					{
-						"buffer_size": 2940,
+						"buffer_size": 2957,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
@@ -574,7 +574,7 @@
 			"groups":
 			[
 				{
-					"selected": 2,
+					"selected": 1,
 					"sheets":
 					[
 						{
@@ -583,7 +583,7 @@
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 850,
+								"buffer_size": 946,
 								"regions":
 								{
 								},
@@ -611,7 +611,7 @@
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 2940,
+								"buffer_size": 2957,
 								"regions":
 								{
 									"col_DD0000FF":
@@ -643,19 +643,19 @@
 								"selection":
 								[
 									[
-										1554,
-										1554
+										1677,
+										1677
 									]
 								],
 								"settings":
 								{
 									"syntax": "Packages/ShellScript/Bash.sublime-syntax"
 								},
-								"translation.x": 3.0,
-								"translation.y": 660.0,
+								"translation.x": 965.0,
+								"translation.y": 585.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 2,
+							"stack_index": 0,
 							"type": "text"
 						},
 						{
@@ -667,31 +667,6 @@
 								"buffer_size": 2345,
 								"regions":
 								{
-									"col_DD0000FF":
-									{
-										"flags": 16,
-										"regions":
-										[
-											[
-												45,
-												55
-											]
-										],
-										"scope": "col_DD0000FF"
-									},
-									"col_DD0000FF_icon":
-									{
-										"flags": 16,
-										"icon": "Packages/User/Color Highlight.cache/col_DD0000FF_circle.png",
-										"regions":
-										[
-											[
-												37,
-												37
-											]
-										],
-										"scope": "col_gutter"
-									}
 								},
 								"selection":
 								[
@@ -706,10 +681,10 @@
 									"word_wrap": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 60.0,
+								"translation.y": 1020.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 0,
+							"stack_index": 1,
 							"type": "text"
 						},
 						{
@@ -737,7 +712,7 @@
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 1,
+							"stack_index": 2,
 							"type": "text"
 						}
 					]

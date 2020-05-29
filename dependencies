@@ -1,0 +1,24 @@
+#Basic Apps
+sudo pacman -S xcb-util-xrm tumbler xfce4-screenshooter python-pywal imagemagick feh slop neofetch brave pulseaudio rofi playerctl wmctrl xfce4-power-manager picom rxvt-unicode polybar redshift
+pamac build spotify espanso oomox
+sudo pip install 
+
+#Sublime Text
+sudo curl -O https://download.sublimetext.com/sublimehq-pub.gpg && sudo pacman-key --add sublimehq-pub.gpg && sudo pacman-key --lsign-key 8A8F901A && rm sublimehq-pub.gpg
+sudo echo -e "\n[sublime-text]\nServer = https://download.sublimetext.com/arch/stable/x86_64" | sudo tee -a /etc/pacman.conf
+sudo pacman -Syu sublime-text
+
+#Picom Fork with kawase blur and rounder corners
+git clone https://github.com/ibhagwan/picom-ibhagwan-git
+makepkg -si
+
+
+/etc/pulse/client.conf set autospwan to on
+/etc/lightdm/slick-greeter.conf
+
+systemctl --user disable dunst
+systemctl --user stop dunst
+
+wait to move pulse etc it has to been installed first4
+subs git in scripts
+picom backend?

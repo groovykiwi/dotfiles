@@ -50,7 +50,7 @@ else
 	if [[ "$error_flag" == "False" ]] && [[ $exit_code -eq 0 ]]; then
 
 		#Creates/Replaces pywal-oomox theme in .themes (it has to be applied in lxappearance once)
-		sudo /opt/oomox/plugins/theme_oomox/gtk-theme/change_color.sh $HOME/.cache/wal/colors-oomox -o pywal-oomox && echo -e "\n${NC}[${ACCENT}I${NC}] ${ACCENT}Updated${NC}: GTK+ Theme."
+		sudo /opt/oomox/plugins/theme_oomox/gtk-theme/change_color.sh $HOME/.cache/wal/colors-oomox -o pywal-oomox -t $HOME/.themes && echo -e "\n${NC}[${ACCENT}I${NC}] ${ACCENT}Updated${NC}: GTK+ Theme."
 		#sudo /opt/oomox/plugins/oomoxify/oomoxify.sh $HOME/.cache/wal/colors-oomox
 		
 		#Replaces .Xresources with pywal's version and refreshes it if -p is set
