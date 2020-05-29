@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>com.github.philip-scott.wallpaperize</icon>
+	<name>Set Theme</name>
+	<unique-id>1590593977271960-1</unique-id>
+	<command>urxvt -geometry 50x20-50+150 -name floatterm -e sh -c &quot;$HOME/scripts/pywal -i %f -a 80 -p -g &amp;&amp; killall Thunar &amp;&amp; sleep 1s &amp;&amp; i3-msg exec Thunar %d&quot; </command>
+	<description>pywal</description>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>pgp-keys</icon>
+	<name>Thunar Root</name>
+	<unique-id>1590672889336584-1</unique-id>
+	<command>urxvt -geometry 30x10-50-40 -name floatterm -e sh -c &quot;i3-msg exec sudo Thunar %f&quot;</command>
+	<description>Open Directory as Root</description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Open Terminal Here</name>
+	<unique-id>1590262211835667-1</unique-id>
+	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
+	<description>Example for a custom action</description>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+</actions>

@@ -1,0 +1,8 @@
+#!/bin/bash
+term_status=$($HOME/scripts/i3get -i floatterm 2>/dev/null)
+
+if [ -z $term_status ]; then
+	urxvt -name floatterm -bd 0 -geometry 50x20-50+150
+else
+	wmctrl -x -R floatterm
+fi

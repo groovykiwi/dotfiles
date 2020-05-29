@@ -1,0 +1,20 @@
+#!/bin/bash
+if [ "$1" == "-l" ]; then
+	while true; do
+		if [ "$2" == "-time" ]; then
+			time=$(date +"%I : %M %p")
+			toilet -f Big.flf $time | lolcat
+			sleep 0.5s
+		else
+			toilet -f 3d.flf "$2"| lolcat
+			sleep 0.5s
+		fi
+	done
+else
+	if [ "$1" == "-time" ]; then
+		time=$(date +"%I : %M %p")
+		toilet -f Big.flf $time | lolcat
+	else
+		toilet -f 3d.flf "$1"| lolcat
+	fi
+fi

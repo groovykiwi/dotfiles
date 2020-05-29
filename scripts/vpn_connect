@@ -1,0 +1,9 @@
+#!/bin/bash
+status=$(expressvpn status)
+
+#ExpressVPN's systemd daemon uses a lot of cpu power so whenever it's not in use it's turned off
+if [ "$status" == "Not connected" ] || [ -z $status]; then
+	systemctl start expressvpn && sleep 2s && expressvpn connect
+else
+	expressvpn disconnect && systemctl stop expressvpn
+fi

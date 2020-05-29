@@ -1,0 +1,13 @@
+#!/bin/bash
+RED='\033[1;31m'
+YELLOW='\033[1;36m'
+path=$(echo "$1" | sed -e 's,tree/master,trunk,g')
+
+if  [ "$2" == "" ]; then
+	cd ~/dl
+	svn checkout $path && echo "${RED}The folder${YELLOW} '"${path##*/}"' ${RED}has been saved in ~/Downloads"
+else
+	cd "$2"
+	svn checkout $path && echo -e "${RED}The folder${YELLOW} '"${path##*/}"' ${RED}has been saved in $2"
+fi
+

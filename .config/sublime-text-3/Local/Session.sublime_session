@@ -1,0 +1,794 @@
+{
+	"folder_history":
+	[
+		"/home/nate/.config/wal/templates",
+		"/home/nate/dotfiles",
+		"/home/nate/.config",
+		"/home/nate/scripts"
+	],
+	"last_version": 3211,
+	"last_window_id": 23,
+	"log_indexing": false,
+	"settings":
+	{
+		"new_window_height": 1013.0,
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"wal",
+						"wal_path"
+					],
+					[
+						"switch",
+						"switch-audio-output"
+					],
+					[
+						"script",
+						"script_file"
+					]
+				]
+			},
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"prefere",
+						"Preferences: Settings"
+					],
+					[
+						"mater",
+						"Material Theme: Configuration"
+					],
+					[
+						"mate",
+						"Material Theme: Configuration"
+					],
+					[
+						"instal",
+						"Package Control: Install Package"
+					],
+					[
+						"colorpi",
+						"Color Picker: Insert Color"
+					],
+					[
+						"colorpick",
+						"Color Picker: Insert Color"
+					],
+					[
+						"remov",
+						"Package Control: Remove Package"
+					],
+					[
+						"packag",
+						"Package Control: Enable Package"
+					],
+					[
+						"remo",
+						"Package Control: Remove Package"
+					],
+					[
+						"remove ",
+						"Package Control: Remove Package"
+					],
+					[
+						"material",
+						"Material Theme: Activate theme"
+					],
+					[
+						"remove pac",
+						"Package Control: Remove Package"
+					],
+					[
+						"inst",
+						"Package Control: Install Package"
+					],
+					[
+						"remove",
+						"Package Control: Remove Package"
+					],
+					[
+						"ins",
+						"Package Control: Install Package"
+					],
+					[
+						"ayu",
+						"ayu: Activate theme"
+					],
+					[
+						"isntal",
+						"Package Control: Install Package"
+					],
+					[
+						"shell",
+						"Set Syntax: Bourne Again Shell (bash)"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/nate/.config/dunst/dunstrc",
+				"/home/nate/scripts/reload-picom",
+				"/home/nate/scripts/display-audio-device",
+				"/home/nate/scripts/switch-audio-output",
+				"/home/nate/scripts/dunst-start",
+				"/home/nate/scripts/expressvpn_status",
+				"/home/nate/scripts/vpn_connect",
+				"/home/nate/.config/wal/templates/.Xresources",
+				"/home/nate/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+				"/home/nate/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+				"/home/nate/scripts/gitclonesub",
+				"/home/nate/scripts/autoscript",
+				"/home/nate/scripts/lolban",
+				"/home/nate/scripts/simpler-cm-rgb",
+				"/home/nate/scripts/vol-up",
+				"/home/nate/scripts/vpn-connect",
+				"/home/nate/scripts/floatterm",
+				"/home/nate/dotfiles/pulseaudio-systemctl/install.sh",
+				"/home/nate/scripts/colortest2",
+				"/home/nate/scripts/colortest",
+				"/home/nate/scripts/i3-get-window-criteria",
+				"/home/nate/scripts/i3get",
+				"/home/nate/scripts/pywal-persistent",
+				"/home/nate/scripts/python-scripts/simpler-cm-rgb.py",
+				"/home/nate/.Xresources",
+				"/home/nate/.cache/wal/colors-oomox",
+				"/home/nate/scripts/wal-persistent",
+				"/home/nate/scripts/displaytitle",
+				"/home/nate/.config/i3/workspaces/workspace1.json",
+				"/home/nate/.config/neofetch/config.conf",
+				"/home/nate/scripts/reload-pulseaudio",
+				"/home/nate/scripts/resize-win",
+				"/home/nate/scripts/i3list",
+				"/home/nate/scripts/i3run",
+				"/home/nate/scripts/audio-fix",
+				"/home/nate/scripts/g213",
+				"/home/nate/scripts/vol-mute",
+				"/etc/lightdm/slick-greeter.conf",
+				"/home/nate/scripts/vol-down",
+				"/home/nate/scripts/sink-id",
+				"/etc/xdg/picom.conf",
+				"/home/nate/.config/compton/compton.conf",
+				"/home/nate/.config/picom.conf",
+				"/home/nate/.config/i3/config",
+				"/home/nate/scripts/hey"
+			],
+			"find":
+			{
+				"height": 34.0
+			},
+			"find_in_files":
+			{
+				"height": 158.0,
+				"where_history":
+				[
+					"<current file>"
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"&",
+					"c1",
+					"c2",
+					"separa",
+					"border",
+					"mod+shift+r",
+					"align",
+					"fg",
+					"bg",
+					"fg",
+					"bg",
+					"colors",
+					"spotif",
+					"spo",
+					"foreground",
+					"vpn"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"text",
+					"foreground"
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 34.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"replace":
+			{
+				"height": 64.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 290.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			}
+		},
+		"new_window_width": 1880.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"wal",
+						"wal_path"
+					],
+					[
+						"switch",
+						"switch-audio-output"
+					],
+					[
+						"script",
+						"script_file"
+					]
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/home/nate/dotfiles/dependencies",
+					"settings":
+					{
+						"buffer_size": 850,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "pywal",
+					"settings":
+					{
+						"buffer_size": 2940,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"contents": "#!/bin/bash\n\nNC='\\033[0m' # No Color\nACCENT='\\033[1;31m'\n\nwhile getopts b flag\ndo\n    case \"${flag}\" in\n    \tb) backup=\"True\";;\n    esac\ndone\n\n[[ \"$backup\" == \"True\" ]] && echo \"Backing up to ~/.backup\" && sudo cp -p -r $HOME/.config/ $HOME/.backup/ && echo \"Done: ~/.config \" && sudo cp -p -r /etc/ $HOME/.backup/ && echo \"Done: /etc/ \"\n#Symlink .config files\nfor entry in \".config\"/*\ndo\n\trm -rf \"$HOME/$entry\" && echo \"Deleted $HOME/$entry\"\n\tln -s \"$HOME/dotfiles/$entry\" \"$HOME/$entry\" && echo -e \"Created symlink with $entry \\n\"\ndone\n\n\n#Symlink /etc files\nfor entry in \"etc\"/*\ndo\n\tsudo rm -rf /\"$entry\" && echo Deleted /\"$entry\"\n\tsudo ln -s \"$HOME\"/dotfiles/$entry /\"$entry\" && echo -e \"Created symlink with $entry \\n\"\ndone\n\n#Symlink myfonts folder\n[[ -d /usr/share/fonts/myfonts ]]  && echo \"Found /usr/share/fonts/myfonts\" && sudo rm -rf /usr/share/fonts/myfonts && echo \"Deleted /usr/share/fonts/myfonts\"\nsudo ln -s $HOME/dotfiles/myfonts /usr/share/fonts/ && echo -e \"Created symlink with myfonts \\n\"\n\n#Symlink scripts folder\n[[ -d $HOME/scripts ]]  && echo \"Found ~/scripts\" && rm -rf $HOME/scripts && echo \"Deleted ~/scripts\"\nln -s $HOME/dotfiles/scripts $HOME  && echo -e \"Symlinked scripts folder \\n\"\n\n#Symlink .bashrc\n[[ -f $HOME/.bashrc ]] && echo \"Found .bashrc\" && rm $HOME/.bashrc && echo \"Deleted .bashrc\"\nln -s $HOME/dotfiles/.bashrc $HOME && echo -e \"Symlinked .bashrc \\n\"\n\n#Symlink .bash_profile\n[[ -f $HOME/.bash_profile ]] && echo \"Found .bash_profile\" && rm $HOME/.bash_profile && echo \"Deleted .bash_profile\"\nln -s $HOME/dotfiles/.bash_profile $HOME && echo -e \"Symlinked .bash_profile \\n\"\n\n#Symlink .profile\n[[ -f $HOME/.profile ]] && echo \"Found .profile\" && rm $HOME/.profile && echo \"Deleted .profile\"\nln -s $HOME/dotfiles/.profile $HOME && echo -e \"Symlinked .profile \\n\"\n\n#Symlink .Xresources\n[[ -f $HOME/.Xresources ]] && echo \"Found .Xresources\" && rm $HOME/.Xresources && echo \"Deleted .Xresources\"\nln -s $HOME/dotfiles/.Xresources $HOME && echo \"Symlinked .Xresources \"\n",
+					"file": "/home/nate/dotfiles/install.sh",
+					"file_size": 1979,
+					"file_write_time": 132352325883038290,
+					"settings":
+					{
+						"buffer_size": 2005,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				}
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"prefere",
+						"Preferences: Settings"
+					],
+					[
+						"mater",
+						"Material Theme: Configuration"
+					],
+					[
+						"mate",
+						"Material Theme: Configuration"
+					],
+					[
+						"instal",
+						"Package Control: Install Package"
+					],
+					[
+						"colorpi",
+						"Color Picker: Insert Color"
+					],
+					[
+						"colorpick",
+						"Color Picker: Insert Color"
+					],
+					[
+						"remov",
+						"Package Control: Remove Package"
+					],
+					[
+						"packag",
+						"Package Control: Enable Package"
+					],
+					[
+						"remo",
+						"Package Control: Remove Package"
+					],
+					[
+						"remove ",
+						"Package Control: Remove Package"
+					],
+					[
+						"material",
+						"Material Theme: Activate theme"
+					],
+					[
+						"remove pac",
+						"Package Control: Remove Package"
+					],
+					[
+						"inst",
+						"Package Control: Install Package"
+					],
+					[
+						"remove",
+						"Package Control: Remove Package"
+					],
+					[
+						"ins",
+						"Package Control: Install Package"
+					],
+					[
+						"ayu",
+						"ayu: Activate theme"
+					],
+					[
+						"isntal",
+						"Package Control: Install Package"
+					],
+					[
+						"shell",
+						"Set Syntax: Bourne Again Shell (bash)"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"expanded_folders":
+			[
+				"/home/nate/scripts",
+				"/home/nate/.config",
+				"/home/nate/.config/dunst",
+				"/home/nate/.config/polybar",
+				"/home/nate/dotfiles",
+				"/home/nate/.config/wal/templates"
+			],
+			"file_history":
+			[
+				"/home/nate/.config/wal/templates/colors.Xresources",
+				"/home/nate/.config/i3/config",
+				"/home/nate/.config/picom.conf",
+				"/home/nate/.Xresources",
+				"/home/nate/.config/ranger/devicons.py",
+				"/home/nate/.config/polybar/config",
+				"/home/nate/scripts/1-README.md",
+				"/home/nate/.config/dunst/dunstrc",
+				"/home/nate/scripts/reload-picom",
+				"/home/nate/scripts/display-audio-device",
+				"/home/nate/scripts/switch-audio-output",
+				"/home/nate/scripts/dunst-start",
+				"/home/nate/scripts/expressvpn_status",
+				"/home/nate/scripts/vpn_connect",
+				"/home/nate/.config/wal/templates/.Xresources",
+				"/home/nate/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+				"/home/nate/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+				"/home/nate/scripts/gitclonesub",
+				"/home/nate/scripts/autoscript",
+				"/home/nate/scripts/lolban",
+				"/home/nate/scripts/simpler-cm-rgb",
+				"/home/nate/scripts/vol-up",
+				"/home/nate/scripts/vpn-connect",
+				"/home/nate/scripts/floatterm",
+				"/home/nate/dotfiles/pulseaudio-systemctl/install.sh",
+				"/home/nate/scripts/colortest2",
+				"/home/nate/scripts/colortest",
+				"/home/nate/scripts/i3-get-window-criteria",
+				"/home/nate/scripts/i3get",
+				"/home/nate/scripts/pywal-persistent",
+				"/home/nate/scripts/python-scripts/simpler-cm-rgb.py",
+				"/home/nate/.cache/wal/colors-oomox",
+				"/home/nate/scripts/wal-persistent",
+				"/home/nate/scripts/displaytitle",
+				"/home/nate/.config/i3/workspaces/workspace1.json",
+				"/home/nate/.config/neofetch/config.conf",
+				"/home/nate/scripts/reload-pulseaudio",
+				"/home/nate/scripts/resize-win",
+				"/home/nate/scripts/i3list",
+				"/home/nate/scripts/i3run",
+				"/home/nate/scripts/audio-fix",
+				"/home/nate/scripts/g213",
+				"/home/nate/scripts/vol-mute",
+				"/etc/lightdm/slick-greeter.conf",
+				"/home/nate/scripts/vol-down",
+				"/home/nate/scripts/sink-id",
+				"/etc/xdg/picom.conf",
+				"/home/nate/.config/compton/compton.conf",
+				"/home/nate/scripts/hey"
+			],
+			"find":
+			{
+				"height": 70.0
+			},
+			"find_in_files":
+			{
+				"height": 158.0,
+				"where_history":
+				[
+					"<current file>"
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"&",
+					"c1",
+					"c2",
+					"separa",
+					"border",
+					"mod+shift+r",
+					"align",
+					"fg",
+					"bg",
+					"fg",
+					"bg",
+					"colors",
+					"spotif",
+					"spo",
+					"foreground",
+					"vpn"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"text",
+					"foreground"
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"groups":
+			[
+				{
+					"selected": 2,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/home/nate/dotfiles/dependencies",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 850,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										266,
+										266
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 2,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "pywal",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 2940,
+								"regions":
+								{
+									"col_DD0000FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												289,
+												299
+											]
+										],
+										"scope": "col_DD0000FF"
+									},
+									"col_DD0000FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_DD0000FF_circle.png",
+										"regions":
+										[
+											[
+												281,
+												281
+											]
+										],
+										"scope": "col_gutter"
+									}
+								},
+								"selection":
+								[
+									[
+										1554,
+										1554
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/ShellScript/Bash.sublime-syntax"
+								},
+								"translation.x": 3.0,
+								"translation.y": 660.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/home/nate/dotfiles/install.sh",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 2005,
+								"regions":
+								{
+									"col_DD0000FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												45,
+												55
+											]
+										],
+										"scope": "col_DD0000FF"
+									},
+									"col_DD0000FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_DD0000FF_circle.png",
+										"regions":
+										[
+											[
+												37,
+												37
+											]
+										],
+										"scope": "col_gutter"
+									}
+								},
+								"selection":
+								[
+									[
+										337,
+										337
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/ShellScript/Bash.sublime-syntax"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 31.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"position": "0,0,0,0,0,20,47,1718,1060,1920,1080",
+			"project": "layout.sublime-project",
+			"replace":
+			{
+				"height": 58.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 290.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 13,
+			"workspace_name": "/home/nate/scripts/layout.sublime-workspace"
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+			"/home/nate/scripts/layout.sublime-workspace"
+		]
+	}
+}
