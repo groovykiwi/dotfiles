@@ -337,7 +337,7 @@
 					"file": "/home/nate/dotfiles/packages",
 					"settings":
 					{
-						"buffer_size": 1159,
+						"buffer_size": 1175,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
@@ -630,7 +630,7 @@
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 1159,
+								"buffer_size": 1175,
 								"regions":
 								{
 									"col_DD0000FF":
@@ -662,8 +662,8 @@
 								"selection":
 								[
 									[
-										1064,
-										1064
+										1171,
+										1171
 									]
 								],
 								"settings":
