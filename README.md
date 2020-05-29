@@ -10,6 +10,8 @@ chmod +x packages config
 
 ```
 
-It will ask you to run the config script once all the packages are installed but you can run it manually if you want a special type of install check `./config -h`
+It will ask you to run the config script once all the packages are installed. However, you can run it manually if you want a special type of install. Check `./config -h`
 
 All the dotfiles are symlinked to the ~/dotfiles folder for an easy management.
+
+The install scripts are made to be ran on a fresh install of Manjaro i3 Edition but should work fine on any Arch based system.

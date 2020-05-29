@@ -355,7 +355,7 @@
 					"file": "/home/nate/dotfiles/README.md",
 					"settings":
 					{
-						"buffer_size": 397,
+						"buffer_size": 532,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
@@ -909,15 +909,15 @@
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 397,
+								"buffer_size": 532,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										397,
-										397
+										323,
+										323
 									]
 								],
 								"settings":
