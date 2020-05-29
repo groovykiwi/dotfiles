@@ -346,7 +346,7 @@
 					"file": "/home/nate/dotfiles/README.md",
 					"settings":
 					{
-						"buffer_size": 703,
+						"buffer_size": 718,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
@@ -873,15 +873,15 @@
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 703,
+								"buffer_size": 718,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										703,
-										703
+										548,
+										548
 									]
 								],
 								"settings":
