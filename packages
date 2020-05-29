@@ -45,5 +45,6 @@ else
 	if [ "$answer" == "y" ]; then
 		./config
 	else
-		echo "Exiting..."
+		:
+	fi
 fi
