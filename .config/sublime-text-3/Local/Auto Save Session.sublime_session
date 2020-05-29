@@ -319,7 +319,7 @@
 					"file": "/home/nate/dotfiles/dependencies",
 					"settings":
 					{
-						"buffer_size": 946,
+						"buffer_size": 953,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
@@ -583,7 +583,7 @@
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 946,
+								"buffer_size": 953,
 								"regions":
 								{
 								},
@@ -614,31 +614,6 @@
 								"buffer_size": 2957,
 								"regions":
 								{
-									"col_DD0000FF":
-									{
-										"flags": 16,
-										"regions":
-										[
-											[
-												289,
-												299
-											]
-										],
-										"scope": "col_DD0000FF"
-									},
-									"col_DD0000FF_icon":
-									{
-										"flags": 16,
-										"icon": "Packages/User/Color Highlight.cache/col_DD0000FF_circle.png",
-										"regions":
-										[
-											[
-												281,
-												281
-											]
-										],
-										"scope": "col_gutter"
-									}
 								},
 								"selection":
 								[

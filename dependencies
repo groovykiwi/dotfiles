@@ -22,3 +22,4 @@ systemctl --user stop dunst
 wait to move pulse etc it has to been installed first4
 subs git in scripts
 picom backend?
+vimix 
