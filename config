@@ -42,6 +42,7 @@ Optional arguments:
 	[[ -d $HOME/Templates ]] && rm -rf $HOME/Templates
 	[[ -d $HOME/Videos ]] && rm -rf $HOME/Videos
 	[[ -d $HOME/Music ]] && rm -rf $HOME/Music
+	[[ -d $HOME/Desktop ]] && rm -rf $HOME/Desktop
 
 	#Copies various files such a few wallpapers, grub-theme installer to ~/pics
 	[[ "$files" == "True" ]] && cp -r $HOME/dotfiles/files/* $HOME/pics/

@@ -18,9 +18,12 @@ if [[ "$help" == "True" ]]; then
 Optional arguments:
   -h,         Displays this message. \n"
 else
-	echo "[.] Removing bloat"
-	sudo pacman -R nitrogen palemoon-bin picom
 
+	#Removes bloat
+	echo "[.] Removing bloat"
+	sudo pacman -Rd --nodeps nitrogen palemoon-bin picom
+
+	#Updates system
 	echo "[.] Updating existing packages"
  	sudo pacman -Syuu
 
@@ -30,6 +33,12 @@ else
  	#Picom Fork with kawase blur and rounder corners
 	cd $HOME/Downloads && git clone https://github.com/ibhagwan/picom-ibhagwan-git && cd picom-ibhagwan-git && makepkg -si
 
+	#Sublime Text
+	sudo curl -O https://download.sublimetext.com/sublimehq-pub.gpg && sudo pacman-key --add sublimehq-pub.gpg && sudo pacman-key --lsign-key 8A8F901A && rm sublimehq-pub.gpg
+	sudo echo -e "\n[sublime-text]\nServer = https://download.sublimetext.com/arch/stable/x86_64" | sudo tee -a /etc/pacman.conf
+	sudo pacman -Syu sublime-text
+
+	#Takes a long time to compile so they are at the end
  	pamac build spotify espanso oomox
 
  	
