@@ -59,12 +59,12 @@ else
 		#Adds pywal.rasi in rofi themes or overwrites existing one
 		sudo cp $HOME/.cache/wal/colors-rofi-dark.rasi /usr/share/rofi/themes/pywal.rasi && echo -e "${NC}[${ACCENT}I${NC}] ${ACCENT}Updated${NC}: Rofi Theme."
 
-		#Changes grubs theme and applies it if -g is present
+		#Update grub theme and applies it if -g is present
 		wal_path=$(cat $HOME/.cache/wal/wal)
 		[[ "$grub" == "True" ]] && magick convert $wal_path -set colorspace RGB /usr/share/grub/themes/Vimix/background.png && echo -e "${NC}[${ACCENT}I${NC}] ${ACCENT}Updated${NC}: Grub's Background."
 
-		#Changes slick-greeter wallpaper
-		sudo cp /usr/share/grub/themes/Vimix/background.png /etc/lightdm/background.png && echo -e "${NC}[${ACCENT}I${NC}] ${ACCENT}Updated${NC}: Slick-greeter's background."
+		#Update slick-greeter wallpaper
+		sudo magick convert $wal_path /usr/share/slick-greeter/slick-greeter.png && echo -e "${NC}[${ACCENT}I${NC}] ${ACCENT}Updated${NC}: Slick-greeter's background."
 		
 		#Reload Dunst
 		killall dunst
