@@ -90,6 +90,7 @@ exec = python $HOME/scripts/polybar-spotify/spotify_status.py --font=0 -f '{play
 format-underline = ${colors.accent}
 click-left = playerctl play-pause
 click-right = wmctrl -x -a "Spotify"
+click-middle = playerctl next
 
 
 

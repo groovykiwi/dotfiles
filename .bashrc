@@ -5,6 +5,8 @@
 export PATH=$PATH:$HOME/scripts
 export EDITOR='vim'
 export VISUAL='vim'
+
+neofetch
 #######
 [[ $- != *i* ]] && return
 

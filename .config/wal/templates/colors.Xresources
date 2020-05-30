@@ -73,7 +73,7 @@ UXTerm*cursorColor: {cursor}
 URxvt*borderColor:  {background.alpha}
 
 ! Rxvt Unicode Settings
-URxvt.font:     				  xft:fira code nerd font:size=16
+URxvt.font:     				  xft:Fira Code Nerd Font:size=16
 URxvt.depth:                      32
 URxvt*scrollBar:                  false
 URxvt*mouseWheelScrollPage:       false

@@ -319,7 +319,7 @@
 					"file": "/home/nate/dotfiles/.config/polybar/config",
 					"settings":
 					{
-						"buffer_size": 4451,
+						"buffer_size": 4481,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
@@ -346,7 +346,7 @@
 					"file": "/home/nate/dotfiles/packages",
 					"settings":
 					{
-						"buffer_size": 1707,
+						"buffer_size": 1715,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
@@ -484,7 +484,9 @@
 			},
 			"expanded_folders":
 			[
-				"/home/nate/dotfiles"
+				"/home/nate/dotfiles",
+				"/home/nate/dotfiles/.config",
+				"/home/nate/dotfiles/.config/polybar"
 			],
 			"file_history":
 			[
@@ -596,7 +598,7 @@
 			"groups":
 			[
 				{
-					"selected": 1,
+					"selected": 0,
 					"sheets":
 					[
 						{
@@ -605,7 +607,7 @@
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 4451,
+								"buffer_size": 4481,
 								"regions":
 								{
 									"col_00000001":
@@ -664,8 +666,8 @@
 										"regions":
 										[
 											[
-												2965,
-												2972
+												2995,
+												3002
 											]
 										],
 										"scope": "col_AAAAAAFF"
@@ -677,8 +679,8 @@
 										"regions":
 										[
 											[
-												2940,
-												2940
+												2970,
+												2970
 											]
 										],
 										"scope": "col_gutter"
@@ -762,8 +764,8 @@
 								"selection":
 								[
 									[
-										1798,
-										1798
+										2310,
+										2310
 									]
 								],
 								"settings":
@@ -771,10 +773,10 @@
 									"syntax": "Packages/i3 wm/Syntax/i3wm_config.tmLanguage"
 								},
 								"translation.x": 0.0,
-								"translation.y": 0.0,
+								"translation.y": 1440.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 1,
+							"stack_index": 0,
 							"type": "text"
 						},
 						{
@@ -825,10 +827,10 @@
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 300.0,
+								"translation.y": 180.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 0,
+							"stack_index": 4,
 							"type": "text"
 						},
 						{
@@ -866,7 +868,7 @@
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 1707,
+								"buffer_size": 1715,
 								"regions":
 								{
 									"col_DD0000FF":
@@ -898,8 +900,8 @@
 								"selection":
 								[
 									[
-										1390,
-										1390
+										637,
+										637
 									]
 								],
 								"settings":
@@ -908,10 +910,10 @@
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 120.0,
+								"translation.y": 240.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 4,
+							"stack_index": 2,
 							"type": "text"
 						},
 						{
@@ -965,7 +967,7 @@
 								"translation.y": 585.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 2,
+							"stack_index": 1,
 							"type": "text"
 						},
 						{
