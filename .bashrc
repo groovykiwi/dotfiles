@@ -5,8 +5,6 @@
 export PATH=$PATH:$HOME/scripts
 export EDITOR='vim'
 export VISUAL='vim'
-
-neofetch
 #######
 [[ $- != *i* ]] && return
 
@@ -78,7 +76,7 @@ if ${use_color} ; then
 	if [[ ${EUID} == 0 ]] ; then
 		PS1='\[\033[01;31m\][\h\[\033[01;36m\] \W\[\033[01;31m\]]\$\[\033[00m\] '
 	else
-		PS1='\[\033[01;32m\][\u@\h\[\033[01;37m\] \W\[\033[01;32m\]]\$\[\033[00m\] '
+		PS1='\[\033[01;31m\][ \u \[\033[01;37m\]\W \[\033[01;31m\]]\[\033[01;32m\] ~ \[\033[00m\]'
 	fi
 
 	alias ls='ls --color=auto'
@@ -143,3 +141,5 @@ ex ()
     echo "'$1' is not a valid file"
   fi
 }
+
+

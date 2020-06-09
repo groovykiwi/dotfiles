@@ -50,6 +50,7 @@ def options():
 
 finalline = "cm-rgb-cli set "
 unactive_elements = 0
+
 enable_component = input("\nEnable the Logo? (y/n) ").strip().lower()
 if enable_component == "y":
     component = "logo"
@@ -57,6 +58,7 @@ if enable_component == "y":
     finalline += line
 else:
     unactive_elements += 1
+
 enable_component = input("\nEnable the Fan? (y/n) ").strip().lower()
 if enable_component == "y":
     component = "fan"
@@ -64,6 +66,7 @@ if enable_component == "y":
     finalline += line
 else:
     unactive_elements += 1
+
 enable_component = input("\nEnable the Ring? (y/n) ").strip().lower()
 if enable_component == "y":
     component = "ring"

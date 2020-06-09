@@ -11,7 +11,7 @@ else
 	echo "Switching to Headset"
 	notify-send "Switching to Headset"
 	pactl set-card-profile 0 off
-	pactl set-card-profile 1 output:analog-stereo
+	pactl set-card-profile 1 output:analog-stereo+input:analog-stereo
 fi
 
 #Updates Polybar's volume module

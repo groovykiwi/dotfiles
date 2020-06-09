@@ -5,7 +5,7 @@ path=$(echo "$1" | sed -e 's,tree/master,trunk,g')
 
 if  [ "$2" == "" ]; then
 	cd ~/dl
-	svn checkout $path && echo "${RED}The folder${YELLOW} '"${path##*/}"' ${RED}has been saved in ~/Downloads"
+	svn checkout $path && echo "${RED}The folder${YELLOW} '"${path##*/}"' ${RED}has been saved in ~/dl"
 else
 	cd "$2"
 	svn checkout $path && echo -e "${RED}The folder${YELLOW} '"${path##*/}"' ${RED}has been saved in $2"

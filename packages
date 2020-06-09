@@ -30,7 +30,7 @@ else
 
  	#Software from the official Arch repo
  	echo "[.] Installing packages"
- 	sudo pacman -S python cmatrix xcb-util-xrm tumbler xfce4-screenshooter python-pywal imagemagick feh slop neofetch brave pulseaudio rofi playerctl wmctrl xfce4-power-manager polybar redshift
+ 	sudo pacman -S libratbag curl sl unclutter gnome-disk-utility baobab python cmatrix xcb-util-xrm tumbler xfce4-screenshooter python-pywal imagemagick feh slop neofetch brave pulseaudio rofi playerctl wmctrl xfce4-power-manager polybar redshift
  	
  	#Picom Fork with kawase blur and rounder corners
 	cd $HOME/Downloads && git clone https://github.com/ibhagwan/picom-ibhagwan-git && cd picom-ibhagwan-git && makepkg -si
@@ -41,7 +41,7 @@ else
 	sudo pacman -Syu sublime-text
 
 	#Takes a long time to compile so they are at the end
- 	pamac build cava expressvpn spotify espanso oomox
+ 	pamac build spicetify cava expressvpn spotify espanso oomox
 
  	
  	# Misc

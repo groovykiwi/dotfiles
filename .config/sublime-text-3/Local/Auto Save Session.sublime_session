@@ -7,7 +7,7 @@
 		"/home/nate/scripts"
 	],
 	"last_version": 3211,
-	"last_window_id": 23,
+	"last_window_id": 25,
 	"log_indexing": false,
 	"settings":
 	{
@@ -18,6 +18,10 @@
 			{
 				"selected_items":
 				[
+					[
+						"bahs",
+						"bash_profile"
+					],
 					[
 						"wal",
 						"wal_path"
@@ -34,6 +38,38 @@
 			},
 			"build_system_choices":
 			[
+				[
+					[
+						[
+							"Packages/Python/Python.sublime-build",
+							""
+						],
+						[
+							"Packages/Python/Python.sublime-build",
+							"Syntax Check"
+						]
+					],
+					[
+						"Packages/Python/Python.sublime-build",
+						""
+					]
+				],
+				[
+					[
+						[
+							"Packages/User/Python-Terminal.sublime-build",
+							""
+						],
+						[
+							"Packages/User/Python-Terminal.sublime-build",
+							"Run as root"
+						]
+					],
+					[
+						"Packages/User/Python-Terminal.sublime-build",
+						""
+					]
+				]
 			],
 			"build_varint": "",
 			"command_palette":
@@ -42,6 +78,50 @@
 				"last_filter": "",
 				"selected_items":
 				[
+					[
+						"run as ",
+						"Build With: Python-Terminal - Run as root"
+					],
+					[
+						"run",
+						"Build With: Run"
+					],
+					[
+						"t",
+						"Terminal: Open"
+					],
+					[
+						"terminal",
+						"Terminal: Open"
+					],
+					[
+						"instal",
+						"Package Control: Install Package"
+					],
+					[
+						"run pt",
+						"SublimeREPL: Python - RUN current file"
+					],
+					[
+						"run pyth",
+						"SublimeREPL: Python - RUN current file"
+					],
+					[
+						"repl python",
+						"SublimeREPL: Python - RUN current file"
+					],
+					[
+						"replpy",
+						"SublimeREPL: Python"
+					],
+					[
+						"w",
+						"Word Wrap: Toggle"
+					],
+					[
+						"word",
+						"Word Wrap: Toggle"
+					],
 					[
 						"prefere",
 						"Preferences: Settings"
@@ -53,10 +133,6 @@
 					[
 						"mate",
 						"Material Theme: Configuration"
-					],
-					[
-						"instal",
-						"Package Control: Install Package"
 					],
 					[
 						"colorpi",
@@ -135,6 +211,27 @@
 			},
 			"file_history":
 			[
+				"/home/nate/dotfiles/.config/sublime-text-3/Packages/Terminal/Terminal.sublime-settings",
+				"/home/nate/dotfiles/README.md",
+				"/home/nate/dotfiles/.config/sublime-text-3/Packages/SublimeREPL/SublimeREPL.sublime-settings",
+				"/home/nate/dotfiles/.config/sublime-text-3/Packages/User/SublimeREPL.sublime-settings",
+				"/home/nate/dotfiles/.config/sublime-text-3/Packages/User/pythonterm.sublime-build",
+				"/home/nate/scripts/layout1",
+				"/home/nate/dotfiles/test.sh",
+				"/home/nate/dotfiles/dependencies",
+				"/home/nate/dotfiles/scripts/layout.sublime-project",
+				"/home/nate/dotfiles/packages",
+				"/home/nate/dotfiles/config",
+				"/home/nate/scripts/pywal",
+				"/home/nate/scripts/autoscript",
+				"/home/nate/dotfiles/install.sh",
+				"/home/nate/.config/wal/templates/colors.Xresources",
+				"/home/nate/.config/i3/config",
+				"/home/nate/.config/picom.conf",
+				"/home/nate/.Xresources",
+				"/home/nate/.config/ranger/devicons.py",
+				"/home/nate/.config/polybar/config",
+				"/home/nate/scripts/1-README.md",
 				"/home/nate/.config/dunst/dunstrc",
 				"/home/nate/scripts/reload-picom",
 				"/home/nate/scripts/display-audio-device",
@@ -146,7 +243,6 @@
 				"/home/nate/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
 				"/home/nate/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
 				"/home/nate/scripts/gitclonesub",
-				"/home/nate/scripts/autoscript",
 				"/home/nate/scripts/lolban",
 				"/home/nate/scripts/simpler-cm-rgb",
 				"/home/nate/scripts/vol-up",
@@ -159,7 +255,6 @@
 				"/home/nate/scripts/i3get",
 				"/home/nate/scripts/pywal-persistent",
 				"/home/nate/scripts/python-scripts/simpler-cm-rgb.py",
-				"/home/nate/.Xresources",
 				"/home/nate/.cache/wal/colors-oomox",
 				"/home/nate/scripts/wal-persistent",
 				"/home/nate/scripts/displaytitle",
@@ -177,8 +272,6 @@
 				"/home/nate/scripts/sink-id",
 				"/etc/xdg/picom.conf",
 				"/home/nate/.config/compton/compton.conf",
-				"/home/nate/.config/picom.conf",
-				"/home/nate/.config/i3/config",
 				"/home/nate/scripts/hey"
 			],
 			"find":
@@ -198,6 +291,7 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"c1",
 					"&",
 					"c1",
 					"c2",
@@ -221,6 +315,7 @@
 				"regex": false,
 				"replace_history":
 				[
+					"bg",
 					"text",
 					"foreground"
 				],
@@ -239,11 +334,15 @@
 				"height": 0.0
 			},
 			"menu_visible": true,
+			"output.exec":
+			{
+				"height": 198.0
+			},
 			"output.find_results":
 			{
 				"height": 0.0
 			},
-			"pinned_build_system": "",
+			"pinned_build_system": "Packages/User/Python-Terminal.sublime-build",
 			"replace":
 			{
 				"height": 64.0
@@ -296,6 +395,22 @@
 				"selected_items":
 				[
 					[
+						"rgb",
+						"rgb_to_hex"
+					],
+					[
+						"Speed",
+						"speed_check"
+					],
+					[
+						"__",
+						"__init__"
+					],
+					[
+						"Ac",
+						"ActionClick"
+					],
+					[
 						"bahs",
 						"bash_profile"
 					],
@@ -319,7 +434,16 @@
 					"file": "/home/nate/dotfiles/.config/polybar/config",
 					"settings":
 					{
-						"buffer_size": 4481,
+						"buffer_size": 4815,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/nate/dotfiles/.config/i3/config",
+					"settings":
+					{
+						"buffer_size": 8961,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
@@ -334,38 +458,88 @@
 					}
 				},
 				{
-					"file": "/home/nate/dotfiles/scripts/pywal",
-					"settings":
-					{
-						"buffer_size": 2947,
-						"encoding": "UTF-8",
-						"line_ending": "Unix"
-					}
-				},
-				{
 					"file": "/home/nate/dotfiles/packages",
 					"settings":
 					{
-						"buffer_size": 1759,
+						"buffer_size": 1823,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
 				},
 				{
-					"contents": "# dotfiles\n\nTo install the whole setup :\n```\ncd ~\ngit clone https://github.com/groovykiwi/dotfiles/\ncd dotfiles\nchmod +x packages config\n./packages\n\n```\n\nIt will ask you to run the config script once all the packages are installed. However, you can run it manually if you want a special type of install. Check `./config -h`\n\nAll the dotfiles are symlinked to the ~/dotfiles folder for an easy management.\n\nThe install scripts are made to be ran on a fresh install of Manjaro i3 Edition but should work fine on any Arch based system.\n\nThe color scheme are generated using [pywal](https://github.com/dylanaraps/pywal) and made permanent with a custom script I wrote. Instead of using `wal` use `pywal`, check `pywal -h` for more information. \nThis means that if you want to make changes to .Xresources, refer to `.config/wal/templates/colors.Xresources` instead.\n\n## Screenshots\n![Picture](https://github.com/groovykiwi/dotfiles/blob/master/git-stuff/ibm-ss.png)\n![Picture](https://github.com/groovykiwi/dotfiles/blob/master/git-stuff/plant-ss.png)\n",
-					"file": "/home/nate/dotfiles/README.md",
-					"file_size": 1047,
-					"file_write_time": 132352609998968596,
+					"file": "/home/nate/dotfiles/scripts/cm-rgb-gui",
 					"settings":
 					{
-						"buffer_size": 1047,
+						"buffer_size": 10385,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/nate/dotfiles/scripts/pywal",
+					"settings":
+					{
+						"buffer_size": 3127,
+						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
 				}
 			],
-			"build_system": "",
+			"build_system": "Packages/User/Python-Terminal.sublime-build",
 			"build_system_choices":
 			[
+				[
+					[
+						[
+							"Packages/Python/Python.sublime-build",
+							""
+						],
+						[
+							"Packages/Python/Python.sublime-build",
+							"Syntax Check"
+						]
+					],
+					[
+						"Packages/Python/Python.sublime-build",
+						""
+					]
+				],
+				[
+					[
+						[
+							"Packages/User/Python-Terminal.sublime-build",
+							""
+						],
+						[
+							"Packages/User/Python-Terminal.sublime-build",
+							"Run as root"
+						]
+					],
+					[
+						"Packages/User/Python-Terminal.sublime-build",
+						""
+					]
+				],
+				[
+					[
+						[
+							"Packages/User/Python-Terminal.sublime-build",
+							""
+						],
+						[
+							"Packages/User/Python-Terminal.sublime-build",
+							"Run as root"
+						],
+						[
+							"Packages/User/Python-Terminal.sublime-build",
+							"Auto Exit"
+						]
+					],
+					[
+						"Packages/User/Python-Terminal.sublime-build",
+						"Auto Exit"
+					]
+				]
 			],
 			"build_varint": "",
 			"command_palette":
@@ -375,11 +549,67 @@
 				"selected_items":
 				[
 					[
-						"w",
+						"wo",
 						"Word Wrap: Toggle"
 					],
 					[
 						"word",
+						"Word Wrap: Toggle"
+					],
+					[
+						"aut",
+						"Build With: Python-Terminal - Auto Exit"
+					],
+					[
+						"au",
+						"Build With: Python-Terminal - Auto Exit"
+					],
+					[
+						"auo",
+						"Build With: Python-Terminal - Auto Exit"
+					],
+					[
+						"root",
+						"Build With: Python-Terminal - Run as root"
+					],
+					[
+						"run as ",
+						"Build With: Python-Terminal - Run as root"
+					],
+					[
+						"run",
+						"Build With: Run"
+					],
+					[
+						"t",
+						"Terminal: Open"
+					],
+					[
+						"terminal",
+						"Terminal: Open"
+					],
+					[
+						"instal",
+						"Package Control: Install Package"
+					],
+					[
+						"run pt",
+						"SublimeREPL: Python - RUN current file"
+					],
+					[
+						"run pyth",
+						"SublimeREPL: Python - RUN current file"
+					],
+					[
+						"repl python",
+						"SublimeREPL: Python - RUN current file"
+					],
+					[
+						"replpy",
+						"SublimeREPL: Python"
+					],
+					[
+						"w",
 						"Word Wrap: Toggle"
 					],
 					[
@@ -393,10 +623,6 @@
 					[
 						"mate",
 						"Material Theme: Configuration"
-					],
-					[
-						"instal",
-						"Package Control: Install Package"
 					],
 					[
 						"colorpi",
@@ -476,11 +702,33 @@
 			"expanded_folders":
 			[
 				"/home/nate/dotfiles",
-				"/home/nate/dotfiles/.config",
-				"/home/nate/dotfiles/.config/polybar"
+				"/home/nate/dotfiles/scripts"
 			],
 			"file_history":
 			[
+				"/home/nate/dotfiles/scripts/gitclonesub",
+				"/home/nate/dotfiles/.config/picom.conf",
+				"/usr/bin/g213colors-gui",
+				"/home/nate/scripts/call_pavucontrol",
+				"/home/nate/scripts/auto_scrcpy",
+				"/home/nate/.minecraft/old versions/servers.dat",
+				"/home/nate/dotfiles/scripts/display-audio-device",
+				"/home/nate/dotfiles/scripts/switch-audio-output",
+				"/etc/modprobe.d/alsa-base.conf",
+				"/home/nate/dotfiles/scripts/pywal",
+				"/home/nate/scripts/cm-rgb-gui",
+				"/home/nate/dotfiles/scripts/python-scripts/pygobject.py",
+				"/home/nate/dotfiles/scripts/python-scripts/simpler-cm-rgb.py",
+				"/home/nate/.config/sublime-text-3/Packages/User/Python-Terminal.sublime-build",
+				"/home/nate/dotfiles/scripts/python-scripts/tkinter.py",
+				"/home/nate/dotfiles/.config/sublime-text-3/Packages/User/Terminal.sublime-settings",
+				"/home/nate/dotfiles/.config/sublime-text-3/Packages/User/Python-Terminal.sublime-build",
+				"/home/nate/dotfiles/.config/sublime-text-3/Packages/Terminal/Terminal.sublime-settings",
+				"/home/nate/dotfiles/README.md",
+				"/home/nate/dotfiles/.config/sublime-text-3/Packages/SublimeREPL/SublimeREPL.sublime-settings",
+				"/home/nate/dotfiles/.config/sublime-text-3/Packages/User/SublimeREPL.sublime-settings",
+				"/home/nate/dotfiles/.config/sublime-text-3/Packages/User/pythonterm.sublime-build",
+				"/home/nate/scripts/layout1",
 				"/home/nate/dotfiles/test.sh",
 				"/home/nate/dotfiles/dependencies",
 				"/home/nate/dotfiles/scripts/layout.sublime-project",
@@ -540,7 +788,7 @@
 			],
 			"find":
 			{
-				"height": 31.0
+				"height": 35.0
 			},
 			"find_in_files":
 			{
@@ -552,9 +800,19 @@
 			},
 			"find_state":
 			{
-				"case_sensitive": false,
+				"case_sensitive": true,
 				"find_history":
 				[
+					"|",
+					"mod+space",
+					"rofi",
+					"fan",
+					"logo",
+					"fan",
+					"logo",
+					"hey man",
+					"tk.",
+					"c1",
 					"&",
 					"c1",
 					"c2",
@@ -578,6 +836,18 @@
 				"regex": false,
 				"replace_history":
 				[
+					"",
+					"ring",
+					"fan",
+					"ring",
+					"fan",
+					"ring",
+					"fan",
+					"ring",
+					"fan",
+					"button",
+					"",
+					"bg",
 					"text",
 					"foreground"
 				],
@@ -585,12 +855,12 @@
 				"show_context": true,
 				"use_buffer2": true,
 				"whole_word": false,
-				"wrap": true
+				"wrap": false
 			},
 			"groups":
 			[
 				{
-					"selected": 0,
+					"selected": 5,
 					"sheets":
 					[
 						{
@@ -599,7 +869,7 @@
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 4481,
+								"buffer_size": 4815,
 								"regions":
 								{
 									"col_00000001":
@@ -658,8 +928,8 @@
 										"regions":
 										[
 											[
-												2995,
-												3002
+												3401,
+												3408
 											]
 										],
 										"scope": "col_AAAAAAFF"
@@ -671,8 +941,8 @@
 										"regions":
 										[
 											[
-												2970,
-												2970
+												3376,
+												3376
 											]
 										],
 										"scope": "col_gutter"
@@ -683,8 +953,8 @@
 										"regions":
 										[
 											[
-												1359,
-												1368
+												1378,
+												1387
 											]
 										],
 										"scope": "col_ABABABAB"
@@ -696,8 +966,8 @@
 										"regions":
 										[
 											[
-												1336,
-												1336
+												1355,
+												1355
 											]
 										],
 										"scope": "col_gutter"
@@ -756,8 +1026,8 @@
 								"selection":
 								[
 									[
-										2158,
-										2158
+										3153,
+										3153
 									]
 								],
 								"settings":
@@ -765,14 +1035,119 @@
 									"syntax": "Packages/i3 wm/Syntax/i3wm_config.tmLanguage"
 								},
 								"translation.x": 0.0,
-								"translation.y": 1260.0,
+								"translation.y": 2460.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 0,
+							"stack_index": 5,
 							"type": "text"
 						},
 						{
 							"buffer": 1,
+							"file": "/home/nate/dotfiles/.config/i3/config",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 8961,
+								"regions":
+								{
+									"col_000000FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												5949,
+												5956
+											]
+										],
+										"scope": "col_000000FF"
+									},
+									"col_000000FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_000000FF_circle.png",
+										"regions":
+										[
+											[
+												5915,
+												5915
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_757575FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												5558,
+												5565
+											]
+										],
+										"scope": "col_757575FF"
+									},
+									"col_757575FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_757575FF_circle.png",
+										"regions":
+										[
+											[
+												5541,
+												5541
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_F0F0F0FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												5907,
+												5914
+											]
+										],
+										"scope": "col_F0F0F0FF"
+									},
+									"col_F0F0F0FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_F0F0F0FF_circle.png",
+										"regions":
+										[
+											[
+												5873,
+												5873
+											]
+										],
+										"scope": "col_gutter"
+									}
+								},
+								"selection":
+								[
+									[
+										8705,
+										8705
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/i3 wm/Syntax/i3wm_config.tmLanguage",
+									"tab_size": 8,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 4733.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 4,
+							"type": "text"
+						},
+						{
+							"buffer": 2,
 							"file": "/home/nate/dotfiles/config",
 							"semi_transient": false,
 							"settings":
@@ -819,64 +1194,10 @@
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 900.0,
+								"translation.y": 1024.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 1,
-							"type": "text"
-						},
-						{
-							"buffer": 2,
-							"file": "/home/nate/dotfiles/scripts/pywal",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 2947,
-								"regions":
-								{
-									"col_DD0000FF":
-									{
-										"flags": 16,
-										"regions":
-										[
-											[
-												289,
-												299
-											]
-										],
-										"scope": "col_DD0000FF"
-									},
-									"col_DD0000FF_icon":
-									{
-										"flags": 16,
-										"icon": "Packages/User/Color Highlight.cache/col_DD0000FF_circle.png",
-										"regions":
-										[
-											[
-												281,
-												281
-											]
-										],
-										"scope": "col_gutter"
-									}
-								},
-								"selection":
-								[
-									[
-										2655,
-										2655
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/ShellScript/Bash.sublime-syntax",
-									"translate_tabs_to_spaces": false
-								},
-								"translation.x": 0.0,
-								"translation.y": 585.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 2,
+							"stack_index": 3,
 							"type": "text"
 						},
 						{
@@ -885,7 +1206,7 @@
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 1759,
+								"buffer_size": 1823,
 								"regions":
 								{
 									"col_DD0000FF":
@@ -917,8 +1238,8 @@
 								"selection":
 								[
 									[
-										1742,
-										1742
+										1498,
+										1498
 									]
 								],
 								"settings":
@@ -927,38 +1248,290 @@
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 540.0,
+								"translation.y": 152.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 3,
+							"stack_index": 2,
 							"type": "text"
 						},
 						{
 							"buffer": 4,
-							"file": "/home/nate/dotfiles/README.md",
+							"file": "/home/nate/dotfiles/scripts/cm-rgb-gui",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 1047,
+								"buffer_size": 10385,
 								"regions":
 								{
+									"col_0000FFFF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												7395,
+												7399
+											],
+											[
+												7474,
+												7478
+											],
+											[
+												8196,
+												8200
+											],
+											[
+												8275,
+												8279
+											],
+											[
+												9000,
+												9004
+											],
+											[
+												9079,
+												9083
+											]
+										],
+										"scope": "col_0000FFFF"
+									},
+									"col_0000FFFF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_0000FFFF_circle.png",
+										"regions":
+										[
+											[
+												7379,
+												7379
+											],
+											[
+												7422,
+												7422
+											],
+											[
+												8180,
+												8180
+											],
+											[
+												8223,
+												8223
+											],
+											[
+												8984,
+												8984
+											],
+											[
+												9027,
+												9027
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_008000FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												7350,
+												7355
+											],
+											[
+												7468,
+												7473
+											],
+											[
+												8151,
+												8156
+											],
+											[
+												8269,
+												8274
+											],
+											[
+												8955,
+												8960
+											],
+											[
+												9073,
+												9078
+											]
+										],
+										"scope": "col_008000FF"
+									},
+									"col_008000FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_008000FF_circle.png",
+										"regions":
+										[
+											[
+												7334,
+												7334
+											],
+											[
+												7422,
+												7422
+											],
+											[
+												8135,
+												8135
+											],
+											[
+												8223,
+												8223
+											],
+											[
+												8939,
+												8939
+											],
+											[
+												9027,
+												9027
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_FF0000FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												7309,
+												7312
+											],
+											[
+												7464,
+												7467
+											],
+											[
+												8110,
+												8113
+											],
+											[
+												8265,
+												8268
+											],
+											[
+												8914,
+												8917
+											],
+											[
+												9069,
+												9072
+											]
+										],
+										"scope": "col_FF0000FF"
+									},
+									"col_FF0000FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_FF0000FF_circle.png",
+										"regions":
+										[
+											[
+												7293,
+												7293
+											],
+											[
+												7422,
+												7422
+											],
+											[
+												8094,
+												8094
+											],
+											[
+												8223,
+												8223
+											],
+											[
+												8898,
+												8898
+											],
+											[
+												9027,
+												9027
+											]
+										],
+										"scope": "col_gutter"
+									}
 								},
 								"selection":
 								[
 									[
-										405,
-										405
+										9764,
+										9755
 									]
 								],
 								"settings":
 								{
-									"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+									"syntax": "Packages/Python/Python.sublime-syntax",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true,
+									"word_wrap": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 0.0,
+								"translation.y": 1800.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 4,
+							"stack_index": 1,
+							"type": "text"
+						},
+						{
+							"buffer": 5,
+							"file": "/home/nate/dotfiles/scripts/pywal",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 3127,
+								"regions":
+								{
+									"col_DD0000FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												289,
+												299
+											]
+										],
+										"scope": "col_DD0000FF"
+									},
+									"col_DD0000FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_DD0000FF_circle.png",
+										"regions":
+										[
+											[
+												281,
+												281
+											]
+										],
+										"scope": "col_gutter"
+									}
+								},
+								"selection":
+								[
+									[
+										2204,
+										2204
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/ShellScript/Bash.sublime-syntax",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 320.0,
+								"translation.y": 780.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
 							"type": "text"
 						}
 					]
@@ -966,11 +1539,11 @@
 			],
 			"incremental_find":
 			{
-				"height": 31.0
+				"height": 35.0
 			},
 			"input":
 			{
-				"height": 0.0
+				"height": 73.0
 			},
 			"layout":
 			{
@@ -995,16 +1568,20 @@
 				]
 			},
 			"menu_visible": true,
+			"output.exec":
+			{
+				"height": 198.0
+			},
 			"output.find_results":
 			{
 				"height": 0.0
 			},
-			"pinned_build_system": "",
+			"pinned_build_system": "Packages/User/Python-Terminal.sublime-build",
 			"position": "0,0,0,0,0,20,47,1900,1060,1920,1080",
 			"project": "layout.sublime-project",
 			"replace":
 			{
-				"height": 58.0
+				"height": 66.0
 			},
 			"save_all_on_build": true,
 			"select_file":

@@ -1,6 +1,6 @@
 app=viewnior
 last_user=
-screenshot_dir=file:///home/nate/pics/screenshots
+screenshot_dir=file:/home/nate/dl
 action=1
 delay=0
 region=2

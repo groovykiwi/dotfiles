@@ -7,5 +7,6 @@
 		"Vintage"
 	],
 	"material_theme_accent_graphite": true,
+	"show_panel_on_build": false,
 	"theme": "Material-Theme-Darker.sublime-theme"
 }

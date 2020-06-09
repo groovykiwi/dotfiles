@@ -3,7 +3,7 @@
 check=$(pacmd list-cards | grep "<output:hdmi-stereo-extra1>")
 
 if [ "$check" == "" ] ;then
-	echo ""
+	echo "Headset:"
 else
-	echo ""
+	echo "Speakers:"
 fi

@@ -13,6 +13,8 @@ background = ${xrdb:color0:#000000}
 foreground = #ffffff
 accent = ${xrdb:color2:#ff0000}
 
+[values]
+margin = 4
 
 [bar/top]
 width = 100%
@@ -25,7 +27,7 @@ foreground = ${colors.foreground}
 padding-left = 0
 padding-right = 2
 
-module-margin-left = 1
+module-margin-left = 0
 module-margin-right = 0
 
 ;Fonts
@@ -36,7 +38,7 @@ font-2 = Font Awesome 5 Free:style=Solid:size=13;2
 ;Module Positions
 modules-left = i3 spotify
 modules-center = titlehook 
-modules-right =  vpn filesystem  pulseaudio audiodevice date battery powermenu
+modules-right =  vpn filesystem audiodevice pulseaudio date battery powermenu
 
 ;[System Tray]
 ;tray-position = center
@@ -83,14 +85,15 @@ label-urgent-padding = 2
 
 
 [module/spotify]
+format-margin = ${values.margin}
 type = custom/script
 interval = 0
 format = <label>
 exec = python $HOME/scripts/polybar-spotify/spotify_status.py --font=0 -f '{play_pause} {artist} - {song}  ' -t 70 -p '   ,   '
 format-underline = ${colors.accent}
-click-left = playerctl play-pause
+click-left = playerctl -p spotify play-pause
 click-right = wmctrl -x -a "Spotify"
-click-middle = playerctl next
+click-middle = playerctl -p spotify next
 
 
 
@@ -111,19 +114,31 @@ format-underline = ${colors.accent}
 [module/vpn]
 type = custom/script
 tail = false
-label = %output% |
+label = %output% 
 interval = 0
 exec = $HOME/scripts/vpn_status
 click-right = bash /$HOME/scripts/vpn_connect
 
 
 [module/filesystem]
+format-mounted-margin = ${values.margin}
 type = internal/fs
 interval = 25
 mount-0 = /home
-label-mounted = %free% left |
+label-mounted = "%free% left" 
 fixed-values = true
 
+
+[module/audiodevice]
+format-margin = 0
+type = custom/script
+tail = false
+label = "%output% "
+interval = 0.1
+exec = $HOME/scripts/display-audio-device
+click-left = i3-msg exec $HOME/scripts/switch-audio-output
+click-right = $HOME/scripts/call_pavucontrol
+#format-underline = ${colors.accent}
 
 [module/pulseaudio]
 type = internal/pulseaudio
@@ -131,34 +146,28 @@ type = internal/pulseaudio
 use-ui-max = true
 label-volume = %percentage%%
 format-volume = <label-volume> <ramp-volume>
-label-muted = 0%  |
+label-muted = 0%  
 label-muted-foreground = #aaaaaa
 ; Only applies if <ramp-volume> is used
-ramp-volume-0 =  |
-ramp-volume-1 =  |
-ramp-volume-2 =  |
-
-
-[module/audiodevice]
-type = custom/script
-tail = false
-label = %output% |
-interval = 0.1
-exec = $HOME/scripts/display-audio-device
-click-left = i3-msg exec $HOME/scripts/switch-audio-output
-click-right = pavucontrol &
+ramp-volume-0 =  
+ramp-volume-1 =  
+ramp-volume-2 =  
+#format-volume-underline = ${colors.accent}
+#format-muted-underline = ${colors.accent}
 
 
 [module/date]
+format-margin = ${values.margin}
 type = internal/date
 interval = 5
-date = %a %d %b |
-time = %I:%M %p |
+date = %a %d %b 
+time = %I:%M %p 
 format-prefix-foreground = ${colors.foreground}
 label =%date% %time%
 
 
 [module/battery]
+format-margin = ${values.margin}
 type = internal/battery
 ; This is useful in case the battery never reports 100% charge
 full-at = 99

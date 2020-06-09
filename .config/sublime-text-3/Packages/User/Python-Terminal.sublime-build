@@ -1,0 +1,16 @@
+{	
+	"selector": "source.python",
+ 	"shell_cmd": "urxvt -geometry 50x20-50+150 -name \"floatterm\" -e \"sh\" -c \"python ${file} && echo 'Press ENTER to exit' && read answer\"",
+ 	"variants":
+    [
+        {
+          "name": "Run as root",
+          "shell_cmd": "urxvt -geometry 50x20-50+150 -name \"floatterm\" -e \"sh\" -c \"sudo python ${file} && echo 'Press ENTER to exit' && read answer\"",
+        },
+
+        {
+          "name": "Auto Exit",
+          "shell_cmd": "urxvt -geometry 50x20-50+150 -name \"floatterm\" -e \"sh\" -c \"python ${file}\"",
+        }
+    ]
+}

@@ -99,7 +99,7 @@ set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
-set $ws9 "9"
+set $ws9 "9: "
 set $ws10 "10: "
 
 # switch to workspace
@@ -178,7 +178,6 @@ bindsym $mod+r mode "resize"
 #}
 
 # Colors
-set_from_resource $c1 i3wm.color1 #000000
 set_from_resource $fg i3wm.color7 #f0f0f0
 set_from_resource $bg i3wm.color0 #000000
 
@@ -192,14 +191,16 @@ client.urgent           $bg     $bg        $fg   $bg
 hide_edge_borders both
 
 # Custom Bindings
+bindsym $mod+Shift+h exec cat ~/.config/i3/config | grep 'bindsym' | grep -v '^\s*#' | sed 's/bindsym / /' | rofi -dmenu
+
 bindsym Print exec xfce4-screenshooter -f -s $HOME/pics/screenshots/ 
 bindsym Shift+Print exec xfce4-screenshooter -r -s $HOME/pics/screenshots/
 bindsym $mod+v exec $HOME/scripts/resize-win
 bindsym $mod+Shift+u exec $HOME/scripts/reload-pulseaudio
 bindsym $mod+Shift+Return exec $HOME/scripts/floatterm
-bindsym $mod+space exec rofi -show run -show-icons  #rofi
+bindsym $mod+space exec rofi -show run  #rofi
 bindsym $mod+Shift+v exec $HOME/scripts/audio-fix
-bindsym $mod+Shift+p exec  $HOME/scripts/switch-audio-output
+bindsym $mod+Shift+p exec  $HOME/scripts/auto_scrcpy
 
 #Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec $HOME/scripts/vol-up
@@ -221,33 +222,39 @@ for_window [class="^.*"] border pixel 0
 for_window [class="Pavucontrol"] floating enable border normal
 for_window [class="G213colors-gui"] floating enable border normal
 for_window [class="Piper"] floating enable border normal
+for_window [class="Tk"] floating enable border normal
+for_window [class="Cm-rgb-gui"] floating enable border normal
+for_window [class="scrcpy"] floating enable
 for_window [instance="floatterm"] floating enable border normal
 
-# Gap
+
+# Gaps
 #smart_gaps on
 gaps inner 20
 
-
 # Startup Apps
-#exec_always  i3-msg "$ws1; append_layout $HOME/.config/i3/workspaces/workspace1.json"
-exec_always --no-startup-id dunst -sep_color "$c1" -lb "$c1" -nb "$c1" -cb "$c1" -lf "$fg" -cf "$fg" -nf "$fg" -lfr "$c1" -nfr "$c1" -cfr 
+
+exec_always --no-startup-id dunst -sep_color "$bg" -lb "$bg" -nb "$bg" -cb "$bg" -lf "$fg" -cf "$fg" -nf "$fg" -lfr "$bg" -nfr "$bg" -cfr 
 exec_always --no-startup-id $HOME/scripts/i3-alternating-layout/alternating_layouts.py
+exec_always --no-startup-id killall picom ; sleep 0.1s && picom 
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 #Authentification for pamac-manager
 exec --no-startup-id xfce4-power-manager
-exec_always --no-startup-id killall picom ; sleep 0.1s && picom 
 exec --no-startup-id ~/.fehbg &
 exec --no-startup-id tumbler #Thumbnails in Thunar
-exec  --no-startup-id redshift
+exec --no-startup-id redshift
 exec --no-startup-id polybar -r top
-exec urxvt
+exec --no-startup-id $HOME/scripts/layout1
+exec --no-startup-id unclutter &
+exec --no-startup-id espanso restart
+exec sudo scripts/msi-rgb/target/release/msi-rgb 0 0 0 -x
 exec brave
 exec subl
 exec spotify
 
-#exec $HOME/scripts/switch-audio-output
-
-
-# Assign Apps to Workspace
+# Assign Apps to Workspacess
 assign [class="Brave-browser"] $ws2
 assign [class="Sublime"] $ws3
+assign [class="Minecraft.*"] $ws9
+assign [class="FML.*"] $ws9
+assign [class="MultiMC5"] $ws9
 for_window [class="Spotify"] move to workspace $ws10

@@ -56,6 +56,8 @@ else
 		#Replaces .Xresources with pywal's version and refreshes it if -p is set
 		[[ "$persistent" == "True" ]] && sudo mv $HOME/.cache/wal/colors.Xresources ~/.Xresources && sudo xrdb $HOME/.Xresources && echo -e "${NC}[${ACCENT}I${NC}] ${ACCENT}Updated${NC}: Xresources colors."
 
+		#Updates Spicetify based on Xresources
+		[[ "$persistent" == "True" ]] && spicetify update >/dev/null && echo -e "${NC}[${ACCENT}I${NC}] ${ACCENT}Updated${NC}: Spicetify Theme."
 		#Adds pywal.rasi in rofi themes or overwrites existing one
 		sudo cp $HOME/.cache/wal/colors-rofi-dark.rasi /usr/share/rofi/themes/pywal.rasi && echo -e "${NC}[${ACCENT}I${NC}] ${ACCENT}Updated${NC}: Rofi Theme."
 
