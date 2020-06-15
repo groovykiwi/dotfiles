@@ -628,7 +628,7 @@
 					"file": "/home/nate/dotfiles/scripts/pywal",
 					"settings":
 					{
-						"buffer_size": 4186,
+						"buffer_size": 4246,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
@@ -652,10 +652,7 @@
 					}
 				},
 				{
-					"contents": "#!/bin/bash\n\n#Colors for when I eventually add them to the verbose\nNC='\\033[0m' # No Color\nACCENT='\\033[1;31m'\n\nwhile getopts bhrf flag\ndo\n    case \"${flag}\" in\n    \tb) backup=\"True\";;\n\t\th) help=\"True\";;\n\t\tr) rename=\"True\";;\n\t\tf) files=\"True\";;\n    esac\ndone\n\nif [[ \"$help\" == \"True\" ]]; then\n\techo -e \"Usage: ./config [-b]\n\n[I] Install dotfiles to your system (the dotfiles folder needs to be in your home directory)\n\nOptional arguments:\n  -b,         Creates a backup of your current dotfiles and stores it in ~/.backup\n  -r,         Renames default directory with shorter names and deletes useless ones.\n  -f,         Copies various files such a few wallpapers, grub-theme installer to ~/pics.\n  -h,         Displays this message. \\n\"\n else\n\n \t# Backup process\n\t[[ -d $HOME/.backup ]] && echo -e \"\\nA previous backup (~/.backup) has been found, it will be overwritten. To cancel press Ctrl+C or press ENTER to continue \" && read answer\n\t[[ \"$backup\" == \"True\" ]] && echo \"Backing up to ~/.backup\" && sudo rm -rf $HOME/.backup && mkdir $HOME/.backup &&sudo cp -p -r $HOME/.config/ $HOME/.backup/.config && echo \"Done: .config/ \" && sudo cp -p -r /etc/ $HOME/.backup/etc && echo \"Done: etc/ \" && sudo cp -p $HOME/{.Xresources,.bashrc,.bash_profile,.profile} $HOME/.backup/ && echo \"Done: dotfiles \\n\"\n\n\n\t# Renames default directory with shorter names and deletes useless ones\n\t[[ \"$rename\" == \"True\" ]] && mv $HOME/Downloads $HOME/dl && mv $HOME/Documents $HOME/docs && mv $HOME/Pictures $HOME/pics\n\t[[ -d $HOME/Public ]] && rm -rf $HOME/Public\n\t[[ -d $HOME/Templates ]] && rm -rf $HOME/Templates\n\t[[ -d $HOME/Videos ]] && rm -rf $HOME/Videos\n\t[[ -d $HOME/Music ]] && rm -rf $HOME/Music\n\t[[ -d $HOME/Desktop ]] && rm -rf $HOME/Desktop\n\t\n\t# Copies various files such a few wallpapers, grub-theme installer to ~/pics\n\t[[ \"$files\" == \"True\" ]] && cp -r $HOME/dotfiles/files/* $HOME/pics/\n\t\n\t# Symlink .config files\n\tfor entry in \".config\"/*\n\tdo\n\t\trm -rf \"$HOME/$entry\" && echo \"Deleted $HOME/$entry\"\n\t\tln -s \"$HOME/dotfiles/$entry\" \"$HOME/$entry\" && echo -e \"Created symlink with $entry \\n\"\n\tdone\n\n\n\t# Symlink /etc files (since there is a few files I do it manually for now)\n\t\n\t#Pulse\n\t[[ -d /etc/pulse ]]  && echo \"Found /etc/pulse\" && sudo rm -rf /etc/pulse && echo \"Deleted /etc/pulse\"\n\tsudo ln -s $HOME/dotfiles/etc/pulse /etc/ && echo -e \"Created symlink with etc/pulse \\n\"\n\n\t#Slick-greeter\n\tfor entry in \"etc/lightdm\"/*\n\tdo\n\t\tsudo rm -rf \"/$entry\" && echo \"/$entry\"\n\t\tsudo ln -s \"$HOME/dotfiles/$entry\" \"/$entry\" && echo -e \"Created symlink with $entry \\n\"\n\tdone\n\tsudo cp $HOME/dotfiles/files/slick-greeter/* /usr/share/slick-greeter/ #Copies arch.png and slick-greeter.png\n\t\n\t#for entry in \"etc\"/*\n\t#do\n\t#\tsudo rm -rf /\"$entry\" && echo Deleted /\"$entry\"\n\t#\tsudo ln -s \"$HOME\"/dotfiles/$entry /\"$entry\" && echo -e \"Created symlink with $entry \\n\"\n\t#done\n\n\n\t# Symlink myfonts folder\n\t[[ -d /usr/share/fonts/myfonts ]]  && echo \"Found /usr/share/fonts/myfonts\" && sudo rm -rf /usr/share/fonts/myfonts && echo \"Deleted /usr/share/fonts/myfonts\"\n\tsudo ln -s $HOME/dotfiles/myfonts /usr/share/fonts/ && echo -e \"Created symlink with myfonts \\n\" && fc-cache\n\n\t# Symlink scripts folder\n\t[[ -d $HOME/scripts ]]  && echo \"Found ~/scripts\" && rm -rf $HOME/scripts && echo \"Deleted ~/scripts\"\n\tln -s $HOME/dotfiles/scripts $HOME  && echo -e \"Symlinked scripts folder \\n\"\n\n\t# Symlink .bashrc\n\t[[ -f $HOME/.bashrc ]] && echo \"Found .bashrc\" && rm $HOME/.bashrc && echo \"Deleted .bashrc\"\n\tln -s $HOME/dotfiles/.bashrc $HOME && echo -e \"Symlinked .bashrc \\n\" && source $HOME/.bashrc\n\t# Symlink .bash_profile\n\t[[ -f $HOME/.bash_profile ]] && echo \"Found .bash_profile\" && rm $HOME/.bash_profile && echo \"Deleted .bash_profile\"\n\tln -s $HOME/dotfiles/.bash_profile $HOME && echo -e \"Symlinked .bash_profile \\n\" && source $HOME/.bash_profile\n\t# Symlink .profile\n\t[[ -f $HOME/.profile ]] && echo \"Found .profile\" && rm $HOME/.profile && echo \"Deleted .profile\"\n\tln -s $HOME/dotfiles/.profile $HOME && echo -e \"Symlinked .profile \\n\" && source $HOME/.profile\n\t# Symlink .Xresources\n\t[[ -f $HOME/.Xresources ]] && echo \"Found .Xresources\" && rm $HOME/.Xresources && echo \"Deleted .Xresources\"\n\tln -s $HOME/dotfiles/.Xresources $HOME && echo \"Symlinked .Xresources \" && xrdb $HOME/.Xresources\n\t\n\t# Applies default theme \n\t$HOME/scripts/pywal -i $HOME/dotfiles/files/walls/darkplant.jpg -a 90 -p\nfi",
 					"file": "/home/nate/dotfiles/config",
-					"file_size": 4377,
-					"file_write_time": 132353148404923712,
 					"settings":
 					{
 						"buffer_size": 4378,
@@ -667,7 +664,7 @@
 					"file": "/home/nate/dotfiles/packages",
 					"settings":
 					{
-						"buffer_size": 1972,
+						"buffer_size": 1992,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
@@ -1479,7 +1476,7 @@
 								"translation.y": 5548.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 6,
+							"stack_index": 4,
 							"type": "text"
 						},
 						{
@@ -1732,7 +1729,7 @@
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 5,
+							"stack_index": 3,
 							"type": "text"
 						},
 						{
@@ -1873,8 +1870,8 @@
 								"selection":
 								[
 									[
-										395,
-										395
+										4643,
+										4643
 									]
 								],
 								"settings":
@@ -1882,10 +1879,10 @@
 									"syntax": "Packages/i3 wm/Syntax/i3wm_config.tmLanguage"
 								},
 								"translation.x": 0.0,
-								"translation.y": 154.0,
+								"translation.y": 4513.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 4,
+							"stack_index": 2,
 							"type": "text"
 						},
 						{
@@ -1913,7 +1910,7 @@
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 3,
+							"stack_index": 7,
 							"type": "text"
 						},
 						{
@@ -1952,7 +1949,7 @@
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 4186,
+								"buffer_size": 4246,
 								"regions":
 								{
 									"col_DD0000FF":
@@ -1984,8 +1981,8 @@
 								"selection":
 								[
 									[
-										2077,
-										2077
+										4135,
+										4135
 									]
 								],
 								"settings":
@@ -1994,10 +1991,10 @@
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 1512.0,
+								"translation.y": 1584.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 8,
+							"stack_index": 5,
 							"type": "text"
 						},
 						{
@@ -2249,7 +2246,7 @@
 								"translation.y": 3049.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 7,
+							"stack_index": 8,
 							"type": "text"
 						},
 						{
@@ -2354,7 +2351,7 @@
 								"translation.y": 5296.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 2,
+							"stack_index": 6,
 							"type": "text"
 						},
 						{
@@ -2417,7 +2414,7 @@
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 1972,
+								"buffer_size": 1992,
 								"regions":
 								{
 									"col_DD0000FF":
@@ -2449,8 +2446,8 @@
 								"selection":
 								[
 									[
-										671,
-										671
+										1666,
+										1666
 									]
 								],
 								"settings":
@@ -2459,7 +2456,7 @@
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 340.0,
+								"translation.y": 556.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 0,

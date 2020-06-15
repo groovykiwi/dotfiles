@@ -91,7 +91,7 @@ Optional arguments:
 	# Symlink .Xresources
 	[[ -f $HOME/.Xresources ]] && echo "Found .Xresources" && rm $HOME/.Xresources && echo "Deleted .Xresources"
 	ln -s $HOME/dotfiles/.Xresources $HOME && echo "Symlinked .Xresources " && xrdb $HOME/.Xresources
-
+	
 	# Applies default theme 
 	$HOME/scripts/pywal -i $HOME/dotfiles/files/walls/darkplant.jpg -a 90 -p
 fi

@@ -95,7 +95,7 @@ else
 		#Sets RGB
 		sudo g213-led -a $(bash -c "sed -n '2p' $HOME/.cache/wal/colors | sed 's/#//'")
 		sudo cm-rgb-cli set fan --brightness=5 --color=$(bash -c "sed -n '2p' $HOME/.cache/wal/colors | sed 's/#//'") logo --brightness=5 --color=$(bash -c "sed -n '7p' $HOME/.cache/wal/colors | sed 's/#//'")
-
+		sudo $HOME/scripts/msi-rgb/target/release/msi-rgb 0 0 0 -x
 		#Display colorscheme again
 		wal --preview
 
