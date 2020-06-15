@@ -1,0 +1,3 @@
+#!/bin/bash
+clipboard=$(clipit -c)
+notify-send -t 5000 "Clipboard:" "$clipboard"

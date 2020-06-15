@@ -1,0 +1,16 @@
+#!/bin/bash
+
+while getopts b flag
+do
+	case "${flag}" in
+		b) backup="True";;
+	esac
+done
+
+date=$(date +"%F--%H-%M")
+
+[[ "$backup" == "True" ]] && cat $HOME/st/config.def.h > $HOME/st/backups/$date
+[[ -f $HOME/st/config.h ]] && sudo rm $HOME/st/config.h
+cd $HOME/st/
+sudo make clean install
+st 

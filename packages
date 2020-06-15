@@ -30,12 +30,12 @@ else
 
  	#Software from the official Arch repo
  	echo "[.] Installing packages"
- 	sudo pacman -S libratbag curl sl unclutter gnome-disk-utility baobab python cmatrix xcb-util-xrm tumbler xfce4-screenshooter python-pywal imagemagick feh slop neofetch brave pulseaudio rofi playerctl wmctrl xfce4-power-manager polybar redshift
+ 	sudo pacman -S thunar libratbag curl sl unclutter gnome-disk-utility baobab python cmatrix xcb-util-xrm tumbler xfce4-screenshooter python-pywal imagemagick feh slop neofetch brave pulseaudio rofi playerctl wmctrl xfce4-power-manager polybar redshift
 	
 	#Copies st to ~/ and installs it
 	cp -r $HOME/dotfiles/st $HOME/
 	cd $HOME/st && sudo rm config.h && sudo make clean install	
-	
+
  	#Picom Fork with kawase blur and rounder corners
 	cd $HOME/Downloads && git clone https://github.com/ibhagwan/picom-ibhagwan-git && cd picom-ibhagwan-git && makepkg -si
 	
