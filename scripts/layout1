@@ -1,18 +1,21 @@
 #!/bin/bash
 
-i3-msg "workspace 1: ; append_layout ~/.config/i3/workspace_1.json"
-
 nc='\033[0m' # No Color
 accent='\033[1;31m'
 accent2='\033[1;37m'
 bold=$(tput bold)
 normal=$(tput sgr0)
 
-urxvt -name ranger -e sh -c "ranger;bash" &
-urxvt -name main -hold -e sh -c "
+wmctrl -s 0 && i3-msg "focus parent, focus parent, focus parent, focus parent, focus parent,  kill "
+i3-msg "workspace 1: ; append_layout ~/.config/i3/workspace_1.json" >/dev/null
+
+st -n ranger -e sh -c "ranger;bash" &
+st -n main -e sh -c "
 echo -e '$bold$accent[ Welcome Back! How are you today $accent2$USER$accent ? ]$nc$bold';
 curl wttr.in/Iskele?format="~+Weather+:+%t+%C+~";
 echo "";
 neofetch;
 bash" &
-urxvt -name htop -e sh -c "htop;bash" &
+st -n top -e sh -c "vtop -t certs;bash" &
+
+#echo "" >> $HOME/.config/picom.conf

@@ -15,9 +15,9 @@ else
 fi
 
 #Updates Polybar's volume module
-if [[ -z $(pgrep polybar) ]]; then
-	polybar -r top &
-else
-	killall polybar 
-	polybar -r top &
-fi
+#if [[ -z $(pgrep polybar) ]]; then
+#	polybar -r top &
+#else
+#	killall polybar 
+#	polybar -r top &
+#fi

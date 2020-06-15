@@ -2,7 +2,7 @@
 status=$(expressvpn status 2>/dev/null)
 
 if [[ "$status" == "Not connected" ]] || [[ -z $status ]]; then
-	echo ""
+	echo ""
 else
-	echo ""
+	echo ""
 fi

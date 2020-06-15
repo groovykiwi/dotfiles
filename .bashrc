@@ -1,10 +1,6 @@
 #
 # ~/.bashrc
 #
-#My Commmands
-export PATH=$PATH:$HOME/scripts
-export EDITOR='vim'
-export VISUAL='vim'
 #######
 [[ $- != *i* ]] && return
 
@@ -76,7 +72,7 @@ if ${use_color} ; then
 	if [[ ${EUID} == 0 ]] ; then
 		PS1='\[\033[01;31m\][\h\[\033[01;36m\] \W\[\033[01;31m\]]\$\[\033[00m\] '
 	else
-		PS1='\[\033[01;31m\][ \u \[\033[01;37m\]\W \[\033[01;31m\]]\[\033[01;32m\] ~ \[\033[00m\]'
+		PS1='\[\033[01;31m\][ \u \[\033[01;37m\]\W \[\033[01;31m\]]\[\033[01;32m\] $ \[\033[00m\]'
 	fi
 
 	alias ls='ls --color=auto'
@@ -142,4 +138,21 @@ ex ()
   fi
 }
 
+#My Stuff
+export PATH=$PATH:$HOME/scripts
+export TERMINAL='st'
 
+# ~/ Clean-Up:
+export GOPATH="$HOME/.local/share/go"
+export LESSHISTFILE=- #Disables Less History
+export CUDA_CACHE_PATH=$HOME/.cache/nv
+export GNUPGHOME=$HOME/.local/share/gnupg
+eval $(dircolors $HOME/.config/dircolors)
+
+
+# Aliases
+alias cp='cp -v'
+alias mv='mv -v'
+alias ls='ls -Shv --color=always'
+alias lsa='ls -AFhv --color=always'
+alias lsaa='ls -lAFhv --color=always | less -R -X -F'

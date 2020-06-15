@@ -5,9 +5,9 @@ title=$(cat /proc/$(xdotool getwindowpid 2>/dev/null $(xdotool getwindowfocus))/
 title=$(tr '[:lower:]' '[:upper:]' <<< ${title:0:1})${title:1}
 
 title=$(echo "$title" | tr _ " ")
-title=$(echo "$title" | sed -e "s/\b\(.\)/\u\1/g")
-if [ "$title" == "" ]; then
-	echo " Desktop "
+title=$(echo "$title" | sed -e "s,\b\(.\),\u\1,g")
+if [ -z "$title" ]; then
+	echo "Desktop"
 else
-	echo " $title "
+	echo "$title"
 fi

@@ -8,11 +8,13 @@
 NC='\033[0m' # No Color
 ACCENT='\033[1;31m'
 
-while getopts i:a:gph flag
+while getopts i:a:s:b:gph flag
 do
     case "${flag}" in
         i) path=${OPTARG};;
         a) opacity=${OPTARG};;
+		s) saturation=${OPTARG};;
+		b) backend=${OPTARG};;
 		g) grub="True";;
 		p) persistent="True";;
 		h) help="True";;
@@ -33,31 +35,49 @@ optional arguments:
 else
 	error_flag=False
 
-	if [[ -z $path ]] && [[ -z $opacity ]]; then
-		error_flag=True
-		echo "Specify the path to the wallpaper with -i and opacity with -a. "
-	elif [[ -z $opacity ]]; then
+	if ! [[ -z $path ]] && ! [[ -z $opacity ]] && ! [[ -z $saturation ]] && ! [[ -z $backend ]]; then
+		wal -i $path -a $opacity --saturate $saturation --backend $backend
+
+	elif ! [[ -z $path ]] && ! [[ -z $opacity ]] && ! [[ -z $backend ]]; then
+		wal -i $path -a $opacity --backend $backend
+
+	elif ! [[ -z $path ]] && ! [[ -z $saturation ]] && ! [[ -z $backend ]]; then
+		wal -i $path --saturate $saturation --backend $backend
+
+	elif ! [[ -z $path ]] && ! [[ -z $opacity ]] && ! [[ -z $saturation ]]; then
+		wal -i $path -a $opacity --saturate $saturation
+
+	elif ! [[ -z $path ]] && ! [[ -z $opacity ]]; then
+		wal -i $path -a $opacity 
+
+	elif ! [[ -z $path ]] && ! [[ -z $saturation ]]; then
+		wal -i $path --saturate $saturation
+
+	elif ! [[ -z $path ]] && ! [[ -z $backend ]]; then
+		wal -i $path --backend $backend
+
+	elif ! [[ -z $path ]]; then
 		wal -i $path
-	elif [[ -z $path ]]; then
+
+	else
 		error_flag=True
 		echo "No path to the wallpaper has been set."
-	else
-		wal -i $path -a $opacity
 	fi
-
 	exit_code=$?
+	
 
+	
 	if [[ "$error_flag" == "False" ]] && [[ $exit_code -eq 0 ]]; then
 
 		#Creates/Replaces pywal-oomox theme in .themes (it has to be applied in lxappearance once)
-		sudo /opt/oomox/plugins/theme_oomox/gtk-theme/change_color.sh $HOME/.cache/wal/colors-oomox -o pywal-oomox -t $HOME/.themes && echo -e "\n${NC}[${ACCENT}I${NC}] ${ACCENT}Updated${NC}: GTK+ Theme."
-		#sudo /opt/oomox/plugins/oomoxify/oomoxify.sh $HOME/.cache/wal/colors-oomox
+		sudo /opt/oomox/plugins/theme_oomox/gtk-theme/change_color.sh $HOME/.cache/wal/colors-oomox -o pywal-oomox -t $HOME/.themes >/dev/null && echo -e "\n${NC}[${ACCENT}I${NC}] ${ACCENT}Updated${NC}: GTK+ Theme."
 		
 		#Replaces .Xresources with pywal's version and refreshes it if -p is set
-		[[ "$persistent" == "True" ]] && sudo mv $HOME/.cache/wal/colors.Xresources ~/.Xresources && sudo xrdb $HOME/.Xresources && echo -e "${NC}[${ACCENT}I${NC}] ${ACCENT}Updated${NC}: Xresources colors."
+		[[ "$persistent" == "True" ]] && sudo cat "$HOME/.cache/wal/colors.Xresources" > $HOME/.Xresources && sudo xrdb $HOME/.Xresources && echo -e "${NC}[${ACCENT}I${NC}] ${ACCENT}Updated${NC}: Xresources colors."
 
 		#Updates Spicetify based on Xresources
-		[[ "$persistent" == "True" ]] && spicetify update >/dev/null && echo -e "${NC}[${ACCENT}I${NC}] ${ACCENT}Updated${NC}: Spicetify Theme."
+		[[ "$persistent" == "True" ]] && spicetify update >/dev/null && echo -e "${NC}[${ACCENT}I${NC}] ${ACCENT}Updated${NC}: Spicetify Theme." && ! [[ -z $(pgrep spotify) ]] && killall spotify && i3-msg exec spotify >/dev/null
+		
 		#Adds pywal.rasi in rofi themes or overwrites existing one
 		sudo cp $HOME/.cache/wal/colors-rofi-dark.rasi /usr/share/rofi/themes/pywal.rasi && echo -e "${NC}[${ACCENT}I${NC}] ${ACCENT}Updated${NC}: Rofi Theme."
 
@@ -70,7 +90,14 @@ else
 		
 		#Reload Dunst
 		killall dunst
-		i3-msg restart 1>/dev/null && echo -e "${NC}[${ACCENT}I${NC}] ${ACCENT}Reloaded${NC}: i3.\n"
+		i3-msg restart >/dev/null && echo -e "${NC}[${ACCENT}I${NC}] ${ACCENT}Reloaded${NC}: i3.\n"
+
+		#Sets RGB
+		sudo g213-led -a $(bash -c "sed -n '2p' $HOME/.cache/wal/colors | sed 's/#//'")
+		sudo cm-rgb-cli set fan --brightness=5 --color=$(bash -c "sed -n '2p' $HOME/.cache/wal/colors | sed 's/#//'") logo --brightness=5 --color=$(bash -c "sed -n '7p' $HOME/.cache/wal/colors | sed 's/#//'")
+
+		#Display colorscheme again
+		wal --preview
 
 	fi
 fi

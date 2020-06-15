@@ -93,7 +93,7 @@
                     "swallows": [
                        {
                        // "class": "^URxvt$",
-                       "instance": "^htop$"
+                       "instance": "^top$"
                        // "title": "^nate\\@nebula\\:\\~$"
                        }
                     ],
