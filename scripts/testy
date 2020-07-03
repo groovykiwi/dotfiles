@@ -1,3 +1,0 @@
-#!/bin/bash
-
-! [[ -z $(pgrep spotify ) ]] && notify-send "hey"

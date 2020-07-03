@@ -28,7 +28,9 @@ pywal - Makes wal changes persistent and changes other aspect of the system.
 
 optional arguments:
   -h, --help          Show this help message and exit
-  -a "alpha"            Set terminal background transparency. *Only works in URxvt*
+  -a [0-255]          Set terminal background transparency
+  -s [0-1]            Set the saturation of colors
+  -b [backend]        Select the color backend (haishoku, wal)			
   -g grub-theme       Applies this wallpaper to the Vimix Grub theme and installs it
   -p 		      Makes the changes on persistent by modifying .Xresources using ~/.config/wal/templates/colors.Xresources
 "
@@ -95,7 +97,7 @@ else
 		#Sets RGB
 		sudo g213-led -a $(bash -c "sed -n '2p' $HOME/.cache/wal/colors | sed 's/#//'")
 		sudo cm-rgb-cli set fan --brightness=5 --color=$(bash -c "sed -n '2p' $HOME/.cache/wal/colors | sed 's/#//'") logo --brightness=5 --color=$(bash -c "sed -n '7p' $HOME/.cache/wal/colors | sed 's/#//'")
-		sudo $HOME/scripts/msi-rgb/target/release/msi-rgb 0 0 0 -x
+
 		#Display colorscheme again
 		wal --preview
 

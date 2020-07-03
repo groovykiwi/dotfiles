@@ -22,7 +22,7 @@ else
 
 	#Removes bloat
 	echo "\n[.] Removing bloat"
-	sudo pacman -Rd --nodeps nitrogen palemoon-bin picom
+	sudo pacman -Rd --nodeps nitrogen palemoon-bin picom vlc
 
 	#Updates system
 	echo "[.] Updating existing packages"
@@ -30,7 +30,7 @@ else
 
  	#Software from the official Arch repo
  	echo "[.] Installing packages"
- 	sudo pacman -S pavucontrol thunar libratbag curl sl unclutter gnome-disk-utility baobab python cmatrix xcb-util-xrm tumbler xfce4-screenshooter python-pywal imagemagick feh slop neofetch brave pulseaudio rofi playerctl wmctrl xfce4-power-manager polybar redshift
+ 	sudo pacman -S youtube-dl timeshift pavucontrol thunar libratbag curl sl unclutter gnome-disk-utility baobab python cmatrix xcb-util-xrm tumbler mate-utils python-pywal imagemagick feh slop neofetch firefox pulseaudio rofi playerctl wmctrl xfce4-power-manager polybar redshift
 	
 	#Copies st to ~/ and installs it
 	cp -r $HOME/dotfiles/st $HOME/
@@ -39,6 +39,9 @@ else
  	#Picom Fork with kawase blur and rounder corners
 	cd $HOME/Downloads && git clone https://github.com/ibhagwan/picom-ibhagwan-git && cd picom-ibhagwan-git && makepkg -si
 	
+	#Python Stuff
+	sudo pip install i3-py
+
 	#Sublime Text
 	sudo curl -O https://download.sublimetext.com/sublimehq-pub.gpg && sudo pacman-key --add sublimehq-pub.gpg && sudo pacman-key --lsign-key 8A8F901A && rm sublimehq-pub.gpg
 	sudo echo -e "\n[sublime-text]\nServer = https://download.sublimetext.com/arch/stable/x86_64" | sudo tee -a /etc/pacman.conf

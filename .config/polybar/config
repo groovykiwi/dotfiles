@@ -10,8 +10,9 @@
 [colors]
 transparent = #00000000
 background = ${xrdb:color0:#000000}
-foreground = #ffffff
+foreground = ${xrdb:color15:#ffffff}
 accent = ${xrdb:color5:#ff0000}
+accent2 = ${xrdb:color1:#ffff00}
 
 [values]
 margin = 2
@@ -30,19 +31,17 @@ padding-right = 2
 module-margin-left = 0
 module-margin-right = 0
 
-;Fonts
-
 font-0 = Fira Code Nerd Font:size=13;3
 
 ;Module Positions
 modules-left = i3 spotify
 modules-center = titlehook 
-modules-right =  filesystem vpn audiodevice pulseaudio netstat date battery powermenu
+modules-right =  filesystem vpn audiodevice pulseaudio date battery powermenu
 
-;[System Tray]
-;tray-position = center
-tray-offset-x = 25%
-tray-offset-y = 1
+;System Tray
+tray-position = right
+tray-offset-x = -560px
+tray-offset-y = 0
 tray-padding = 0
 tray-background= ${colors.background}
 tray-scale = 1
@@ -53,7 +52,7 @@ tray-detached = true
 cursor-click = pointer
 cursor-scroll = ns-resize
 
-
+#underline-size = 2
 ; LEFT MODULES
 
 [module/i3]
@@ -83,17 +82,18 @@ label-visible-color = ${colors.foreground}
 ; Urgent = Workspace with urgency hint set
 label-urgent = %name%
 label-urgent-color = ${colors.foreground}
+label-urgent-background = ${colors.accent2}
 label-urgent-padding = 2
 
 [module/spotify]
-format-margin = 1
+format-margin = 0
 type = custom/script
 interval = 0
 format = <label>
 exec = python $HOME/scripts/polybar-spotify/spotify_status.py --font=0 -f '{play_pause} {artist} - {song}  ' -t 65 -p '   ,  契 '
 #format-underline = ${colors.accent}
 click-left = playerctl -p spotify play-pause
-click-right = wmctrl -x -a "Spotify"
+click-right = if ! [[ -z $(pgrep spotify-lyrics) ]]; then wmctrl -x -R spotify-lyrics; else i3-msg exec "st -g 50x20-50+150 -n spotify-lyrics -e spotify-lyrics"; fi
 click-middle = playerctl -p spotify next
 
 
@@ -107,7 +107,7 @@ label = %output%
 interval = 0
 exec = $HOME/scripts/displaytitle
 format-underline = ${colors.accent}
-
+click-middle = touch .config/polybar/config -m
 
 
 ; RIGHT MODULES
@@ -118,8 +118,8 @@ label-mounted-padding-right = 2
 type = internal/fs
 interval = 25
 mount-0 = /home
-label-mounted = %{A1:baobab &:}%free% left%{A}
-fixed-values = true
+label-mounted = %{A1:baobab &:}/home: %free%%{A}
+fixed-values = false
 
 [module/vpn]
 label-padding-right = 3
@@ -127,8 +127,9 @@ type = custom/script
 tail = false
 label = vpn:%output% 
 interval = 0
-exec = $HOME/scripts/vpn_status
-click-left = bash /$HOME/scripts/vpn_connect
+exec = $HOME/scripts/expressvpn_module -s
+click-left = /$HOME/scripts/expressvpn_module -c
+click-right = /$HOME/scripts/expressvpn_module -d
 
 
 [module/audiodevice]
@@ -158,14 +159,6 @@ ramp-volume-1 = 
 ramp-volume-2 =  
 #format-volume-underline = ${colors.accent}
 #format-muted-underline = ${colors.accent}
-
-[module/netstat]
-label-padding-right = ${values.margin}
-type = custom/script
-tail = false
-label = "%output%"
-interval = 0
-exec = $HOME/scripts/network-status
 
 [module/date]
 label-padding-right = ${values.margin}

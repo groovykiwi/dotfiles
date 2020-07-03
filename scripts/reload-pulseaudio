@@ -1,5 +1,0 @@
-#!/bin/bash
-killall pulseaudio 2>/dev/null
-sleep 1s
-pulseaudio &
-notify-send "Restarted Pulseaudio"

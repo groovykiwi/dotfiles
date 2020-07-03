@@ -151,6 +151,7 @@ eval $(dircolors $HOME/.config/dircolors)
 
 
 # Aliases
+
 alias cp='cp -v'
 alias mv='mv -v'
 alias ls='ls -Shv --color=always'

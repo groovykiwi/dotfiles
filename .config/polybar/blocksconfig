@@ -38,7 +38,7 @@ font-1 = Fira Code Nerd Font:size=19;3
 ;Module Positions
 modules-left = i3 titlehook
 modules-center = 
-modules-right =   spotify filesystem vpn audiodevice pulseaudio date battery powermenu
+modules-right = filesystem vpn audiodevice pulseaudio date battery powermenu
 
 ;[System Tray]
 ;tray-position = center

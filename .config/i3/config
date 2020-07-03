@@ -97,7 +97,7 @@ set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
-set $ws8 "8"
+set $ws8 "8:  "
 set $ws9 "9: "
 set $ws10 "10: "
 
@@ -188,18 +188,20 @@ client.unfocused        $bg     $bg        $fg   $bg
 client.urgent           $bg     $bg        $fg   $bg       
 
 hide_edge_borders both
+focus_on_window_activation urgent
 
 # Custom Bindings
 bindsym $mod+Shift+m exec cat ~/.config/i3/config | grep 'bindsym' | grep -v '^\s*#' | sed 's/bindsym / /' | rofi -dmenu
 bindsym $mod+Shift+F1 exec --no-startup-id $HOME/scripts/layout1
-bindsym Print exec xfce4-screenshooter -f -s $HOME/pics/screenshots/ 
-bindsym Shift+Print exec xfce4-screenshooter -r -s $HOME/pics/screenshots/
+bindsym Print exec mate-screenshot
+bindsym Shift+Print exec mate-screenshot -a
 bindsym $mod+v exec $HOME/scripts/resize-win
-bindsym $mod+Shift+u exec $HOME/scripts/reload-pulseaudio
 bindsym $mod+Shift+Return exec $HOME/scripts/floatterm
-bindsym $mod+space exec rofi -show run  #rofi
+bindsym $mod+space exec rofi -show run -font "fira code nerd font 14" -lines 5 -width 30  #rofi
 bindsym $mod+Shift+v exec $HOME/scripts/audio-fix
 bindsym $mod+Shift+p exec  $HOME/scripts/auto_scrcpy
+bindsym $mod+e exec $HOME/scripts/nf-cheatsheet
+bindsym Mod1+shift+k exec $HOME/scripts/killer
 
 #Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec $HOME/scripts/vol-up
@@ -218,18 +220,21 @@ bindsym XF86AudioPrev exec playerctl -p spotify previous
 for_window [class="^.*"] border pixel 0
 
 for_window [class="Pavucontrol"] floating enable border normal
+for_window [class="firefox" instance="Places"] floating enable border normal
 for_window [class="G213colors-gui"] floating enable border normal
 for_window [class="Piper"] floating enable border normal
 for_window [class="Tk"] floating enable border normal
 for_window [class="Cm-rgb-gui"] floating enable border normal
+for_window [class="Cm-rgb-monitor-gui"] floating enable border normal
 for_window [class="scrcpy"] floating enable
 for_window [class="Baobab"] floating enable border normal
 for_window [instance="floatterm"] floating enable border normal
+for_window [instance="spotify-lyrics"] floating enable border normal
 
 
 # Gaps
 #smart_gaps on
-gaps inner 20
+gaps inner 10
 
 # Startup Apps
 
@@ -238,23 +243,26 @@ exec_always --no-startup-id $HOME/scripts/i3-alternating-layout/alternating_layo
 exec_always --no-startup-id killall picom ; sleep 0.1s && picom 
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 #Authentification for pamac-manager
 exec --no-startup-id xfce4-power-manager
-exec --no-startup-id ~/.fehbg &
+exec --no-startup-id ~/.fehbg
 exec --no-startup-id tumbler #Thumbnails in Thunar
 exec --no-startup-id redshift
 exec --no-startup-id polybar -r top #-c .config/polybar/roundedblocksconfig
 exec --no-startup-id $HOME/scripts/layout1
-exec --no-startup-id unclutter &
+exec --no-startup-id unclutter
 exec --no-startup-id espanso restart
-exec sudo scripts/msi-rgb/target/release/msi-rgb 0 0 0 -x
-exec brave
+exec --no-startup-id /usr/lib/kdeconnectd && kdeconnect-indicator
+exec firefox
 exec subl
 exec spotify
 
 # Assign Apps to Workspacess
 assign [class="Brave-browser"] $ws2
+assign [class="firefox"] $ws2
 assign [class="Sublime"] $ws3
+assign [class="fl64.exe"] $ws8
 assign [class="Minecraft.*"] $ws9
 assign [class="FML.*"] $ws9
 assign [class="MultiMC5"] $ws9
 assign [class="Steam"] $ws9
 for_window [class="Spotify"] move to workspace $ws10
+
