@@ -1854,8 +1854,8 @@
 								"selection":
 								[
 									[
-										506,
-										506
+										507,
+										507
 									]
 								],
 								"settings":
@@ -1864,7 +1864,7 @@
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 414.0,
+								"translation.y": 6.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 0,
@@ -2297,6 +2297,31 @@
 								"buffer_size": 4278,
 								"regions":
 								{
+									"col_DD0000FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												289,
+												299
+											]
+										],
+										"scope": "col_DD0000FF"
+									},
+									"col_DD0000FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_DD0000FF_circle.png",
+										"regions":
+										[
+											[
+												281,
+												281
+											]
+										],
+										"scope": "col_gutter"
+									}
 								},
 								"selection":
 								[
@@ -2327,6 +2352,230 @@
 								"buffer_size": 4316,
 								"regions":
 								{
+									"col_000000FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												461,
+												466
+											]
+										],
+										"scope": "col_000000FF"
+									},
+									"col_000000FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_000000FF_circle.png",
+										"regions":
+										[
+											[
+												442,
+												442
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_00DD00FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												2243,
+												2254
+											]
+										],
+										"scope": "col_00DD00FF"
+									},
+									"col_00DD00FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_00DD00FF_circle.png",
+										"regions":
+										[
+											[
+												2180,
+												2180
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_00DDDDFF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												2125,
+												2136
+											]
+										],
+										"scope": "col_00DDDDFF"
+									},
+									"col_00DDDDFF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_00DDDDFF_circle.png",
+										"regions":
+										[
+											[
+												2098,
+												2098
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_139609FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												3226,
+												3233
+											]
+										],
+										"scope": "col_139609FF"
+									},
+									"col_139609FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_139609FF_circle.png",
+										"regions":
+										[
+											[
+												3174,
+												3174
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_808000FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												176,
+												182
+											],
+											[
+												234,
+												240
+											]
+										],
+										"scope": "col_808000FF"
+									},
+									"col_808000FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_808000FF_circle.png",
+										"regions":
+										[
+											[
+												149,
+												149
+											],
+											[
+												207,
+												207
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_DD0000FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												2107,
+												2118
+											],
+											[
+												2143,
+												2154
+											],
+											[
+												2189,
+												2200
+											],
+											[
+												2227,
+												2238
+											]
+										],
+										"scope": "col_DD0000FF"
+									},
+									"col_DD0000FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_DD0000FF_circle.png",
+										"regions":
+										[
+											[
+												2098,
+												2098
+											],
+											[
+												2180,
+												2180
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_DDDDDDFF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												2209,
+												2220
+											]
+										],
+										"scope": "col_DDDDDDFF"
+									},
+									"col_DDDDDDFF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_DDDDDDFF_circle.png",
+										"regions":
+										[
+											[
+												2180,
+												2180
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_FFFFFFFF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												436,
+												441
+											]
+										],
+										"scope": "col_FFFFFFFF"
+									},
+									"col_FFFFFFFF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_FFFFFFFF_circle.png",
+										"regions":
+										[
+											[
+												417,
+												417
+											]
+										],
+										"scope": "col_gutter"
+									}
 								},
 								"selection":
 								[

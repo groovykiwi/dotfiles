@@ -5,7 +5,6 @@ To install the whole setup :
 cd ~
 git clone https://github.com/groovykiwi/dotfiles/
 cd dotfiles
-chmod +x packages config
 ./packages
 
 ```
