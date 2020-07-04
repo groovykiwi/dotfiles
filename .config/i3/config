@@ -250,19 +250,22 @@ exec --no-startup-id polybar -r top #-c .config/polybar/roundedblocksconfig
 exec --no-startup-id $HOME/scripts/layout1
 exec --no-startup-id unclutter
 exec --no-startup-id espanso restart
-exec --no-startup-id /usr/lib/kdeconnectd && kdeconnect-indicator
+exec --no-startup-id /usr/lib/kdeconnectd && sleep 5 && kdeconnect-indicator
 exec firefox
 exec subl
 exec spotify
 
 # Assign Apps to Workspacess
 assign [class="Brave-browser"] $ws2
-assign [class="firefox"] $ws2
-assign [class="Sublime"] $ws3
+#assign [class="firefox"] $ws2
+#assign [class="Sublime"] $ws3
 assign [class="fl64.exe"] $ws8
 assign [class="Minecraft.*"] $ws9
 assign [class="FML.*"] $ws9
 assign [class="MultiMC5"] $ws9
 assign [class="Steam"] $ws9
+
+for_window [class="firefox"] move to workspace $ws2
+for_window [class="subl"] move to workspace $ws3
 for_window [class="Spotify"] move to workspace $ws10
 

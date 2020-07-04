@@ -3,51 +3,51 @@
 ! Colors Dark/Light
 
 ! Black 0=background  
-*color0:  #080709					
-*color8:  #788794    
+*color0:  #131116					
+*color8:  #989c9c    
 
 ! Red    
-*color1:  #52384F    
-*color9:  #52384F
+*color1:  #3d6ab7    
+*color9:  #3d6ab7
 
 ! Green  		
-*color2:  #604A5D		
-*color10:  #604A5D
+*color2:  #487ec2		
+*color10:  #487ec2
 
 ! Yellow    
-*color3:  #444962		
-*color11:  #444962
+*color3:  #66c3cc		
+*color11:  #66c3cc
 
 ! Blue    
-*color4:  #A94B52		
-*color12:  #A94B52
+*color4:  #87d6d7		
+*color12:  #87d6d7
 
 ! Magenta    
-*color5:  #A35459		
-*color13:  #A35459
+*color5:  #97dcd1		
+*color13:  #97dcd1
 
 ! Cyan    
-*color6:  #9E7588		
-*color14:  #9E7588
+*color6:  #a1dadf		
+*color14:  #a1dadf
 
 ! White 7=foreground	    
-*color7:  #acc2d4					
-*color15:  #acc2d4
+*color7:  #dadfdf					
+*color15:  #dadfdf
 
 ! Black color that will not be affected by bold highlighting.
-*color66:  #080709
+*color66:  #131116
 
 ! Terminal Colors
 *alpha: 			230
-*foreground:        #acc2d4
-*background:        #080709
-*cursorColor:  		#acc2d4
+*foreground:        #dadfdf
+*background:        #131116
+*cursorColor:  		#dadfdf
 
 
 
 ! URxvt Settings
-URxvt.background:   [230]#080709
-URxvt.borderColor:  [230]#080709
+URxvt.background:   [230]#131116
+URxvt.borderColor:  [230]#131116
 URxvt.font:     				  xft:Fira Code Nerd Font:size=16
 URxvt.depth:                      32
 URxvt.scrollBar:                  false

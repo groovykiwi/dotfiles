@@ -11,8 +11,8 @@
 transparent = #00000000
 background = ${xrdb:color0:#000000}
 foreground = ${xrdb:color15:#ffffff}
-accent = ${xrdb:color5:#ff0000}
-accent2 = ${xrdb:color1:#ffff00}
+accent = ${xrdb:color2:#ff0000}
+accent2 = ${xrdb:color3:#ffff00}
 
 [values]
 margin = 2
@@ -93,8 +93,8 @@ format = <label>
 exec = python $HOME/scripts/polybar-spotify/spotify_status.py --font=0 -f '{play_pause} {artist} - {song}  ' -t 65 -p '   ,  契 '
 #format-underline = ${colors.accent}
 click-left = playerctl -p spotify play-pause
-click-right = if ! [[ -z $(pgrep spotify-lyrics) ]]; then wmctrl -x -R spotify-lyrics; else i3-msg exec "st -g 50x20-50+150 -n spotify-lyrics -e spotify-lyrics"; fi
-click-middle = playerctl -p spotify next
+click-middle = if ! [[ -z $(pgrep spotify-lyrics) ]]; then wmctrl -x -R spotify-lyrics; else i3-msg exec "st -g 50x20-50+150 -n spotify-lyrics -e spotify-lyrics"; fi
+click-right = playerctl -p spotify next
 
 
 
@@ -107,7 +107,8 @@ label = %output%
 interval = 0
 exec = $HOME/scripts/displaytitle
 format-underline = ${colors.accent}
-click-middle = touch .config/polybar/config -m
+click-right = touch .config/polybar/config -m
+click-middle = $HOME/scripts/lagfix
 
 
 ; RIGHT MODULES

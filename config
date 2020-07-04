@@ -22,8 +22,8 @@ if [[ "$help" == "True" ]]; then
 Optional arguments:
   -b,         Creates a backup of your current dotfiles and stores it in ~/.backup
   -r,         Renames default directory with shorter names and deletes useless ones.
-  -f,         Copies various files such a few wallpapers, grub-theme installer to ~/pics.
-  -h,         Displays this message. \n"
+  -f,         Copies various files such as a few wallpapers, grub-theme installer to ~/pics.
+  -h,         Displays this message and exit. \n"
  else
 
  	# Backup process

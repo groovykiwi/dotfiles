@@ -16,6 +16,6 @@ curl wttr.in/Iskele?format="~+Weather+:+%t+%C+~" 2>/dev/null;
 echo "";
 neofetch;
 bash" &
-st -n top -e sh -c "gotop -a;bash" &
+st -n top -e sh -c "ytop -m;bash" &
 
 #echo "" >> $HOME/.config/picom.conf
