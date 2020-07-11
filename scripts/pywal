@@ -7,14 +7,15 @@
 
 NC='\033[0m' # No Color
 ACCENT='\033[1;31m'
-
-while getopts i:a:s:b:gph flag
+HOME=/home/nate
+while getopts i:a:s:b:gphl flag
 do
     case "${flag}" in
         i) path=${OPTARG};;
         a) opacity=${OPTARG};;
 		s) saturation=${OPTARG};;
 		b) backend=${OPTARG};;
+		l) light="True";;
 		g) grub="True";;
 		p) persistent="True";;
 		h) help="True";;
@@ -33,40 +34,21 @@ optional arguments:
   -b [backend]        Select the color backend (haishoku, wal)			
   -g grub-theme       Applies this wallpaper to the Vimix Grub theme and installs it
   -p 		      Makes the changes on persistent by modifying .Xresources using ~/.config/wal/templates/colors.Xresources
+  -p 		      Generates a light theme
 "
 else
 	error_flag=False
 
-	if ! [[ -z $path ]] && ! [[ -z $opacity ]] && ! [[ -z $saturation ]] && ! [[ -z $backend ]]; then
-		wal -i $path -a $opacity --saturate $saturation --backend $backend
-
-	elif ! [[ -z $path ]] && ! [[ -z $opacity ]] && ! [[ -z $backend ]]; then
-		wal -i $path -a $opacity --backend $backend
-
-	elif ! [[ -z $path ]] && ! [[ -z $saturation ]] && ! [[ -z $backend ]]; then
-		wal -i $path --saturate $saturation --backend $backend
-
-	elif ! [[ -z $path ]] && ! [[ -z $opacity ]] && ! [[ -z $saturation ]]; then
-		wal -i $path -a $opacity --saturate $saturation
-
-	elif ! [[ -z $path ]] && ! [[ -z $opacity ]]; then
-		wal -i $path -a $opacity 
-
-	elif ! [[ -z $path ]] && ! [[ -z $saturation ]]; then
-		wal -i $path --saturate $saturation
-
-	elif ! [[ -z $path ]] && ! [[ -z $backend ]]; then
-		wal -i $path --backend $backend
-
-	elif ! [[ -z $path ]]; then
-		wal -i $path
-
-	else
-		error_flag=True
-		echo "No path to the wallpaper has been set."
-	fi
-	exit_code=$?
+	string="wal "
+	if ! [ -z $path ]; then string+="-i $path "; else echo "No path to the wallpaper has been set." && exit; fi
+	! [ -z $opacity ] && string+="-a $opacity "
+	! [ -z $saturation ] && string+="--saturate $saturation "
+	! [ -z $backend ] && string+="--backend $backend "
+	if [ "$light" == "True" ]; then string+="-l" && echo "light" > $HOME/.config/wal/current-theme.txt; else echo "dark" > $HOME/.config/wal/current-theme.txt; fi
+	echo "pywal $@" >> $HOME/.config/wal/current-theme.txt
+	$string
 	
+	exit_code=$?
 
 	
 	if [[ "$error_flag" == "False" ]] && [[ $exit_code -eq 0 ]]; then

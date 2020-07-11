@@ -1,0 +1,21 @@
+#!/bin/bash
+while getopts scd flag
+do
+    case "${flag}" in
+        c) change="True";;
+		s) state="True";;
+    esac
+done
+
+if [ "$state" == "True" ]; then
+	[ "$(cat $HOME/.config/wal/current-theme.txt | sed '1q;d')" == "dark" ] && echo ""
+	[ "$(cat $HOME/.config/wal/current-theme.txt | sed '1q;d')" == "light" ] && echo ""
+	exit
+fi
+
+theme=$(cat $HOME/.config/wal/current-theme.txt | sed '2q;d')
+if [ "$(cat $HOME/.config/wal/current-theme.txt | sed '1q;d')" == "dark" ]; then 
+	theme+=" -l" && sudo $theme
+else
+	light_theme=$(echo "$theme" | sed 's/-l//g') && sudo $light_theme
+fi

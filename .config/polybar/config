@@ -113,7 +113,6 @@ click-middle = $HOME/scripts/lagfix
 
 ; RIGHT MODULES
 
-
 [module/filesystem]
 label-mounted-padding-right = 2
 type = internal/fs

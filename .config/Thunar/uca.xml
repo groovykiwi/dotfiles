@@ -33,4 +33,13 @@
 	<text-files/>
 	<video-files/>
 </action>
+<action>
+	<icon>cm_extractfiles</icon>
+	<name>Extract Here</name>
+	<unique-id>1594052189934011-1</unique-id>
+	<command>unzip %f -d $(echo %n | sed &apos;s/\..*$//g&apos;)</command>
+	<description></description>
+	<patterns>*.zip;.*.rar</patterns>
+	<other-files/>
+</action>
 </actions>

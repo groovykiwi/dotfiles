@@ -142,6 +142,16 @@ ex ()
 export PATH=$PATH:$HOME/scripts
 export TERMINAL='st'
 
+#Powerline
+
+function _update_ps1() {
+	    PS1=$(powerline-shell $?)
+    }
+
+if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
+	    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+fi
+
 # ~/ Clean-Up:
 export GOPATH="$HOME/.local/share/go"
 export LESSHISTFILE=- #Disables Less History

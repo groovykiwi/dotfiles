@@ -1,13 +1,14 @@
 {
 	"folder_history":
 	[
+		"/home/nate/dotfiles/scripts/archives",
 		"/home/nate/.config/wal/templates",
 		"/home/nate/dotfiles",
 		"/home/nate/.config",
 		"/home/nate/scripts"
 	],
 	"last_version": 3211,
-	"last_window_id": 30,
+	"last_window_id": 32,
 	"log_indexing": false,
 	"settings":
 	{
@@ -131,6 +132,22 @@
 					],
 					[
 						"Packages/Python/Python.sublime-build",
+						""
+					]
+				],
+				[
+					[
+						[
+							"Packages/ShellScript/ShellScript.sublime-build",
+							""
+						],
+						[
+							"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+							""
+						]
+					],
+					[
+						"Packages/ShellScript/ShellScript.sublime-build",
 						""
 					]
 				],
@@ -335,6 +352,19 @@
 			},
 			"file_history":
 			[
+				"/home/nate/dotfiles/scripts/audio-fix",
+				"/home/nate/scripts/lagfix",
+				"/home/nate/.config/BetterDiscord/themes/BasicBackground.theme.css",
+				"/home/nate/.Xresources",
+				"/home/nate/dotfiles/scripts/colorpicker",
+				"/home/nate/.config/BetterDiscord/themes/FrostedGlass.theme.css",
+				"/home/nate/scripts/colorpicker",
+				"/home/nate/scripts/ueb",
+				"/home/nate/scripts/1-README.md",
+				"/home/nate/scripts/call_pavucontrol",
+				"/home/nate/dotfiles/.config/sublime-text-3/killer",
+				"/home/nate/dotfiles/.config/sublime-text-3/i3-get-window-criteria",
+				"/home/nate/dotfiles/.config/sublime-text-3/ueb",
 				"/home/nate/scripts/i3get",
 				"/home/nate/dotfiles/scripts/layout1",
 				"/home/nate/dotfiles/scripts/autoscript",
@@ -343,7 +373,6 @@
 				"/home/nate/dl/cm-rgb-gui/scripts/cm-rgb-gui",
 				"/home/nate/dotfiles/scripts/pywal",
 				"/home/nate/dotfiles/.config/wal/templates/colors.Xresources",
-				"/home/nate/.Xresources",
 				"/home/nate/dotfiles/scripts/vpn_status",
 				"/home/nate/scripts/express_module",
 				"/home/nate/dotfiles/scripts/eth-fix",
@@ -385,7 +414,6 @@
 				"/home/nate/dl/config.def.h",
 				"/home/nate/st/config.mk",
 				"/home/nate/scripts/show-clipboard",
-				"/home/nate/.config/BetterDiscord/themes/FrostedGlass.theme.css",
 				"/home/nate/dotfiles/.bashrc",
 				"/home/nate/dotfiles/scripts/floatterm",
 				"/home/nate/dotfiles/.Xresources",
@@ -395,7 +423,6 @@
 				"/home/nate/.config/discord/0.0.10/modules/discord_desktop_core/discord-custom.css",
 				"/home/nate/dotfiles/scripts/gitclonesub",
 				"/usr/bin/g213colors-gui",
-				"/home/nate/scripts/call_pavucontrol",
 				"/home/nate/scripts/auto_scrcpy",
 				"/home/nate/.minecraft/old versions/servers.dat",
 				"/etc/modprobe.d/alsa-base.conf",
@@ -422,7 +449,6 @@
 				"/home/nate/.config/picom.conf",
 				"/home/nate/.config/ranger/devicons.py",
 				"/home/nate/.config/polybar/config",
-				"/home/nate/scripts/1-README.md",
 				"/home/nate/.config/dunst/dunstrc",
 				"/home/nate/scripts/reload-picom",
 				"/home/nate/scripts/display-audio-device",
@@ -453,20 +479,11 @@
 				"/home/nate/scripts/reload-pulseaudio",
 				"/home/nate/scripts/resize-win",
 				"/home/nate/scripts/i3list",
-				"/home/nate/scripts/i3run",
-				"/home/nate/scripts/audio-fix",
-				"/home/nate/scripts/g213",
-				"/home/nate/scripts/vol-mute",
-				"/etc/lightdm/slick-greeter.conf",
-				"/home/nate/scripts/vol-down",
-				"/home/nate/scripts/sink-id",
-				"/etc/xdg/picom.conf",
-				"/home/nate/.config/compton/compton.conf",
-				"/home/nate/scripts/hey"
+				"/home/nate/scripts/i3run"
 			],
 			"find":
 			{
-				"height": 70.0
+				"height": 73.0
 			},
 			"find_in_files":
 			{
@@ -481,6 +498,12 @@
 				"case_sensitive": true,
 				"find_history":
 				[
+					";.*",
+					".desktop",
+					"=",
+					";",
+					"50px",
+					"glances",
 					"floatterm",
 					"Brightness",
 					"bright",
@@ -583,9 +606,13 @@
 				"highlight": true,
 				"in_selection": false,
 				"preserve_case": false,
-				"regex": false,
+				"regex": true,
 				"replace_history":
 				[
+					"",
+					":     ",
+					":",
+					"",
 					"mirage",
 					"misc",
 					"mirage_factors_label",
@@ -635,7 +662,7 @@
 			},
 			"incremental_find":
 			{
-				"height": 34.0
+				"height": 51.0
 			},
 			"input":
 			{
@@ -650,10 +677,10 @@
 			{
 				"height": 0.0
 			},
-			"pinned_build_system": "Packages/ShellScript/ShellScript.sublime-build",
+			"pinned_build_system": "",
 			"replace":
 			{
-				"height": 114.0
+				"height": 120.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -702,6 +729,10 @@
 			{
 				"selected_items":
 				[
+					[
+						"th",
+						"term_height"
+					],
 					[
 						"ma",
 						"max_height"
@@ -806,7 +837,16 @@
 					"file": "/home/nate/dotfiles/.config/polybar/config",
 					"settings":
 					{
-						"buffer_size": 5215,
+						"buffer_size": 5249,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/nate/scripts/autotheme",
+					"settings":
+					{
+						"buffer_size": 582,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
@@ -821,48 +861,10 @@
 					}
 				},
 				{
-					"file": "/home/nate/scripts/colorpicker",
-					"settings":
-					{
-						"buffer_size": 772,
-						"encoding": "UTF-8",
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/home/nate/scripts/ueb",
-					"settings":
-					{
-						"buffer_size": 252,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/home/nate/dotfiles/packages",
-					"settings":
-					{
-						"buffer_size": 2050,
-						"encoding": "UTF-8",
-						"line_ending": "Unix"
-					}
-				},
-				{
 					"file": "/home/nate/dotfiles/.config/picom.conf",
 					"settings":
 					{
-						"buffer_size": 1570,
-						"encoding": "UTF-8",
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"contents": "/**\n * @name Frosted Glass\n * @author Gibbu#1211\n * @version 2.0.0\n * @description Display your picture of choice with adjustable blur and brightness. Dark theme is required.\n * @invite ZHthyCw\n * @donate https://paypal.me/IanRGibson\n * @authorId 174868361040232448\n * @source https://github.com/Gibbu/BetterDiscord-Themes/tree/master/FrostedGlass\n * @website https://gibbu.me/\n*/\n\n@import url(\"https://gibbu.github.io/BetterDiscord-Themes/FrostedGlass/base.css\");\n\n/* User Background */\n@import url('https://discord-custom-covers.github.io/usrbg/snippets/userPopouts.css');\n@import url('https://discord-custom-covers.github.io/usrbg/snippets/modals.css');\n\n/* BlackBox tags */\n@import url('https://monstrousdev.github.io/themes/addons/user-tags.css');\n\n/* Old Windows titlebar - remove this @import if you wish to use default titlebar */\n@import url(\"https://gibbu.github.io/BetterDiscord-Themes/addons/windows-titlebar.css\");\n\n:root {\n  /* Background image variables */\n  --background-image: ; /* Main background image | URL MUST BE A DIRECT LINK (ending in .jpg, .jpeg, .png, .gif) */\n  --background-image-blur: none; /* Blur intensity of --background-image | Must end in px | DEFAULT: 5px */\n  --background-image-size: cover; /* Size of the background image | DEFAUT: cover */\n  --background-image-position: center; /* Position of background image | DEAFULT: center */\n\n  /* Popout & Modal variables */\n  --popout-modal-image: var(--background-image); /* Background image for popouts and modals | URL MUST BE A DIRECT LINK (ending in .jpg, .jpeg, .png, .gif) */\n  --popout-modal-blur: 5px; /* Blur intensity of --popout-modal-image | Must end in px | DEFAULT: 5px */\n  --popout-modal-size: cover; /* Size of the popout/modal image | DEFAUT: cover */\n  --popout-modal-position: center; /* Position of popout/modal image | DEAFULT: center */\n\n  /* Home image variables */\n  --home-button-image: url('https://gibbu.github.io/BetterDiscord-Themes/FrostedGlass/assets/discord.svg'); /* Home button image | URL MUST BE A DIRECT LINK (ending in .jpg, .jpeg, .png, .gif) */\n  --home-button-size: cover; /* Size of the home button image | DEFAUT: cover */\n  --home-button-position: center; /* Position of home button image | DEAFULT: center */\n\n  /* Brightness variables */\n  --serverlist-brightness: 0.8; /* Brightness for serverlist | 0 - 1 (decimals allowed) | DEFAULT: 0.8 */\n  --left-brightness: 0.8; /* Channels and DM list brightness | 0 - 1 (decimals allowed) | DEFAULT: 0.8 */\n  --middle-brightness: 0.6; /* Chat brightness | 0 - 1 (decimals allowed) | DEFAULT: 0.6 */\n  --right-brightness: 0; /* Members and Now Playing brightness | 0 - 1 (decimals allowed) | DEFAULT: 0 */\n  --popout-modal-brightness: 0.75; /* Brightness for popouts and modals | 0 - 1 (decimals allowed) | DEFAULT: 0.75 */\n\n  /* Gradient variables */\n  --gradient-primary: 103,58,183; /* DEFAULT: 103,58,183 */\n  --gradient-secondary: 63,81,181; /* DEFAULT: 63,81,181 */\n  --gradient-direction: 320deg; /* DEFAULT: 320deg */\n\n  /* Tint variables */\n  --tint-colour: 255,51,159; /* Colour of tint | DEAFULT: 255,51,159 */\n  --tint-brightness: 0; /* Brightness of --tint-colour | 0 - 1 (decimals allowed) | DEFAULT: 0 */\n\n  /* Other variables */\n  --window-padding: 0px; /* Spacing around the Discord window | DEFAULT: 20px */\n  --window-roundness: 10px; /* Roundness of Discord | DEFAULT: 10px */\n  --scrollbar-colour: rgba(255,255,255,0.05); /* DEFAULT: rgba(255,255,255,0.05) */\n  --link-colour: #00b0f4; /* DEFAULT: #00b0f4 */\n  --show-gift-gif-buttons: none; /* Show buttons: block | Hide buttons: none | DEFAULT: none */\n\n  /*\n    Visit https://fonts.google.com and select one to your liking.\n    Now just follow this tutorial: https://imgur.com/a/CNbw7xC\n  */\n\n@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');\n  --font: 'PT Sans', sans-serif;\n\n  /* Do not touch */\n  --update-notice-1: none;\n}\n",
-					"file": "/home/nate/.config/BetterDiscord/themes/FrostedGlass.theme.css",
-					"file_size": 3937,
-					"file_write_time": 132382662590080218,
-					"settings":
-					{
-						"buffer_size": 3936,
+						"buffer_size": 1598,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
@@ -871,16 +873,16 @@
 					"file": "/home/nate/dotfiles/.config/i3/config",
 					"settings":
 					{
-						"buffer_size": 9469,
+						"buffer_size": 9587,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
 				},
 				{
-					"file": "/home/nate/scripts/audio-fix",
+					"file": "/home/nate/dotfiles/scripts/layout1",
 					"settings":
 					{
-						"buffer_size": 353,
+						"buffer_size": 612,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
@@ -907,7 +909,7 @@
 					"file": "/home/nate/dotfiles/scripts/pywal",
 					"settings":
 					{
-						"buffer_size": 4278,
+						"buffer_size": 3941,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
@@ -939,7 +941,7 @@
 					}
 				}
 			],
-			"build_system": "Packages/User/Python-Terminal.sublime-build",
+			"build_system": "Packages/ShellScript/ShellScript.sublime-build",
 			"build_system_choices":
 			[
 				[
@@ -955,6 +957,22 @@
 					],
 					[
 						"Packages/Python/Python.sublime-build",
+						""
+					]
+				],
+				[
+					[
+						[
+							"Packages/ShellScript/ShellScript.sublime-build",
+							""
+						],
+						[
+							"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+							""
+						]
+					],
+					[
+						"Packages/ShellScript/ShellScript.sublime-build",
 						""
 					]
 				],
@@ -1002,6 +1020,18 @@
 				"last_filter": "",
 				"selected_items":
 				[
+					[
+						"theme",
+						"Material Theme: Extras"
+					],
+					[
+						"mat",
+						"Material Theme: Configuration"
+					],
+					[
+						"materi",
+						"Material Theme: Configuration"
+					],
 					[
 						"word",
 						"Word Wrap: Toggle"
@@ -1159,12 +1189,30 @@
 			},
 			"expanded_folders":
 			[
-				"/home/nate/dotfiles"
+				"/home/nate/dotfiles",
+				"/home/nate/dotfiles/scripts"
 			],
 			"file_history":
 			[
-				"/home/nate/scripts/1-README.md",
+				"/home/nate/scripts/audio-fix",
+				"/home/nate/.config/mimi/mime.conf",
+				"/home/nate/.config/wal/templates/colors-light.Xresources",
+				"/home/nate/dotfiles/config",
+				"/home/nate/dotfiles/packages",
+				"/home/nate/dotfiles/scripts/autoedit",
+				"/home/nate/scripts/ueb",
+				"/home/nate/dotfiles/scripts/audio-fix",
+				"/home/nate/scripts/colortest2",
 				"/home/nate/scripts/call_pavucontrol",
+				"/home/nate/call_pavucontrol",
+				"/home/nate/scripts/edit-scripts",
+				"/home/nate/scripts/lagfix",
+				"/home/nate/.config/BetterDiscord/themes/BasicBackground.theme.css",
+				"/home/nate/.Xresources",
+				"/home/nate/dotfiles/scripts/colorpicker",
+				"/home/nate/.config/BetterDiscord/themes/FrostedGlass.theme.css",
+				"/home/nate/scripts/colorpicker",
+				"/home/nate/scripts/1-README.md",
 				"/home/nate/dotfiles/.config/sublime-text-3/killer",
 				"/home/nate/dotfiles/.config/sublime-text-3/i3-get-window-criteria",
 				"/home/nate/dotfiles/.config/sublime-text-3/ueb",
@@ -1176,7 +1224,6 @@
 				"/home/nate/dl/cm-rgb-gui/scripts/cm-rgb-gui",
 				"/home/nate/dotfiles/scripts/pywal",
 				"/home/nate/dotfiles/.config/wal/templates/colors.Xresources",
-				"/home/nate/.Xresources",
 				"/home/nate/dotfiles/scripts/vpn_status",
 				"/home/nate/scripts/express_module",
 				"/home/nate/dotfiles/scripts/eth-fix",
@@ -1197,8 +1244,6 @@
 				"/home/nate/dl/nerd-font-cheatsheets/icons.md",
 				"/home/nate/dl/nerd-font-cheatsheets/final.txt",
 				"/home/nate/dotfiles/scripts/sorticons.py",
-				"/home/nate/dotfiles/packages",
-				"/home/nate/dotfiles/config",
 				"/home/nate/dl/polybar-themes/polybar-10/config.ini",
 				"/home/nate/dotfiles/.config/polybar/blocksconfig",
 				"/home/nate/dotfiles/.config/polybar/roundedblocksconfig",
@@ -1218,7 +1263,6 @@
 				"/home/nate/dl/config.def.h",
 				"/home/nate/st/config.mk",
 				"/home/nate/scripts/show-clipboard",
-				"/home/nate/.config/BetterDiscord/themes/FrostedGlass.theme.css",
 				"/home/nate/dotfiles/.bashrc",
 				"/home/nate/dotfiles/scripts/floatterm",
 				"/home/nate/dotfiles/.Xresources",
@@ -1271,30 +1315,17 @@
 				"/home/nate/scripts/vpn-connect",
 				"/home/nate/scripts/floatterm",
 				"/home/nate/dotfiles/pulseaudio-systemctl/install.sh",
-				"/home/nate/scripts/colortest2",
 				"/home/nate/scripts/colortest",
 				"/home/nate/scripts/i3-get-window-criteria",
 				"/home/nate/scripts/pywal-persistent",
 				"/home/nate/scripts/python-scripts/simpler-cm-rgb.py",
 				"/home/nate/.cache/wal/colors-oomox",
 				"/home/nate/scripts/wal-persistent",
-				"/home/nate/scripts/displaytitle",
-				"/home/nate/.config/i3/workspaces/workspace1.json",
-				"/home/nate/.config/neofetch/config.conf",
-				"/home/nate/scripts/reload-pulseaudio",
-				"/home/nate/scripts/resize-win",
-				"/home/nate/scripts/i3list",
-				"/home/nate/scripts/i3run",
-				"/home/nate/scripts/audio-fix",
-				"/home/nate/scripts/g213",
-				"/home/nate/scripts/vol-mute",
-				"/etc/lightdm/slick-greeter.conf",
-				"/home/nate/scripts/vol-down",
-				"/home/nate/scripts/sink-id"
+				"/home/nate/scripts/displaytitle"
 			],
 			"find":
 			{
-				"height": 70.0
+				"height": 39.0
 			},
 			"find_in_files":
 			{
@@ -1309,6 +1340,14 @@
 				"case_sensitive": true,
 				"find_history":
 				[
+					"gksu",
+					"sed",
+					";.*",
+					".desktop",
+					"=",
+					";",
+					"50px",
+					"glances",
 					"floatterm",
 					"Brightness",
 					"bright",
@@ -1411,9 +1450,15 @@
 				"highlight": true,
 				"in_selection": false,
 				"preserve_case": false,
-				"regex": false,
+				"regex": true,
 				"replace_history":
 				[
+					"sudo",
+					"/usr/bin/sed",
+					"",
+					":     ",
+					":",
+					"",
 					"mirage",
 					"misc",
 					"mirage_factors_label",
@@ -1464,7 +1509,7 @@
 			"groups":
 			[
 				{
-					"selected": 6,
+					"selected": 0,
 					"sheets":
 					[
 						{
@@ -1473,7 +1518,7 @@
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 5215,
+								"buffer_size": 5249,
 								"regions":
 								{
 									"col_00000001":
@@ -1532,8 +1577,8 @@
 										"regions":
 										[
 											[
-												3795,
-												3802
+												3829,
+												3836
 											]
 										],
 										"scope": "col_AAAAAAFF"
@@ -1545,8 +1590,8 @@
 										"regions":
 										[
 											[
-												3770,
-												3770
+												3804,
+												3804
 											]
 										],
 										"scope": "col_gutter"
@@ -1630,8 +1675,8 @@
 								"selection":
 								[
 									[
-										1137,
-										1137
+										928,
+										928
 									]
 								],
 								"settings":
@@ -1639,14 +1684,42 @@
 									"syntax": "Packages/i3 wm/Syntax/i3wm_config.tmLanguage"
 								},
 								"translation.x": 0.0,
-								"translation.y": 621.0,
+								"translation.y": 756.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 8,
+							"stack_index": 0,
 							"type": "text"
 						},
 						{
 							"buffer": 1,
+							"file": "/home/nate/scripts/autotheme",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 582,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										6,
+										6
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/ShellScript/Bash.sublime-syntax"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"type": "text"
+						},
+						{
+							"buffer": 2,
 							"file": "/home/nate/scripts/autoscript",
 							"semi_transient": false,
 							"settings":
@@ -1670,233 +1743,24 @@
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 4,
-							"type": "text"
-						},
-						{
-							"buffer": 2,
-							"file": "/home/nate/scripts/colorpicker",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 772,
-								"regions":
-								{
-									"col_0000FFFF":
-									{
-										"flags": 16,
-										"regions":
-										[
-											[
-												328,
-												332
-											],
-											[
-												379,
-												383
-											]
-										],
-										"scope": "col_0000FFFF"
-									},
-									"col_0000FFFF_icon":
-									{
-										"flags": 16,
-										"icon": "Packages/User/Color Highlight.cache/col_0000FFFF_circle.png",
-										"regions":
-										[
-											[
-												327,
-												327
-											],
-											[
-												342,
-												342
-											]
-										],
-										"scope": "col_gutter"
-									},
-									"col_008000FF":
-									{
-										"flags": 16,
-										"regions":
-										[
-											[
-												312,
-												317
-											],
-											[
-												373,
-												378
-											]
-										],
-										"scope": "col_008000FF"
-									},
-									"col_008000FF_icon":
-									{
-										"flags": 16,
-										"icon": "Packages/User/Color Highlight.cache/col_008000FF_circle.png",
-										"regions":
-										[
-											[
-												311,
-												311
-											],
-											[
-												342,
-												342
-											]
-										],
-										"scope": "col_gutter"
-									},
-									"col_FF0000FF":
-									{
-										"flags": 16,
-										"regions":
-										[
-											[
-												298,
-												301
-											],
-											[
-												369,
-												372
-											]
-										],
-										"scope": "col_FF0000FF"
-									},
-									"col_FF0000FF_icon":
-									{
-										"flags": 16,
-										"icon": "Packages/User/Color Highlight.cache/col_FF0000FF_circle.png",
-										"regions":
-										[
-											[
-												297,
-												297
-											],
-											[
-												342,
-												342
-											]
-										],
-										"scope": "col_gutter"
-									}
-								},
-								"selection":
-								[
-									[
-										628,
-										628
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/Python/Python.sublime-syntax"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 3,
-							"type": "text"
-						},
-						{
-							"buffer": 3,
-							"file": "/home/nate/scripts/ueb",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 252,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										0,
-										0
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/ShellScript/Bash.sublime-syntax"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 7,
-							"type": "text"
-						},
-						{
-							"buffer": 4,
-							"file": "/home/nate/dotfiles/packages",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 2050,
-								"regions":
-								{
-									"col_DD0000FF":
-									{
-										"flags": 16,
-										"regions":
-										[
-											[
-												99,
-												109
-											]
-										],
-										"scope": "col_DD0000FF"
-									},
-									"col_DD0000FF_icon":
-									{
-										"flags": 16,
-										"icon": "Packages/User/Color Highlight.cache/col_DD0000FF_circle.png",
-										"regions":
-										[
-											[
-												91,
-												91
-											]
-										],
-										"scope": "col_gutter"
-									}
-								},
-								"selection":
-								[
-									[
-										507,
-										507
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/ShellScript/Bash.sublime-syntax",
-									"translate_tabs_to_spaces": false
-								},
-								"translation.x": 0.0,
-								"translation.y": 6.0,
-								"zoom_level": 1.0
-							},
 							"stack_index": 2,
 							"type": "text"
 						},
 						{
-							"buffer": 5,
+							"buffer": 3,
 							"file": "/home/nate/dotfiles/.config/picom.conf",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 1570,
+								"buffer_size": 1598,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										908,
-										908
+										613,
+										613
 									]
 								],
 								"settings":
@@ -1906,132 +1770,19 @@
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 432.0,
+								"translation.y": 120.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 1,
+							"stack_index": 4,
 							"type": "text"
 						},
 						{
-							"buffer": 6,
-							"file": "/home/nate/.config/BetterDiscord/themes/FrostedGlass.theme.css",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 3936,
-								"regions":
-								{
-									"col_00B0F4FF":
-									{
-										"flags": 16,
-										"regions":
-										[
-											[
-												3471,
-												3478
-											],
-											[
-												3492,
-												3499
-											]
-										],
-										"scope": "col_00B0F4FF"
-									},
-									"col_00B0F4FF_icon":
-									{
-										"flags": 16,
-										"icon": "Packages/User/Color Highlight.cache/col_00B0F4FF_circle.png",
-										"regions":
-										[
-											[
-												3454,
-												3454
-											]
-										],
-										"scope": "col_gutter"
-									},
-									"col_11221111":
-									{
-										"flags": 16,
-										"regions":
-										[
-											[
-												43,
-												48
-											]
-										],
-										"scope": "col_11221111"
-									},
-									"col_11221111_icon":
-									{
-										"flags": 16,
-										"icon": "Packages/User/Color Highlight.cache/col_11221111_circle.png",
-										"regions":
-										[
-											[
-												27,
-												27
-											]
-										],
-										"scope": "col_gutter"
-									},
-									"col_FFFFFF0C":
-									{
-										"flags": 16,
-										"regions":
-										[
-											[
-												3392,
-												3414
-											],
-											[
-												3428,
-												3450
-											]
-										],
-										"scope": "col_FFFFFF0C"
-									},
-									"col_FFFFFF0C_icon":
-									{
-										"flags": 16,
-										"icon": "Packages/User/Color Highlight.cache/col_FFFFFF0C_circle.png",
-										"regions":
-										[
-											[
-												3370,
-												3370
-											]
-										],
-										"scope": "col_gutter"
-									}
-								},
-								"selection":
-								[
-									[
-										1589,
-										1590
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/CSS/CSS.sublime-syntax",
-									"tab_size": 2,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 504.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 0,
-							"type": "text"
-						},
-						{
-							"buffer": 7,
+							"buffer": 4,
 							"file": "/home/nate/dotfiles/.config/i3/config",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 9469,
+								"buffer_size": 9587,
 								"regions":
 								{
 									"col_000000FF":
@@ -2113,8 +1864,8 @@
 								"selection":
 								[
 									[
-										6310,
-										6310
+										9587,
+										9587
 									]
 								],
 								"settings":
@@ -2124,27 +1875,77 @@
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 3129.0,
+								"translation.y": 4949.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 5,
+							"stack_index": 3,
 							"type": "text"
 						},
 						{
-							"buffer": 8,
-							"file": "/home/nate/scripts/audio-fix",
+							"buffer": 5,
+							"file": "/home/nate/dotfiles/scripts/layout1",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 353,
+								"buffer_size": 612,
 								"regions":
 								{
+									"col_DD0000FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												45,
+												55
+											]
+										],
+										"scope": "col_DD0000FF"
+									},
+									"col_DD0000FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_DD0000FF_circle.png",
+										"regions":
+										[
+											[
+												37,
+												37
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_DDDDDDFF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												66,
+												76
+											]
+										],
+										"scope": "col_DDDDDDFF"
+									},
+									"col_DDDDDDFF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_DDDDDDFF_circle.png",
+										"regions":
+										[
+											[
+												57,
+												57
+											]
+										],
+										"scope": "col_gutter"
+									}
 								},
 								"selection":
 								[
 									[
-										1,
-										1
+										565,
+										565
 									]
 								],
 								"settings":
@@ -2155,11 +1956,11 @@
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 9,
+							"stack_index": 11,
 							"type": "text"
 						},
 						{
-							"buffer": 9,
+							"buffer": 6,
 							"file": "/home/nate/docs/github-repos/cm-rgb-gui/scripts/cm-rgb-gui",
 							"semi_transient": false,
 							"settings":
@@ -2380,11 +2181,11 @@
 								"translation.y": 5705.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 6,
+							"stack_index": 10,
 							"type": "text"
 						},
 						{
-							"buffer": 10,
+							"buffer": 7,
 							"file": "/home/nate/docs/github-repos/cm-rgb-gui/scripts/cm-rgb-monitor-gui",
 							"semi_transient": false,
 							"settings":
@@ -2392,6 +2193,187 @@
 								"buffer_size": 14629,
 								"regions":
 								{
+									"col_0000FFFF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												11925,
+												11929
+											],
+											[
+												12003,
+												12007
+											]
+										],
+										"scope": "col_0000FFFF"
+									},
+									"col_0000FFFF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_0000FFFF_circle.png",
+										"regions":
+										[
+											[
+												11909,
+												11909
+											],
+											[
+												11952,
+												11952
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_008000FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												11880,
+												11885
+											],
+											[
+												11997,
+												12002
+											]
+										],
+										"scope": "col_008000FF"
+									},
+									"col_008000FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_008000FF_circle.png",
+										"regions":
+										[
+											[
+												11864,
+												11864
+											],
+											[
+												11952,
+												11952
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_00FFFFFF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												660,
+												667
+											],
+											[
+												3995,
+												4002
+											],
+											[
+												7750,
+												7757
+											]
+										],
+										"scope": "col_00FFFFFF"
+									},
+									"col_00FFFFFF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_00FFFFFF_circle.png",
+										"regions":
+										[
+											[
+												639,
+												639
+											],
+											[
+												3966,
+												3966
+											],
+											[
+												7721,
+												7721
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_FF0000FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												11839,
+												11842
+											],
+											[
+												11993,
+												11996
+											]
+										],
+										"scope": "col_FF0000FF"
+									},
+									"col_FF0000FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_FF0000FF_circle.png",
+										"regions":
+										[
+											[
+												11823,
+												11823
+											],
+											[
+												11952,
+												11952
+											]
+										],
+										"scope": "col_gutter"
+									},
+									"col_FFA500FF":
+									{
+										"flags": 16,
+										"regions":
+										[
+											[
+												1007,
+												1014
+											],
+											[
+												4859,
+												4866
+											],
+											[
+												8449,
+												8456
+											]
+										],
+										"scope": "col_FFA500FF"
+									},
+									"col_FFA500FF_icon":
+									{
+										"flags": 16,
+										"icon": "Packages/User/Color Highlight.cache/col_FFA500FF_circle.png",
+										"regions":
+										[
+											[
+												986,
+												986
+											],
+											[
+												4830,
+												4830
+											],
+											[
+												8420,
+												8420
+											]
+										],
+										"scope": "col_gutter"
+									}
 								},
 								"selection":
 								[
@@ -2410,16 +2392,16 @@
 								"translation.y": 2164.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 12,
+							"stack_index": 9,
 							"type": "text"
 						},
 						{
-							"buffer": 11,
+							"buffer": 8,
 							"file": "/home/nate/dotfiles/scripts/pywal",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 4278,
+								"buffer_size": 3941,
 								"regions":
 								{
 									"col_DD0000FF":
@@ -2451,8 +2433,8 @@
 								"selection":
 								[
 									[
-										3059,
-										3059
+										584,
+										584
 									]
 								],
 								"settings":
@@ -2462,14 +2444,14 @@
 									"word_wrap": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 1386.0,
+								"translation.y": 320.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 11,
+							"stack_index": 5,
 							"type": "text"
 						},
 						{
-							"buffer": 12,
+							"buffer": 9,
 							"file": "/home/nate/dotfiles/.bashrc",
 							"semi_transient": false,
 							"settings":
@@ -2717,11 +2699,11 @@
 								"translation.y": 2435.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 13,
+							"stack_index": 7,
 							"type": "text"
 						},
 						{
-							"buffer": 13,
+							"buffer": 10,
 							"file": "/home/nate/dotfiles/scripts/expressvpn_module",
 							"semi_transient": false,
 							"settings":
@@ -2733,8 +2715,8 @@
 								"selection":
 								[
 									[
-										1213,
-										1213
+										158,
+										158
 									]
 								],
 								"settings":
@@ -2747,11 +2729,11 @@
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 10,
+							"stack_index": 6,
 							"type": "text"
 						},
 						{
-							"buffer": 14,
+							"buffer": 11,
 							"file": "Packages/User/Python-Terminal.sublime-build",
 							"semi_transient": false,
 							"settings":
@@ -2774,10 +2756,10 @@
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 189.0,
+								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 14,
+							"stack_index": 8,
 							"type": "text"
 						}
 					]
@@ -2785,7 +2767,7 @@
 			],
 			"incremental_find":
 			{
-				"height": 51.0
+				"height": 39.0
 			},
 			"input":
 			{
@@ -2822,12 +2804,12 @@
 			{
 				"height": 0.0
 			},
-			"pinned_build_system": "Packages/User/Python-Terminal.sublime-build",
+			"pinned_build_system": "",
 			"position": "0,0,0,0,0,10,40,1910,1070,1920,1080",
 			"project": "layout.sublime-project",
 			"replace":
 			{
-				"height": 114.0
+				"height": 128.0
 			},
 			"save_all_on_build": true,
 			"select_file":
