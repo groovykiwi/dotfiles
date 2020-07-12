@@ -1,0 +1,10 @@
+#!/bin/bash
+choice=$(pmenu "Pacman Packages" "Pamac Packages" "Configs" -p "What to do you want to sync: ")
+
+packages=$(cat $HOME/dotfiles/packages | sed -n 's/^\s\+//g; /sudo pacman -S\s.*$/ p')
+[ "$choice" == "Pacman Packages" ] && packages=$(cat $HOME/dotfiles/packages | sed -n 's/^\s\+//g; /sudo pacman -S\s.*$/ p') && $packages
+[ "$choice" == "Pamac Packages" ] && packages=$(cat $HOME/dotfiles/packages | sed -n 's/^\s\+//g; /pamac build\s.*$/ p') && $packages
+
+[ "$choice" == "Configs" ] && name=$(for entry in "$HOME/dotfiles/.config"/*; do echo $entry; done | sed 's/.*\.config\///' | pmenu -p "Config to sync: " ) &&
+rm -rf "$HOME/.config/$name" && echo -e "\nDeleted $HOME/$name" &&
+ln -s "$HOME/dotfiles/.config/$name" "$HOME/.config/$name" && echo -e "Created symlink with $name \n"

@@ -56,6 +56,10 @@ Optional arguments:
 	[[ -d /etc/pulse ]]  && echo "Found /etc/pulse" && sudo rm -rf /etc/pulse && echo "Deleted /etc/pulse"
 	sudo ln -s $HOME/dotfiles/etc/pulse /etc/ && echo -e "Created symlink with etc/pulse \n"
 
+	#Pacman.d
+	[[ -d /etc/pacman.d/hooks ]]  && echo "Found /etc/pacman.d/hooks" && sudo rm -rf /etc/pacman.d/hooks && echo "Deleted /etc/pacman.d/hooks"
+	sudo ln -s $HOME/dotfiles/etc/pacman.d/hooks /etc/pacman.d && echo -e "Created symlink with etc/pacman.d/hooks \n"
+
 	#Slick-greeter
 	for entry in "etc/lightdm"/*
 	do
@@ -82,6 +86,7 @@ Optional arguments:
 	# Symlink .bashrc
 	[[ -f $HOME/.bashrc ]] && echo "Found .bashrc" && rm $HOME/.bashrc && echo "Deleted .bashrc"
 	ln -s $HOME/dotfiles/.bashrc $HOME && echo -e "Symlinked .bashrc \n" && source $HOME/.bashrc
+
 	# Symlink .bash_profile
 	[[ -f $HOME/.bash_profile ]] && echo "Found .bash_profile" && rm $HOME/.bash_profile && echo "Deleted .bash_profile"
 	ln -s $HOME/dotfiles/.bash_profile $HOME && echo -e "Symlinked .bash_profile \n" && source $HOME/.bash_profile

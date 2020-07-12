@@ -40,16 +40,14 @@ else
 	error_flag=False
 
 	string="wal "
-	if ! [ -z $path ]; then string+="-i $path "; else echo "No path to the wallpaper has been set." && exit; fi
+	! [ -z $path ] && string+="-i $path " || echo "No path to the wallpaper has been set." && exit; fi
 	! [ -z $opacity ] && string+="-a $opacity "
 	! [ -z $saturation ] && string+="--saturate $saturation "
 	! [ -z $backend ] && string+="--backend $backend "
-	if [ "$light" == "True" ]; then string+="-l" && echo "light" > $HOME/.config/wal/current-theme.txt; else echo "dark" > $HOME/.config/wal/current-theme.txt; fi
+	[ "$light" == "True" ] && string+="-l" && echo "light" > $HOME/.config/wal/current-theme.txt; || echo "dark" > $HOME/.config/wal/current-theme.txt
 	echo "pywal $@" >> $HOME/.config/wal/current-theme.txt
-	$string
 	
 	exit_code=$?
-
 	
 	if [[ "$error_flag" == "False" ]] && [[ $exit_code -eq 0 ]]; then
 

@@ -1,0 +1,6 @@
+#!/bin/bash
+num="${2:-5}"
+var=$(pacmd list-sinks | grep 'index:' | tr -dc '0-9')
+[ "$1" == "up" ] && pactl set-sink-volume $var +$num%
+[ "$1" == "down" ] && pactl set-sink-volume $var -$num%
+[ "$1" == "mute" ] && pactl set-sink-mute $var toggle

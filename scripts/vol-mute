@@ -1,4 +1,0 @@
-#!/bin/bash
-
-var=$(pacmd list-sinks | grep 'index:' | tr -dc '0-9')
-pactl set-sink-mute $var toggle

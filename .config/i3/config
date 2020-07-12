@@ -192,21 +192,21 @@ focus_on_window_activation urgent
 
 # Custom Bindings
 bindsym $mod+Shift+m exec cat ~/.config/i3/config | grep 'bindsym' | grep -v '^\s*#' | sed 's/bindsym / /' | rofi -dmenu
-bindsym $mod+Shift+F1 exec --no-startup-id $HOME/scripts/layout1
-bindsym Print exec mate-screenshot
-bindsym Shift+Print exec mate-screenshot -a
+bindsym $mod+Shift+F1 exec --no-startup-id $HOME/scripts/termlayout
+bindsym Print exec xfce4-screenshooter -f -c
+bindsym Shift+Print exec  xfce4-screenshooter -r -c
+bindsym CTRL+Print exec xfce4-screenshooter -f 
+bindsym CTRL+Shift+Print exec xfce4-screenshooter -r 
 bindsym $mod+v exec $HOME/scripts/resize-win
 bindsym $mod+Shift+Return exec $HOME/scripts/floatterm
 bindsym $mod+space exec rofi -show run -font "fira code nerd font 14" -lines 5 -width 30  #rofi
-bindsym $mod+Shift+v exec $HOME/scripts/audio-fix
-bindsym $mod+Shift+p exec  $HOME/scripts/auto_scrcpy
 bindsym $mod+e exec $HOME/scripts/nf-cheatsheet
-bindsym Mod1+shift+k exec $HOME/scripts/killer
+bindsym Mod1+shift+k exec $HOME/scripts/fkill rofi
 
 #Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec $HOME/scripts/vol-up
-bindsym XF86AudioLowerVolume exec $HOME/scripts/vol-down
-bindsym XF86AudioMute exec $HOME/scripts/vol-mute
+bindsym XF86AudioRaiseVolume exec $HOME/scripts/vol up
+bindsym XF86AudioLowerVolume exec $HOME/scripts/vol down
+bindsym XF86AudioMute exec $HOME/scripts/vol mute
 
 #Media player controls
 bindsym XF86AudioPlay exec playerctl -p spotify play-pause
@@ -247,7 +247,7 @@ exec --no-startup-id ~/.fehbg
 exec --no-startup-id tumbler #Thumbnails in Thunar
 exec --no-startup-id redshift
 exec --no-startup-id polybar -r top #-c .config/polybar/roundedblocksconfig
-exec --no-startup-id $HOME/scripts/layout1
+exec --no-startup-id $HOME/scripts/termlayout
 exec --no-startup-id unclutter
 exec --no-startup-id espanso restart
 exec --no-startup-id /usr/lib/kdeconnectd && sleep 5 && kdeconnect-indicator

@@ -1,9 +1,0 @@
-#!/bin/bash
-
-if [[ -z $(pgrep scrcpy) ]]; then
-	adb kill-server && adb start-server && scrcpy -m1080
-else
-	killall scrcpy 
-	adb kill-server && adb start-server && scrcpy -m1080
-fi
-

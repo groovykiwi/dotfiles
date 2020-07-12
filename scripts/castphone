@@ -1,0 +1,4 @@
+#!/bin/bash
+! [ -z $(pgrep scrcpy) ] && killall scrcpy 
+adb kill-server && adb start-server && scrcpy -m1080
+

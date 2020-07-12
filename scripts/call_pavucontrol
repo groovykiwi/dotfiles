@@ -1,6 +1,0 @@
-#!/bin/bash
-if [[ -z $(pgrep pavucontrol) ]]; then
-	pavucontrol &
-else
-	wmctrl -x -R pavucontrol 
-fi

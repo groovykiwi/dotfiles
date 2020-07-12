@@ -1,0 +1,10 @@
+# /etc/pacman.d/hooks/dotpack_add.hook
+[Trigger]
+Operation = Remove
+Type = Package
+Target = *
+
+[Action]
+Description = Updating dotfiles packages...
+When = PostTransaction
+Exec = home/nate/scripts/dotpack lastremove

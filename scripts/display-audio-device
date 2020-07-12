@@ -1,9 +1,0 @@
-#!/bin/bash
-
-check=$(pacmd list-cards | grep "<output:hdmi-stereo-extra1>")
-
-if [ "$check" == "" ] ;then
-	echo " "
-else
-	echo "蓼 "
-fi

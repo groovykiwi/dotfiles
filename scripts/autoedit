@@ -1,6 +1,0 @@
-#!/bin/bash
-name=$(for entry in "/home/nate/scripts"/*; do ! [ -d $entry ] && echo $entry; done |
-sed 's/.*scripts\///g' |
-rofi -dmenu -p 'Script to edit')
-
-! [ -z $name ] && subl "/home/nate/scripts/$name" && wmctrl -s 2

@@ -1,6 +1,5 @@
 
 #!/bin/bash
-
 while getopts scd flag
 do
     case "${flag}" in
@@ -10,64 +9,31 @@ do
     esac
 done
 
-#STATUS
+# STATUS
 if [[ "$state" == "True" ]]; then
 	status=$(expressvpn status 2>/dev/null)
-
-	if [[ "$status" == "Not connected" ]] || [[ -z $status ]]; then
-		echo ""
-	else
-		echo ""
-	fi
+	[[ "$status" == "Not connected" ]] || [[ -z $status ]] && echo "" || echo ""
 fi
 
-
-#CONNECT
+# CONNECT
 if [[ "$connect" == "True" ]]; then
-	if ! [[ -z $(systemctl status expressvpn | grep inactive) ]]; then
-		gksu systemctl start expressvpn
-		sleep 1
-	fi
+	! [[ -z $(systemctl status expressvpn | grep inactive) ]] && gksu systemctl start expressvpn && sleep 1
 
 	expressvpn_locations=$(expressvpn list all | sed -e '/-----.*$/d ; /ALIAS.*$/d; /Recommended.*$/d; s/.*Y$/ &/g; s/Y$/star/g'| rofi -font "Fira Code Nerd Font 15" -dmenu -i -p 'Recommended Locations' -location 3 -lines 5 -width 45 -yoffset 40)
 	if ! [[ -z $expressvpn_locations ]] && ! [[ $expressvpn_locations == "refresh" ]]; then
 		status=$(expressvpn status 2>/dev/null)
-		if ! [[ "$status" == "Not connected" ]] || ! [[ -z $status ]]; then
-			expressvpn disconnect
-		fi
+		! [[ "$status" == "Not connected" ]] || ! [[ -z $status ]] && expressvpn disconnect
 		selected_location=$(echo "$expressvpn_locations" | sed 's/\s\+/ /g'| cut -d' ' -f1 )
 		expressvpn connect $selected_location
 	elif [[ $expressvpn_locations == "refresh" ]]; then
 		expressvpn refresh && /$HOME/scripts/expressvpn_module -c
 	else
-		if [[ -z $(systemctl status expressvpn | grep inactive) ]]; then
-			gksu systemctl stop expressvpn
-		fi
+		[[ -z $(systemctl status expressvpn | grep inactive) ]] && gksu systemctl stop expressvpn
 	fi
 fi
 
-#DISCONNECT
+# DISCONNECT
 if [[ "$disconnect" == "True" ]]; then
 	expressvpn disconnect
-	if [[ -z $(systemctl status expressvpn | grep inactive) ]]; then
-		gksu systemctl stop expressvpn
-	fi
+	[[ -z $(systemctl status expressvpn | grep inactive) ]] && gksu systemctl stop expressvpn
 fi
-###!/usr/bin/env python
-#import os
-#
-#expressvpn_locations = os.popen("expressvpn list | sed '/-----.*$/d ; /ALIAS.*$/d ; /Recommended.*$/d; /Type.*$/d'| 
-#rofi -dmenu -p 'Recommended Locations'").readlines()#
-#
-#expressvpn_locations_f = expressvpn_locations.replace("\t"," ")
-# #; s/\s\+/ /g
-#print(expressvpn_locations)
-
-	
-
-
-
-		#MENU="$(rofi -font 'Fire Code Retina 15' -theme solarized_alternate \
-		#	-sep "|" -dmenu -i -p 'Mullvad VPN' -columns 1 -width 10 -hide-scrollbar \
-		#	-location 5 -xoffset -50 -yoffset -50 \
-		#	-line-padding 4 -padding 20 -lines 9 <<< \

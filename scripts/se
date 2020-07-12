@@ -1,0 +1,13 @@
+#!/bin/bash
+#Easily edits scripts using pmenu
+
+[ "$1" == "-h" ] || [ "$1" == "--help" ]  && echo -e "\noptional arguments:
+  -p,                 Create a symbolic link to script in /usr/bin
+  -h, --help          Show this help message and exit\n" && exit
+
+name=$(for entry in "/home/nate/scripts"/*; do ! [ -d $entry ] && ! [[ $entry =~ .*\..* ]] && echo $entry; done |
+sed 's/.*scripts\///g' |
+pmenu -p '>')
+
+[ "$1" == "-p" ] && sudo ln -s /home/nate/scripts/$name /usr/bin && echo "Added $name to /usr/bin" && exit
+! [ -z $name ] && subl "/home/nate/scripts/$name" && wmctrl -s 2

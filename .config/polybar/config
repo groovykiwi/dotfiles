@@ -105,7 +105,7 @@ type = custom/script
 tail = false
 label = %output%
 interval = 0
-exec = $HOME/scripts/displaytitle
+exec = $HOME/scripts/wintitle
 format-underline = ${colors.accent}
 click-right = touch .config/polybar/config -m
 click-middle = $HOME/scripts/lagfix
@@ -137,11 +137,11 @@ type = custom/script
 tail = false
 label = "%output%"
 interval = 0
-exec = $HOME/scripts/display-audio-device
-click-left = i3-msg exec $HOME/scripts/switch-audio-output
-click-right = $HOME/scripts/call_pavucontrol
-scroll-up = $HOME/scripts/vol-up
-scroll-down = $HOME/scripts/vol-down
+exec = $HOME/scripts/oad status
+click-left = i3-msg exec $HOME/scripts/oad
+click-right = $HOME/scripts/oad pavu
+scroll-up = $HOME/scripts/vol up
+scroll-down = $HOME/scripts/vol down
 #format-underline = ${colors.accent}
 
 [module/pulseaudio]
