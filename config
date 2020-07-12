@@ -26,6 +26,9 @@ Optional arguments:
   -h,         Displays this message and exit. \n"
  else
 
+ 	#Validation
+ 	echo "Are you sure you want to proceed? To cancel press Ctrl+C or press ENTER to continue " && read answer
+ 	
  	# Backup process
 	[[ -d $HOME/.backup ]] && echo -e "\nA previous backup (~/.backup) has been found, it will be overwritten. To cancel press Ctrl+C or press ENTER to continue " && read answer
 	[[ "$backup" == "True" ]] && echo "Backing up to ~/.backup" && sudo rm -rf $HOME/.backup && mkdir $HOME/.backup &&sudo cp -p -r $HOME/.config/ $HOME/.backup/.config && echo "Done: .config/ " && sudo cp -p -r /etc/ $HOME/.backup/etc && echo "Done: etc/ " && sudo cp -p $HOME/{.Xresources,.bashrc,.bash_profile,.profile} $HOME/.backup/ && echo "Done: dotfiles \n"
@@ -90,9 +93,11 @@ Optional arguments:
 	# Symlink .bash_profile
 	[[ -f $HOME/.bash_profile ]] && echo "Found .bash_profile" && rm $HOME/.bash_profile && echo "Deleted .bash_profile"
 	ln -s $HOME/dotfiles/.bash_profile $HOME && echo -e "Symlinked .bash_profile \n" && source $HOME/.bash_profile
+
 	# Symlink .profile
 	[[ -f $HOME/.profile ]] && echo "Found .profile" && rm $HOME/.profile && echo "Deleted .profile"
 	ln -s $HOME/dotfiles/.profile $HOME && echo -e "Symlinked .profile \n" && source $HOME/.profile
+
 	# Symlink .Xresources
 	[[ -f $HOME/.Xresources ]] && echo "Found .Xresources" && rm $HOME/.Xresources && echo "Deleted .Xresources"
 	ln -s $HOME/dotfiles/.Xresources $HOME && echo "Symlinked .Xresources " && xrdb $HOME/.Xresources
