@@ -901,7 +901,7 @@
 					"file": "/home/nate/dotfiles/packages",
 					"settings":
 					{
-						"buffer_size": 1954,
+						"buffer_size": 1950,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
@@ -910,7 +910,7 @@
 					"file": "/home/nate/scripts/dotpack",
 					"settings":
 					{
-						"buffer_size": 1399,
+						"buffer_size": 1391,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
@@ -1600,7 +1600,7 @@
 			"groups":
 			[
 				{
-					"selected": 1,
+					"selected": 2,
 					"sheets":
 					[
 						{
@@ -1637,7 +1637,7 @@
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 1954,
+								"buffer_size": 1950,
 								"regions":
 								{
 									"col_DD0000FF":
@@ -1646,8 +1646,8 @@
 										"regions":
 										[
 											[
-												99,
-												109
+												95,
+												105
 											]
 										],
 										"scope": "col_DD0000FF"
@@ -1669,8 +1669,8 @@
 								"selection":
 								[
 									[
-										630,
-										630
+										253,
+										253
 									]
 								],
 								"settings":
@@ -1679,10 +1679,10 @@
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 228.0,
+								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 0,
+							"stack_index": 1,
 							"type": "text"
 						},
 						{
@@ -1691,7 +1691,7 @@
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 1399,
+								"buffer_size": 1391,
 								"regions":
 								{
 									"col_00DDDDFF":
@@ -1723,8 +1723,8 @@
 								"selection":
 								[
 									[
-										832,
-										832
+										955,
+										955
 									]
 								],
 								"settings":
@@ -1735,7 +1735,7 @@
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 1,
+							"stack_index": 0,
 							"type": "text"
 						},
 						{

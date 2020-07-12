@@ -22,7 +22,7 @@ fi
 regex="\s$1($|\s)"
 if [ "$2" == "r" ] || [ "$2" == "remove" ]; then
 	if [[ $text =~ $regex  ]]; then
-	 	sed -i.bak "$line s/\s\?$1\s\?//" $HOME/dotfiles/packages
+	 	sed -i "$line s/\s\?$1\s\?//" $HOME/dotfiles/packages
 		echo -e "\nRemoved ${C1}$1${NC} from dotfiles packages\n"
 		exit
 	else
@@ -34,5 +34,5 @@ fi
 
 new=$(echo $text $1)
 
-sed -i.bak "$line s/$text/$new/" $HOME/dotfiles/packages && echo -e "\nAdded ${C1}$1${NC} to dotfiles packages\n"
+sed -i "$line s/$text/$new/" $HOME/dotfiles/packages && echo -e "\nAdded ${C1}$1${NC} to dotfiles packages\n"
 
