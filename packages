@@ -28,17 +28,14 @@ else
 	echo "[.] Updating existing packages"
  	sudo pacman -Syuu
 
- 	#Software from the official Arch repo
+ 	#Official Arch repo packages
  	echo "[.] Installing packages"
- 	sudo pacman -S --needed gufw xfce4-clipman-plugin xfce4-screenshooter youtube-dl timeshift pavucontrol thunar libratbag curl unclutter gnome-disk-utility baobab python cmatrix xcb-util-xrm tumbler python-pywal imagemagick feh slop neofetch firefox pulseaudio rofi playerctl wmctrl xfce4-power-manager polybar redshift
+ 	sudo pacman -S --needed gufw xfce4-clipman-plugin xfce4-screenshooter youtube-dl timeshift pavucontrol thunar libratbag curl unclutter gnome-disk-utility baobab python cmatrix xcb-util-xrm tumbler python-pywal imagemagick feh slop neofetch firefox pulseaudio rofi playerctl wmctrl xfce4-power-manager polybar redshift fzy
 	
 	#Copies st to ~/ and installs it
 	cp -r $HOME/dotfiles/st $HOME/
 	cd $HOME/st && sudo rm config.h && sudo make clean install	
 
- 	#Picom Fork with kawase blur and rounder corners
-	cd $HOME/Downloads && git clone https://github.com/ibhagwan/picom-ibhagwan-git && cd picom-ibhagwan-git && makepkg -si
-	
 	#Python Stuff
 	sudo pip install i3-py pywalfox
 
@@ -47,8 +44,8 @@ else
 	sudo echo -e "\n[sublime-text]\nServer = https://download.sublimetext.com/arch/stable/x86_64" | sudo tee -a /etc/pacman.conf
 	sudo pacman -Syu sublime-text
 
-	#Takes a long time to compile so they are at the end
- 	pamac build mimi-git ytop progress-git vtop spicetify-cli cava expressvpn spotify espanso oomox pmenu
+	#AUR packages (long compiling)
+ 	pamac build picom-ibhagwan-git mimi-git ytop progress-git vtop spicetify-cli cava expressvpn spotify espanso oomox pmenu
 
  	
  	# Misc

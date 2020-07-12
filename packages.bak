@@ -30,7 +30,7 @@ else
 
  	#Software from the official Arch repo
  	echo "[.] Installing packages"
- 	sudo pacman -S --needed gufw xfce4-clipman-plugin xfce4-screenshooter youtube-dl timeshift pavucontrol thunar libratbag curl unclutter gnome-disk-utility baobab python cmatrix xcb-util-xrm tumbler python-pywal imagemagick fehop neofetch firefox pulseaudio rofi playerctl wmctrl xfce4-power-manager polybar redshift trash-cli dunst meson i3-scripts i3exit
+ 	sudo pacman -S --needed gufw xfce4-clipman-plugin xfce4-screenshooter youtube-dl timeshift pavucontrol thunar libratbag curl unclutter gnome-disk-utility baobab python cmatrix xcb-util-xrm tumbler python-pywal imagemagick feh slop neofetch firefox pulseaudio rofi playerctl wmctrl xfce4-power-manager polybar redshift
 	
 	#Copies st to ~/ and installs it
 	cp -r $HOME/dotfiles/st $HOME/

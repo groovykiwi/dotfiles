@@ -1,5 +1,5 @@
 #!/bin/bash
-choice=$(pmenu "Pacman Packages" "Pamac Packages" "Configs" -p "What to do you want to sync: ")
+choice=$(echo -e "Pacman Packages\nPamac Packages\nConfigs" | fzy -l 15 -p "What to do you want to sync: ")
 
 packages=$(cat $HOME/dotfiles/packages | sed -n 's/^\s\+//g; /sudo pacman -S\s.*$/ p')
 [ "$choice" == "Pacman Packages" ] && packages=$(cat $HOME/dotfiles/packages | sed -n 's/^\s\+//g; /sudo pacman -S\s.*$/ p') && $packages
