@@ -5,8 +5,8 @@ NC='\033[0m'
 HOME="/home/nate"
 
 if [ "$1" == "pamac" ] || [ "$1" == "p" ];then
-	text=$(cat $HOME/dotfiles/packages | sed -n 's/^\s\+//g; /pamac build\s.*$/ p')
-	line=$(cat $HOME/dotfiles/packages | sed -n 's/^\s\+//g; /pamac build\s.*$/ =')
+	text=$(cat $HOME/dotfiles/packages | sed -n 's/^\s\+//g; /aurlist=(/ p')
+	line=$(cat $HOME/dotfiles/packages | sed -n 's/^\s\+//g; /aurlist=(/ =')
 	set -- "${@:2:3}"
 else
 	text=$(cat $HOME/dotfiles/packages | sed -n 's/^\s\+//g; /sudo pacman -S\s.*$/ p')

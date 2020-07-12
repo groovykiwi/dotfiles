@@ -40,7 +40,7 @@ modules-right =  filesystem vpn audiodevice pulseaudio date battery powermenu
 
 ;System Tray
 tray-position = right
-tray-offset-x = -560px
+tray-offset-x = -680px
 tray-offset-y = 0
 tray-padding = 0
 tray-background= ${colors.background}
@@ -115,10 +115,12 @@ click-middle = $HOME/scripts/lagfix
 
 [module/filesystem]
 label-mounted-padding-right = 2
+spacing = 0
 type = internal/fs
 interval = 25
 mount-0 = /home
-label-mounted = %{A1:baobab &:}/home: %free%%{A}
+mount-1 = /
+label-mounted = %{A1:baobab &:}%mountpoint%: %free%%{A}
 fixed-values = false
 
 [module/vpn]

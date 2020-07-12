@@ -1,9 +1,28 @@
 #!/bin/bash
-choice=$(echo -e "Pacman Packages\nPamac Packages\nConfigs" | fzy -l 15 -p "What to do you want to sync: ")
+choice=$(echo -e "Pacman Packages\nPamac AUR Packages\nConfigs" | fzy -l 15 -p "What to do you want to sync: ")
 
 packages=$(cat $HOME/dotfiles/packages | sed -n 's/^\s\+//g; /sudo pacman -S\s.*$/ p')
 [ "$choice" == "Pacman Packages" ] && packages=$(cat $HOME/dotfiles/packages | sed -n 's/^\s\+//g; /sudo pacman -S\s.*$/ p') && $packages
-[ "$choice" == "Pamac Packages" ] && packages=$(cat $HOME/dotfiles/packages | sed -n 's/^\s\+//g; /pamac build\s.*$/ p') && $packages
+
+if [ "$choice" == "Pamac AUR Packages" ];then
+	packages=$(cat $HOME/dotfiles/packages | sed -n 's/^\s\+//g; /aurlist=(/ p' | sed 's/aurlist=(//')
+	aurlist=($packages
+	)
+	tobeinstalled=""
+
+	echo -e "\n[.] Checking for already installed packages..."
+	for i in ${aurlist[@]};do
+		[ -z $(pamac list -i | cut -d' ' -f1 | grep -w "$i") ] && tobeinstalled+="$i "
+	done
+
+	pamac build $tobeinstalled
+fi
+
+
+
+
+
+ 
 
 [ "$choice" == "Configs" ] && name=$(for entry in "$HOME/dotfiles/.config"/*; do echo $entry; done | sed 's/.*\.config\///' | pmenu -p "Config to sync: " ) &&
 rm -rf "$HOME/.config/$name" && echo -e "\nDeleted $HOME/$name" &&
