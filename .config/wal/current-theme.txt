@@ -1,2 +1,2 @@
 dark
-pywal -i pics/walls/darkplant.jpg -pa 210 -s 0.5
+pywal -pga 230 -i pics/walls/hillforest.jpg

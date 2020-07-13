@@ -138,11 +138,11 @@ ex ()
   fi
 }
 
-#My Stuff
+# Exports
 export PATH=$PATH:$HOME/scripts
 export TERMINAL='st'
 
-#Powerline
+# Powerline
 
 function _update_ps1() {
 	    PS1=$(powerline-shell $?)
@@ -152,16 +152,8 @@ if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
 	    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 fi
 
-# ~/ Clean-Up:
-export GOPATH="$HOME/.local/share/go"
-export LESSHISTFILE=- #Disables Less History
-export CUDA_CACHE_PATH=$HOME/.cache/nv
-export GNUPGHOME=$HOME/.local/share/gnupg
-eval $(dircolors $HOME/.config/dircolors)
-
-
 # Aliases
-
+alias sudo='sudo '
 alias cp='cp -v'
 alias mv='mv -v'
 alias ls='ls -Shv --color=always'

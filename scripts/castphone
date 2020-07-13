@@ -1,4 +1,4 @@
 #!/bin/bash
 ! [ -z $(pgrep scrcpy) ] && killall scrcpy 
-adb kill-server && adb start-server && scrcpy -m1080
+adb kill-server && adb start-server && i3-msg exec "scrcpy -m1080" >/dev/null
 

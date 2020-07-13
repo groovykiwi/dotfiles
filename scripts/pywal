@@ -34,18 +34,24 @@ optional arguments:
   -b [backend]        Select the color backend (haishoku, wal)			
   -g grub-theme       Applies this wallpaper to the Vimix Grub theme and installs it
   -p 		      Makes the changes on persistent by modifying .Xresources using ~/.config/wal/templates/colors.Xresources
-  -p 		      Generates a light theme
+  -l 		      Generates a light theme
 "
 else
-	error_flag=False
 
+	error_flag=False
+	
 	string="wal "
-	! [ -z $path ] && string+="-i $path " || echo "No path to the wallpaper has been set." && exit; fi
+
+	! [ -z $path ] && string+="-i $path " || nopath=True
+	[ "$nopath" == "True" ] && echo "No path to the wallpaper has been set." && exit
 	! [ -z $opacity ] && string+="-a $opacity "
 	! [ -z $saturation ] && string+="--saturate $saturation "
 	! [ -z $backend ] && string+="--backend $backend "
-	[ "$light" == "True" ] && string+="-l" && echo "light" > $HOME/.config/wal/current-theme.txt; || echo "dark" > $HOME/.config/wal/current-theme.txt
+	[ "$light" == "True" ] && string+="-l" && echo "light" > $HOME/.config/wal/current-theme.txt || echo "dark" > $HOME/.config/wal/current-theme.txt
+
 	echo "pywal $@" >> $HOME/.config/wal/current-theme.txt
+
+	$string
 	
 	exit_code=$?
 	
@@ -81,6 +87,5 @@ else
 
 		#Display colorscheme again
 		wal --preview
-
 	fi
 fi
