@@ -18,12 +18,6 @@ if [ "$choice" == "Pamac AUR Packages" ];then
 	pamac build $tobeinstalled
 fi
 
-
-
-
-
- 
-
-[ "$choice" == "Configs" ] && name=$(for entry in "$HOME/dotfiles/.config"/*; do echo $entry; done | sed 's/.*\.config\///' | pmenu -p "Config to sync: " ) &&
+[ "$choice" == "Configs" ] && name=$(for entry in "$HOME/dotfiles/.config"/*; do echo $entry; done | sed 's/.*\.config\///' | fzy -p "Config to sync: " ) &&
 rm -rf "$HOME/.config/$name" && echo -e "\nDeleted $HOME/$name" &&
 ln -s "$HOME/dotfiles/.config/$name" "$HOME/.config/$name" && echo -e "Created symlink with $name \n"

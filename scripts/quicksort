@@ -1,0 +1,5 @@
+#!/bin/bash
+
+for entry in $(cat treated.txt | cut -d' ' -f6); do
+	echo -e "\u$entry"
+done > icons.txt

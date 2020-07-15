@@ -1,9 +1,10 @@
 #!/bin/bash
-#SCRIPT EDIT
-#Easily edits scripts using pmenu
+# SCRIPT EDIT
+# Easily edits scripts using fzy
 
 [ "$1" == "-h" ] || [ "$1" == "--help" ]  && echo -e "\noptional arguments:
-  -p,                 Create a symbolic link to script in /usr/bin
+  -d,                 Put script in trash
+  -l,                 Create a symbolic link to script in /usr/bin
   -h, --help          Show this help message and exit\n" && exit
 
 name=$(for entry in "/home/nate/scripts"/*; do ! [ -d $entry ] && ! [[ $entry =~ .*\..* ]] && echo $entry; done |
@@ -11,6 +12,6 @@ sed 's/.*scripts\///g' |
 fzy -l 15
 #fzf --layout reverse --pointer " " --color 16,gutter:0,bg+:1,fg+:7,hl+:6
 )
-
-[ "$1" == "-p" ] && sudo ln -s /home/nate/scripts/$name /usr/bin && echo "Added $name to /usr/bin" && exit
+[ "$1" == "-d" ] && trash-put /home/nate/scripts/$name && echo "Moved $name to trash" && exit
+[ "$1" == "-l" ] && sudo ln -s /home/nate/scripts/$name /usr/bin && echo "Added $name to /usr/bin" && exit
 ! [ -z $name ] && subl "/home/nate/scripts/$name" && wmctrl -s 2

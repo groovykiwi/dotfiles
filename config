@@ -80,7 +80,7 @@ Optional arguments:
 
 	# Symlink myfonts folder
 	[[ -d /usr/share/fonts/myfonts ]]  && echo "Found /usr/share/fonts/myfonts" && sudo rm -rf /usr/share/fonts/myfonts && echo "Deleted /usr/share/fonts/myfonts"
-	sudo ln -s $HOME/dotfiles/myfonts /usr/share/fonts/ && echo -e "Created symlink with myfonts \n" && fc-cache
+	sudo ln -s $HOME/dotfiles/files/myfonts /usr/share/fonts/ && echo -e "Created symlink with myfonts \n" && fc-cache
 
 	# Symlink scripts folder
 	[[ -d $HOME/scripts ]]  && echo "Found ~/scripts" && rm -rf $HOME/scripts && echo "Deleted ~/scripts"
