@@ -31,9 +31,9 @@ optional arguments:
   -h, --help          Show this help message and exit
   -a [0-255]          Set terminal background transparency
   -s [0-1]            Set the saturation of colors
-  -b [backend]        Select the color backend (haishoku, wal)			
+  -b [backend]        Select the color backend (wal, haishoku, colorthief, colorz)			
   -g grub-theme       Applies this wallpaper to the Vimix Grub theme and installs it
-  -p 		      Makes the changes on persistent by modifying .Xresources using ~/.config/wal/templates/colors.Xresources
+  -p 		      Makes the changes persistent by modifying .Xresources using ~/.config/wal/templates/colors.Xresources
   -l 		      Generates a light theme
 "
 else
@@ -82,7 +82,7 @@ else
 
 		#Sets RGB
 		sudo g213-led -a $(bash -c "sed -n '2p' $HOME/.cache/wal/colors | sed 's/#//'")
-		sudo cm-rgb-cli set fan --brightness=5 --color=$(bash -c "sed -n '2p' $HOME/.cache/wal/colors | sed 's/#//'") logo --brightness=5 --color=$(bash -c "sed -n '7p' $HOME/.cache/wal/colors | sed 's/#//'")
+		sudo cm-rgb-cli set fan --brightness=5 --color=$(bash -c "sed -n '6p' $HOME/.cache/wal/colors | sed 's/#//'") logo --brightness=5 --color=$(bash -c "sed -n '7p' $HOME/.cache/wal/colors | sed 's/#//'")
 		sudo msi-rgb 0 0 0 -x
 
 		#Display colorscheme again

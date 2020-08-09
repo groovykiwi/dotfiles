@@ -3,7 +3,7 @@
 # Easily edits scripts using fzy
 
 [ "$1" == "-h" ] || [ "$1" == "--help" ]  && echo -e "\noptional arguments:
-  -d,                 Put script in trash
+  -d,                 Put script in the trash
   -l,                 Create a symbolic link to script in /usr/bin
   -h, --help          Show this help message and exit\n" && exit
 

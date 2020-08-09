@@ -13,4 +13,3 @@ date=$(date +"%F--%H-%M")
 [[ -f $HOME/st/config.h ]] && sudo rm $HOME/st/config.h
 cd $HOME/st/
 sudo make clean install
-st 

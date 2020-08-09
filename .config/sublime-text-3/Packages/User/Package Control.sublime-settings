@@ -6,13 +6,15 @@
 	"installed_packages":
 	[
 		"A File Icon",
+		"ayu",
 		"Color Highlight",
 		"ColorPick",
+		"Guna",
 		"i3 wm",
-		"Material Theme",
 		"Package Control",
 		"RemoteSubl",
 		"SublimeREPL",
-		"Terminal"
+		"Terminal",
+		"Theme - Cyanide"
 	]
 }

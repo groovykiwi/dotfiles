@@ -1,2 +1,2 @@
 dark
-pywal -pga 230 -i pics/walls/hillforest.jpg
+pywal -pa 230 -i pics/walls/wave.png -s 0.4

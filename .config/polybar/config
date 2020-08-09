@@ -65,21 +65,11 @@ click-middle = $HOME/scripts/lagfix
 label-mounted-padding-right = 2
 spacing = 0
 type = internal/fs
-interval = 25
+interval = 5
 mount-0 = /home
 mount-1 = /
-label-mounted = %{A1:baobab &:}%mountpoint%: %free%%{A}
+label-mounted = %{A1:baobab %mountpoint% &:}%mountpoint%: %free%%{A}
 fixed-values = false
-
-[module/vpn]
-label-padding-right = 3
-type = custom/script
-tail = false
-label = vpn:%output% 
-interval = 0
-exec = $HOME/scripts/expressvpn_module -s
-click-left = /$HOME/scripts/expressvpn_module -c
-click-right = /$HOME/scripts/expressvpn_module -d
 
 [module/audiodevice]
 type = custom/script
@@ -89,6 +79,7 @@ interval = 0
 exec = $HOME/scripts/oad status
 click-left = i3-msg exec $HOME/scripts/oad
 click-right = $HOME/scripts/oad pavu
+click-middle = qpaeq
 scroll-up = $HOME/scripts/vol up
 scroll-down = $HOME/scripts/vol down
 
@@ -185,7 +176,7 @@ tray-detached = false
 ;Module Positions
 modules-left = i3 spotify 
 modules-center = titlehook 
-modules-right =  filesystem vpn audiodevice pulseaudio date battery powermenu
+modules-right =  filesystem audiodevice pulseaudio date battery powermenu
 
 
 

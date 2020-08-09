@@ -12,7 +12,7 @@ i3-msg "workspace 1: ; append_layout ~/.config/i3/workspace_1.json" >/dev/nul
 st -n ranger -e sh -c "ranger;bash" &
 st -n main -e sh -c "
 echo -e '$bold$accent[ Welcome Back! How are you today $accent2$USER$accent ? ]$nc$bold';
-curl -m 5 wttr.in/Iskele?format="~+Weather+:+%t+%C+~" 2>/dev/null;
+#curl -m 5 wttr.in/Iskele?format="~+Weather+:+%t+%C+~" 2>/dev/null;
 echo "";
 neofetch;
 bash" &

@@ -1,7 +1,7 @@
 #!/bin/bash
-term_status=$($HOME/scripts/i3get -i floatterm 2>/dev/null)
+term_status=$(pgrep floatterm)
 
-if [ -z $term_status ]; then
+if [ -n $term_status ]; then
 	st -n floatterm -g 50x20-50+150
 else
 	wmctrl -x -R floatterm

@@ -1,15 +1,20 @@
 {
-	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
+	"color_scheme": "Packages/Guna/themes/Guna.sublime-color-scheme",
 	"font_face": "Fira Code",
-	"font_size": 15,
+	"font_size": 12,
+	"gn_hide_tab_dropdown": true,
+	"gn_overlay_scroll_bars": true,
+	"gn_sb_cnvx": true,
+	"gn_sidebar_box": true,
+	"gnwidg1": true,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
-	"material_theme_accent_bright-teal": true,
-	"material_theme_accent_indigo": true,
-	"material_theme_small_tab": true,
-	"material_theme_tabs_separator": true,
+	"open_files_in_new_window": true,
 	"show_panel_on_build": false,
-	"theme": "Material-Theme-Darker.sublime-theme"
+	"spell_check": true,
+	"theme": "Guna.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"word_wrap": true
 }

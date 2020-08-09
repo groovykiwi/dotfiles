@@ -4,8 +4,8 @@
 name: UnitTest (JavaScript React)
 hidden: true
 file_extensions: ['spec.jsx', 'test.jsx']
-scope: source.js.react.unittest
+scope: source.jsx.unittest
 contexts:
   main:
-    - include: scope:source.js.react#prototype
-    - include: scope:source.js.react
+    - include: scope:source.jsx#prototype
+    - include: scope:source.jsx

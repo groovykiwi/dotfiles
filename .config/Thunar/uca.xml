@@ -42,4 +42,13 @@
 	<patterns>*.zip;.*.rar</patterns>
 	<other-files/>
 </action>
+<action>
+	<icon>drive-harddisk</icon>
+	<name>Baobab</name>
+	<unique-id>1596722594986375-1</unique-id>
+	<command>baobab %f</command>
+	<description>Open folder in baobab</description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
 </actions>

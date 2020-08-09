@@ -1,8 +1,5 @@
 #!/bin/bash
-if [ "$1" == "loop" ]; then
-	while true; do
-		[ "$2" == "time" ] && toilet -f Big.flf $(date +"%I : %M %p") | lolcat && sleep 60s || toilet -f 3d.flf "$2"| lolcat && sleep 0.5s
-	done
-else
-	[ "$1" == "time" ] && toilet -f Big.flf $(date +"%I : %M %p") | lolcat || toilet -f 3d.flf "$1"| lolcat
-fi
+[ -z "$1" ] && echo "Usage: lolban <text> (loop) "
+
+[ "$2" == "loop" ] && while true 2>&1 ; do toilet -t -f 3d.flf "$1"| lolcat && sleep 0.5s; done || toilet -t -f 3d.flf "$1"| lolcat
+
