@@ -1,0 +1,53 @@
+[2020-08-14 15:18:23.450] [sharedprocess] [info] main {"machineId":"ef6eaabb028b46b12b77f25dd02de8836fa915fac6b516dc434b8377d54b05dc","windowId":2}
+[2020-08-14 15:18:23.542] [sharedprocess] [info] vscode-icons-team.vscode-icons 10.2.0 Running post uninstall script
+[2020-08-14 15:18:23.630] [sharedprocess] [info] Deleted from disk dracula-theme.theme-dracula /home/nate/.vscode-oss/extensions/dracula-theme.theme-dracula-2.22.1
+[2020-08-14 15:18:23.641] [sharedprocess] [info] Deleted from disk vscode-icons-team.vscode-icons /home/nate/.vscode-oss/extensions/vscode-icons-team.vscode-icons-10.2.0
+[2020-08-14 15:18:23.643] [sharedprocess] [error] vscode-icons-team.vscode-icons 10.2.0 post-uninstall internal/modules/cjs/loader.js:720
+    throw err;
+    ^
+
+Error: Cannot find module '/home/nate/.vscode-oss/extensions/vscode-icons-team.vscode-icons-10.2.0/dist/src/uninstall.bundle.js'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:717:15)
+    at Module._load (internal/modules/cjs/loader.js:622:27)
+    at Module._load (electron/js2c/asar.js:717:26)
+    at Function.Module._load (electron/js2c/asar.js:717:26)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:944:10)
+    at internal/main/run_main_module.js:17:11 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+[2020-08-14 15:18:23.657] [sharedprocess] [error] vscode-icons-team.vscode-icons 10.2.0 Failed to run post uninstall script: post-uninstall process exited with code 1
+[2020-08-14 15:18:23.657] [sharedprocess] [info] Deleted from disk formulahendry.auto-rename-tag /home/nate/.vscode-oss/extensions/formulahendry.auto-rename-tag-0.1.4
+[2020-08-14 15:18:23.663] [sharedprocess] [info] Deleted from disk formulahendry.code-runner /home/nate/.vscode-oss/extensions/formulahendry.code-runner-0.11.0
+[2020-08-14 15:18:53.864] [sharedprocess] [info] Uninstalling extension: ms-vscode-remote.remote-ssh
+[2020-08-14 15:18:53.866] [sharedprocess] [info] Uninstalling extension: ms-vscode-remote.remote-ssh-edit
+[2020-08-14 15:18:53.888] [sharedprocess] [info] Successfully uninstalled extension: ms-vscode-remote.remote-ssh-edit
+[2020-08-14 15:18:54.095] [sharedprocess] [info] Successfully uninstalled extension: ms-vscode-remote.remote-ssh
+[2020-08-14 15:19:03.463] [sharedprocess] [info] Starting to clean up unused language packs.
+[2020-08-14 15:19:14.398] [sharedprocess] [info] Installing extension: ms-vscode-remote.vscode-remote-extensionpack
+[2020-08-14 15:19:15.011] [sharedprocess] [info] Downloaded extension: ms-vscode-remote.vscode-remote-extensionpack /home/nate/.config/Code - OSS/CachedExtensionVSIXs/ms-vscode-remote.vscode-remote-extensionpack-0.20.0
+[2020-08-14 15:19:15.045] [sharedprocess] [info] Extracted extension to /home/nate/.vscode-oss/extensions/.ms-vscode-remote.vscode-remote-extensionpack-0.20.0: ms-vscode-remote.vscode-remote-extensionpack
+[2020-08-14 15:19:15.046] [sharedprocess] [info] Renamed to /home/nate/.vscode-oss/extensions/ms-vscode-remote.vscode-remote-extensionpack-0.20.0
+[2020-08-14 15:19:15.046] [sharedprocess] [info] Installation completed. ms-vscode-remote.vscode-remote-extensionpack
+[2020-08-14 15:19:15.279] [sharedprocess] [info] Installing extension: ms-vscode-remote.remote-wsl
+[2020-08-14 15:19:15.280] [sharedprocess] [info] Installing extension: ms-vscode-remote.remote-ssh
+[2020-08-14 15:19:15.292] [sharedprocess] [info] Downloaded extension: ms-vscode-remote.remote-ssh /home/nate/.config/Code - OSS/CachedExtensionVSIXs/ms-vscode-remote.remote-ssh-0.51.0
+[2020-08-14 15:19:15.299] [sharedprocess] [info] Removed the extension from uninstalled list: ms-vscode-remote.remote-ssh
+[2020-08-14 15:19:15.495] [sharedprocess] [info] Installing extension: ms-vscode-remote.remote-containers
+[2020-08-14 15:19:15.540] [sharedprocess] [info] Installing extension: ms-vscode-remote.remote-ssh-edit
+[2020-08-14 15:19:15.544] [sharedprocess] [info] Downloaded extension: ms-vscode-remote.remote-ssh-edit /home/nate/.config/Code - OSS/CachedExtensionVSIXs/ms-vscode-remote.remote-ssh-edit-0.51.0
+[2020-08-14 15:19:15.548] [sharedprocess] [info] Removed the extension from uninstalled list: ms-vscode-remote.remote-ssh-edit
+[2020-08-14 15:19:15.551] [sharedprocess] [info] Extensions installed successfully: ms-vscode-remote.remote-ssh-edit
+[2020-08-14 15:19:15.552] [sharedprocess] [info] Extensions installed successfully: ms-vscode-remote.remote-ssh
+[2020-08-14 15:19:15.794] [sharedprocess] [info] Downloaded extension: ms-vscode-remote.remote-wsl /home/nate/.config/Code - OSS/CachedExtensionVSIXs/ms-vscode-remote.remote-wsl-0.44.4
+[2020-08-14 15:19:15.827] [sharedprocess] [info] Extracted extension to /home/nate/.vscode-oss/extensions/.ms-vscode-remote.remote-wsl-0.44.4: ms-vscode-remote.remote-wsl
+[2020-08-14 15:19:15.827] [sharedprocess] [info] Renamed to /home/nate/.vscode-oss/extensions/ms-vscode-remote.remote-wsl-0.44.4
+[2020-08-14 15:19:15.827] [sharedprocess] [info] Installation completed. ms-vscode-remote.remote-wsl
+[2020-08-14 15:19:15.830] [sharedprocess] [info] Extensions installed successfully: ms-vscode-remote.remote-wsl
+[2020-08-14 15:19:16.803] [sharedprocess] [info] Downloaded extension: ms-vscode-remote.remote-containers /home/nate/.config/Code - OSS/CachedExtensionVSIXs/ms-vscode-remote.remote-containers-0.128.0
+[2020-08-14 15:19:17.073] [sharedprocess] [info] Extracted extension to /home/nate/.vscode-oss/extensions/.ms-vscode-remote.remote-containers-0.128.0: ms-vscode-remote.remote-containers
+[2020-08-14 15:19:17.073] [sharedprocess] [info] Renamed to /home/nate/.vscode-oss/extensions/ms-vscode-remote.remote-containers-0.128.0
+[2020-08-14 15:19:17.074] [sharedprocess] [info] Installation completed. ms-vscode-remote.remote-containers
+[2020-08-14 15:19:17.084] [sharedprocess] [info] Extensions installed successfully: ms-vscode-remote.remote-containers
+[2020-08-14 15:19:17.085] [sharedprocess] [info] Extensions installed successfully: ms-vscode-remote.vscode-remote-extensionpack

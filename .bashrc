@@ -144,13 +144,13 @@ export TERMINAL='st'
 
 # Powerline
 
-function _update_ps1() {
-	    PS1=$(powerline-shell $?)
-    }
-
-if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
-	    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
-fi
+#function _update_ps1() {
+#	    PS1=$(powerline-shell $?)
+#    }
+#
+#if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
+#	    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+#fi
 
 # Aliases
 alias sudo='sudo '
@@ -168,3 +168,4 @@ alias gitp='git push origin master'
 alias search='find -iname'
 alias fuck='sudo $(history -p !!)'
 alias p='sudo pacman'
+alias houlamy='ssh houlamy.com'

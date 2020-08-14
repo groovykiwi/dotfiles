@@ -1,0 +1,63 @@
+[2020-08-14 12:17:55.735] [renderer1] [error] Cannot read property 'markers' of undefined: TypeError: Cannot read property 'markers' of undefined
+    at K.setTreeSelection (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:7059:728)
+    at K.refreshPanel (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:7059:569)
+    at K.onDidChangeModel (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:7065:411)
+    at file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:7064:690
+    at file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:92:235
+    at c.fire (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:95:801)
+    at t.MarkersModel.setResourceMarkers (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:3207:741)
+    at p.onMarkerChanged (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:3492:193)
+    at file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:3492:121
+    at c.fire (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:95:801)
+    at file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:91:915
+[2020-08-14 12:33:09.161] [renderer1] [error] Cannot invoke loadWASM more than once.: Error: Cannot invoke loadWASM more than once.
+    at Object.t.loadWASM (/usr/lib/code/node_modules.asar/vscode-oniguruma/release/main.js:1:4823)
+    at TextMateLoader.loadOniguruma (/home/nate/.vscode-oss/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/textMateLoader.js:115:19)
+    at new TextMateLoader (/home/nate/.vscode-oss/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/textMateLoader.js:19:31)
+    at new Settings (/home/nate/.vscode-oss/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/settings.js:10:31)
+    at new DocumentDecorationManager (/home/nate/.vscode-oss/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/documentDecorationManager.js:9:25)
+    at restart (/home/nate/.vscode-oss/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/extension.js:42:37)
+    at /home/nate/.vscode-oss/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/extension.js:7:43
+    at l.fire (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:45:801)
+    at s.deltaExtensions (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:590:215)
+    at h.$deltaExtensions (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:843:824)
+    at processTicksAndRejections (internal/process/task_queues.js:85:5)
+[2020-08-14 12:34:58.606] [renderer1] [error] Cannot invoke loadWASM more than once.: Error: Cannot invoke loadWASM more than once.
+    at Object.t.loadWASM (/usr/lib/code/node_modules.asar/vscode-oniguruma/release/main.js:1:4823)
+    at TextMateLoader.loadOniguruma (/home/nate/.vscode-oss/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/textMateLoader.js:115:19)
+    at new TextMateLoader (/home/nate/.vscode-oss/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/textMateLoader.js:19:31)
+    at new Settings (/home/nate/.vscode-oss/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/settings.js:10:31)
+    at new DocumentDecorationManager (/home/nate/.vscode-oss/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/documentDecorationManager.js:9:25)
+    at restart (/home/nate/.vscode-oss/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/extension.js:42:37)
+    at /home/nate/.vscode-oss/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/extension.js:7:43
+    at l.fire (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:45:801)
+    at s.deltaExtensions (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:590:215)
+    at h.$deltaExtensions (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:843:824)
+    at processTicksAndRejections (internal/process/task_queues.js:85:5)
+[2020-08-14 12:44:58.553] [renderer1] [error] Cannot read property 'markers' of undefined: TypeError: Cannot read property 'markers' of undefined
+    at K.setTreeSelection (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:7059:728)
+    at K.refreshPanel (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:7059:569)
+    at K.onDidChangeModel (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:7065:411)
+    at file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:7064:690
+    at file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:92:235
+    at c.fire (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:95:801)
+    at t.MarkersModel.setResourceMarkers (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:3207:741)
+    at p.onMarkerChanged (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:3492:193)
+    at file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:3492:121
+    at c.fire (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:95:801)
+    at file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:91:915
+[2020-08-14 12:56:53.938] [renderer1] [error] [text file model] handleSaveError(182) - exit - resulted in a save error: Error: Unable to write file '/home/nate/scripts/wintitle' (Unknown (FileSystemError): Error: ETXTBSY: text file is busy, open '/home/nate/scripts/wintitle') file:///home/nate/scripts/wintitle
+[2020-08-14 13:14:20.605] [renderer1] [error] TreeError [MarkersView] Tree element not found: [object Object]: Error: TreeError [MarkersView] Tree element not found: [object Object]
+    at t.ObjectTreeModel.getElementLocation (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:114:613)
+    at t.ObjectTreeModel.setCollapsed (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:113:855)
+    at H.expand (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:1106:277)
+    at K.autoReveal (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:7068:818)
+    at K.onDidChangeModel (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:7065:505)
+    at file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:7064:690
+    at file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:92:235
+    at c.fire (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:95:801)
+    at t.MarkersModel.setResourceMarkers (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:3207:741)
+    at p.onMarkerChanged (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:3492:193)
+    at file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:3492:121
+    at c.fire (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:95:801)
+    at file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:91:915

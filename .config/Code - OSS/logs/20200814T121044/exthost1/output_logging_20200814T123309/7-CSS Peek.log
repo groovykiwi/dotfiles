@@ -1,0 +1,1132 @@
+[Server(1804154) projects/] onInitialize
+[Server(1804154) projects/] setupInitialStylemap
+[Server(1804154) projects/] Document opened: app.js
+[Server(1804154) projects/] Document changed: app.js
+[Server(1804154) projects/] Document opened: index.html
+[Server(1804154) projects/] Document changed: index.html
+[Server(1804154) projects/] Document opened: index.html
+[Server(1804154) projects/] Document changed: index.html
+input 423
+  html 17 21
+  head 34 38
+  meta 45 49
+  title 72 77
+  title 91 96
+  link 103 107
+  head 162 166
+  body 170 174
+  img 205 208
+  img 260 263
+  div 328 331
+  p 354 355
+  p 403 404
+  div 415 418
+input is a "id"
+style.css has 27 symbols
+  2:0    [5] *
+  6:4    [5] font-family
+  9:0    [5] body
+  19:0    [5] .body
+  23:0    [5] .red-bg
+  27:0    [5] #crt-overlay
+  37:0    [5] #black
+  46:0    [5] #screen
+  50:0    [5] #screen p
+  57:0    [5] #screen span
+  61:0    [5] .user-input
+  72:0    [5] #input
+  76:0    [5] .music-player
+  84:0    [5] #music-name
+  84:0    [5] #music-time
+  84:0    [5] #music-playback
+  88:0    [5] .red-text
+  92:0    [5] ::selection
+  97:0    [5] .noScrollbar
+  102:0    [5] .noScrollbar::-webkit-scrollbar
+  107:0    [5] .break-words
+  118:0    [5] @keyframes fadeOut
+  123:0    [5] @keyframes fadeOut
+  128:0    [5] .fadeOut
+  136:0    [5] @keyframes horizontalScroll
+  142:0    [5] @keyframes horizontalScroll
+  148:0    [5] .horizontalScroll
+style.css has 20 symbols
+  2:0    [5] *
+  9:0    [5] body
+  13:0    [5] header
+  18:0    [5] header > h1
+  23:0    [5] .scoreboard
+  38:0    [5] .badge
+  46:0    [5] #user-label
+  54:0    [5] #comp-label
+  62:0    [5] .result
+  69:0    [5] .choices
+  76:0    [5] .choice
+  80:0    [5] .image
+  88:0    [5] .choice span
+  101:0    [5] .choice:hover
+  105:0    [5] .choice:hover img
+  109:0    [5] .choice:hover .choice-label
+  113:0    [5] #action-message
+  122:0    [5] .green-glow
+  128:0    [5] .red-glow
+  134:0    [5] .yellow-glow
+screen 336
+  html 17 21
+  head 34 38
+  meta 45 49
+  title 72 77
+  title 91 96
+  link 103 107
+  head 162 166
+  body 170 174
+  img 205 208
+  img 260 263
+  div 328 331
+screen is a "id"
+style.css has 27 symbols
+  2:0    [5] *
+  6:4    [5] font-family
+  9:0    [5] body
+  19:0    [5] .body
+  23:0    [5] .red-bg
+  27:0    [5] #crt-overlay
+  37:0    [5] #black
+  46:0    [5] #screen
+  50:0    [5] #screen p
+  57:0    [5] #screen span
+  61:0    [5] .user-input
+  72:0    [5] #input
+  76:0    [5] .music-player
+  84:0    [5] #music-name
+  84:0    [5] #music-time
+  84:0    [5] #music-playback
+  88:0    [5] .red-text
+  92:0    [5] ::selection
+  97:0    [5] .noScrollbar
+  102:0    [5] .noScrollbar::-webkit-scrollbar
+  107:0    [5] .break-words
+  118:0    [5] @keyframes fadeOut
+  123:0    [5] @keyframes fadeOut
+  128:0    [5] .fadeOut
+  136:0    [5] @keyframes horizontalScroll
+  142:0    [5] @keyframes horizontalScroll
+  148:0    [5] .horizontalScroll
+style.css has 20 symbols
+  2:0    [5] *
+  9:0    [5] body
+  13:0    [5] header
+  18:0    [5] header > h1
+  23:0    [5] .scoreboard
+  38:0    [5] .badge
+  46:0    [5] #user-label
+  54:0    [5] #comp-label
+  62:0    [5] .result
+  69:0    [5] .choices
+  76:0    [5] .choice
+  80:0    [5] .image
+  88:0    [5] .choice span
+  101:0    [5] .choice:hover
+  105:0    [5] .choice:hover img
+  109:0    [5] .choice:hover .choice-label
+  113:0    [5] #action-message
+  122:0    [5] .green-glow
+  128:0    [5] .red-glow
+  134:0    [5] .yellow-glow
+history 360
+  html 17 21
+  head 34 38
+  meta 45 49
+  title 72 77
+  title 91 96
+  link 103 107
+  head 162 166
+  body 170 174
+  img 205 208
+  img 260 263
+  div 328 331
+  p 354 355
+history is a "id"
+style.css has 27 symbols
+  2:0    [5] *
+  6:4    [5] font-family
+  9:0    [5] body
+  19:0    [5] .body
+  23:0    [5] .red-bg
+  27:0    [5] #crt-overlay
+  37:0    [5] #black
+  46:0    [5] #screen
+  50:0    [5] #screen p
+  57:0    [5] #screen span
+  61:0    [5] .user-input
+  72:0    [5] #input
+  76:0    [5] .music-player
+  84:0    [5] #music-name
+  84:0    [5] #music-time
+  84:0    [5] #music-playback
+  88:0    [5] .red-text
+  92:0    [5] ::selection
+  97:0    [5] .noScrollbar
+  102:0    [5] .noScrollbar::-webkit-scrollbar
+  107:0    [5] .break-words
+  118:0    [5] @keyframes fadeOut
+  123:0    [5] @keyframes fadeOut
+  128:0    [5] .fadeOut
+  136:0    [5] @keyframes horizontalScroll
+  142:0    [5] @keyframes horizontalScroll
+  148:0    [5] .horizontalScroll
+style.css has 20 symbols
+  2:0    [5] *
+  9:0    [5] body
+  13:0    [5] header
+  18:0    [5] header > h1
+  23:0    [5] .scoreboard
+  38:0    [5] .badge
+  46:0    [5] #user-label
+  54:0    [5] #comp-label
+  62:0    [5] .result
+  69:0    [5] .choices
+  76:0    [5] .choice
+  80:0    [5] .image
+  88:0    [5] .choice span
+  101:0    [5] .choice:hover
+  105:0    [5] .choice:hover img
+  109:0    [5] .choice:hover .choice-label
+  113:0    [5] #action-message
+  122:0    [5] .green-glow
+  128:0    [5] .red-glow
+  134:0    [5] .yellow-glow
+input 423
+  html 17 21
+  head 34 38
+  meta 45 49
+  title 72 77
+  title 91 96
+  link 103 107
+  head 162 166
+  body 170 174
+  img 205 208
+  img 260 263
+  div 328 331
+  p 354 355
+  p 403 404
+  div 415 418
+input is a "id"
+style.css has 27 symbols
+  2:0    [5] *
+  6:4    [5] font-family
+  9:0    [5] body
+  19:0    [5] .body
+  23:0    [5] .red-bg
+  27:0    [5] #crt-overlay
+  37:0    [5] #black
+  46:0    [5] #screen
+  50:0    [5] #screen p
+  57:0    [5] #screen span
+  61:0    [5] .user-input
+  72:0    [5] #input
+  76:0    [5] .music-player
+  84:0    [5] #music-name
+  84:0    [5] #music-time
+  84:0    [5] #music-playback
+  88:0    [5] .red-text
+  92:0    [5] ::selection
+  97:0    [5] .noScrollbar
+  102:0    [5] .noScrollbar::-webkit-scrollbar
+  107:0    [5] .break-words
+  118:0    [5] @keyframes fadeOut
+  123:0    [5] @keyframes fadeOut
+  128:0    [5] .fadeOut
+  136:0    [5] @keyframes horizontalScroll
+  142:0    [5] @keyframes horizontalScroll
+  148:0    [5] .horizontalScroll
+style.css has 20 symbols
+  2:0    [5] *
+  9:0    [5] body
+  13:0    [5] header
+  18:0    [5] header > h1
+  23:0    [5] .scoreboard
+  38:0    [5] .badge
+  46:0    [5] #user-label
+  54:0    [5] #comp-label
+  62:0    [5] .result
+  69:0    [5] .choices
+  76:0    [5] .choice
+  80:0    [5] .image
+  88:0    [5] .choice span
+  101:0    [5] .choice:hover
+  105:0    [5] .choice:hover img
+  109:0    [5] .choice:hover .choice-label
+  113:0    [5] #action-message
+  122:0    [5] .green-glow
+  128:0    [5] .red-glow
+  134:0    [5] .yellow-glow
+input 423
+  html 17 21
+  head 34 38
+  meta 45 49
+  title 72 77
+  title 91 96
+  link 103 107
+  head 162 166
+  body 170 174
+  img 205 208
+  img 260 263
+  div 328 331
+  p 354 355
+  p 403 404
+  div 415 418
+input is a "id"
+style.css has 27 symbols
+  2:0    [5] *
+  6:4    [5] font-family
+  9:0    [5] body
+  19:0    [5] .body
+  23:0    [5] .red-bg
+  27:0    [5] #crt-overlay
+  37:0    [5] #black
+  46:0    [5] #screen
+  50:0    [5] #screen p
+  57:0    [5] #screen span
+  61:0    [5] .user-input
+  72:0    [5] #input
+  76:0    [5] .music-player
+  84:0    [5] #music-name
+  84:0    [5] #music-time
+  84:0    [5] #music-playback
+  88:0    [5] .red-text
+  92:0    [5] ::selection
+  97:0    [5] .noScrollbar
+  102:0    [5] .noScrollbar::-webkit-scrollbar
+  107:0    [5] .break-words
+  118:0    [5] @keyframes fadeOut
+  123:0    [5] @keyframes fadeOut
+  128:0    [5] .fadeOut
+  136:0    [5] @keyframes horizontalScroll
+  142:0    [5] @keyframes horizontalScroll
+  148:0    [5] .horizontalScroll
+style.css has 20 symbols
+  2:0    [5] *
+  9:0    [5] body
+  13:0    [5] header
+  18:0    [5] header > h1
+  23:0    [5] .scoreboard
+  38:0    [5] .badge
+  46:0    [5] #user-label
+  54:0    [5] #comp-label
+  62:0    [5] .result
+  69:0    [5] .choices
+  76:0    [5] .choice
+  80:0    [5] .image
+  88:0    [5] .choice span
+  101:0    [5] .choice:hover
+  105:0    [5] .choice:hover img
+  109:0    [5] .choice:hover .choice-label
+  113:0    [5] #action-message
+  122:0    [5] .green-glow
+  128:0    [5] .red-glow
+  134:0    [5] .yellow-glow
+input 423
+  html 17 21
+  head 34 38
+  meta 45 49
+  title 72 77
+  title 91 96
+  link 103 107
+  head 162 166
+  body 170 174
+  img 205 208
+  img 260 263
+  div 328 331
+  p 354 355
+  p 403 404
+  div 415 418
+input is a "id"
+style.css has 27 symbols
+  2:0    [5] *
+  6:4    [5] font-family
+  9:0    [5] body
+  19:0    [5] .body
+  23:0    [5] .red-bg
+  27:0    [5] #crt-overlay
+  37:0    [5] #black
+  46:0    [5] #screen
+  50:0    [5] #screen p
+  57:0    [5] #screen span
+  61:0    [5] .user-input
+  72:0    [5] #input
+  76:0    [5] .music-player
+  84:0    [5] #music-name
+  84:0    [5] #music-time
+  84:0    [5] #music-playback
+  88:0    [5] .red-text
+  92:0    [5] ::selection
+  97:0    [5] .noScrollbar
+  102:0    [5] .noScrollbar::-webkit-scrollbar
+  107:0    [5] .break-words
+  118:0    [5] @keyframes fadeOut
+  123:0    [5] @keyframes fadeOut
+  128:0    [5] .fadeOut
+  136:0    [5] @keyframes horizontalScroll
+  142:0    [5] @keyframes horizontalScroll
+  148:0    [5] .horizontalScroll
+style.css has 20 symbols
+  2:0    [5] *
+  9:0    [5] body
+  13:0    [5] header
+  18:0    [5] header > h1
+  23:0    [5] .scoreboard
+  38:0    [5] .badge
+  46:0    [5] #user-label
+  54:0    [5] #comp-label
+  62:0    [5] .result
+  69:0    [5] .choices
+  76:0    [5] .choice
+  80:0    [5] .image
+  88:0    [5] .choice span
+  101:0    [5] .choice:hover
+  105:0    [5] .choice:hover img
+  109:0    [5] .choice:hover .choice-label
+  113:0    [5] #action-message
+  122:0    [5] .green-glow
+  128:0    [5] .red-glow
+  134:0    [5] .yellow-glow
+history 360
+  html 17 21
+  head 34 38
+  meta 45 49
+  title 72 77
+  title 91 96
+  link 103 107
+  head 162 166
+  body 170 174
+  img 205 208
+  img 260 263
+  div 328 331
+  p 354 355
+history is a "id"
+style.css has 27 symbols
+  2:0    [5] *
+  6:4    [5] font-family
+  9:0    [5] body
+  19:0    [5] .body
+  23:0    [5] .red-bg
+  27:0    [5] #crt-overlay
+  37:0    [5] #black
+  46:0    [5] #screen
+  50:0    [5] #screen p
+  57:0    [5] #screen span
+  61:0    [5] .user-input
+  72:0    [5] #input
+  76:0    [5] .music-player
+  84:0    [5] #music-name
+  84:0    [5] #music-time
+  84:0    [5] #music-playback
+  88:0    [5] .red-text
+  92:0    [5] ::selection
+  97:0    [5] .noScrollbar
+  102:0    [5] .noScrollbar::-webkit-scrollbar
+  107:0    [5] .break-words
+  118:0    [5] @keyframes fadeOut
+  123:0    [5] @keyframes fadeOut
+  128:0    [5] .fadeOut
+  136:0    [5] @keyframes horizontalScroll
+  142:0    [5] @keyframes horizontalScroll
+  148:0    [5] .horizontalScroll
+style.css has 20 symbols
+  2:0    [5] *
+  9:0    [5] body
+  13:0    [5] header
+  18:0    [5] header > h1
+  23:0    [5] .scoreboard
+  38:0    [5] .badge
+  46:0    [5] #user-label
+  54:0    [5] #comp-label
+  62:0    [5] .result
+  69:0    [5] .choices
+  76:0    [5] .choice
+  80:0    [5] .image
+  88:0    [5] .choice span
+  101:0    [5] .choice:hover
+  105:0    [5] .choice:hover img
+  109:0    [5] .choice:hover .choice-label
+  113:0    [5] #action-message
+  122:0    [5] .green-glow
+  128:0    [5] .red-glow
+  134:0    [5] .yellow-glow
+input 423
+  html 17 21
+  head 34 38
+  meta 45 49
+  title 72 77
+  title 91 96
+  link 103 107
+  head 162 166
+  body 170 174
+  img 205 208
+  img 260 263
+  div 328 331
+  p 354 355
+  p 403 404
+  div 415 418
+input is a "id"
+style.css has 27 symbols
+  2:0    [5] *
+  6:4    [5] font-family
+  9:0    [5] body
+  19:0    [5] .body
+  23:0    [5] .red-bg
+  27:0    [5] #crt-overlay
+  37:0    [5] #black
+  46:0    [5] #screen
+  50:0    [5] #screen p
+  57:0    [5] #screen span
+  61:0    [5] .user-input
+  72:0    [5] #input
+  76:0    [5] .music-player
+  84:0    [5] #music-name
+  84:0    [5] #music-time
+  84:0    [5] #music-playback
+  88:0    [5] .red-text
+  92:0    [5] ::selection
+  97:0    [5] .noScrollbar
+  102:0    [5] .noScrollbar::-webkit-scrollbar
+  107:0    [5] .break-words
+  118:0    [5] @keyframes fadeOut
+  123:0    [5] @keyframes fadeOut
+  128:0    [5] .fadeOut
+  136:0    [5] @keyframes horizontalScroll
+  142:0    [5] @keyframes horizontalScroll
+  148:0    [5] .horizontalScroll
+style.css has 20 symbols
+  2:0    [5] *
+  9:0    [5] body
+  13:0    [5] header
+  18:0    [5] header > h1
+  23:0    [5] .scoreboard
+  38:0    [5] .badge
+  46:0    [5] #user-label
+  54:0    [5] #comp-label
+  62:0    [5] .result
+  69:0    [5] .choices
+  76:0    [5] .choice
+  80:0    [5] .image
+  88:0    [5] .choice span
+  101:0    [5] .choice:hover
+  105:0    [5] .choice:hover img
+  109:0    [5] .choice:hover .choice-label
+  113:0    [5] #action-message
+  122:0    [5] .green-glow
+  128:0    [5] .red-glow
+  134:0    [5] .yellow-glow
+history 360
+  html 17 21
+  head 34 38
+  meta 45 49
+  title 72 77
+  title 91 96
+  link 103 107
+  head 162 166
+  body 170 174
+  img 205 208
+  img 260 263
+  div 328 331
+  p 354 355
+history is a "id"
+style.css has 27 symbols
+  2:0    [5] *
+  6:4    [5] font-family
+  9:0    [5] body
+  19:0    [5] .body
+  23:0    [5] .red-bg
+  27:0    [5] #crt-overlay
+  37:0    [5] #black
+  46:0    [5] #screen
+  50:0    [5] #screen p
+  57:0    [5] #screen span
+  61:0    [5] .user-input
+  72:0    [5] #input
+  76:0    [5] .music-player
+  84:0    [5] #music-name
+  84:0    [5] #music-time
+  84:0    [5] #music-playback
+  88:0    [5] .red-text
+  92:0    [5] ::selection
+  97:0    [5] .noScrollbar
+  102:0    [5] .noScrollbar::-webkit-scrollbar
+  107:0    [5] .break-words
+  118:0    [5] @keyframes fadeOut
+  123:0    [5] @keyframes fadeOut
+  128:0    [5] .fadeOut
+  136:0    [5] @keyframes horizontalScroll
+  142:0    [5] @keyframes horizontalScroll
+  148:0    [5] .horizontalScroll
+style.css has 20 symbols
+  2:0    [5] *
+  9:0    [5] body
+  13:0    [5] header
+  18:0    [5] header > h1
+  23:0    [5] .scoreboard
+  38:0    [5] .badge
+  46:0    [5] #user-label
+  54:0    [5] #comp-label
+  62:0    [5] .result
+  69:0    [5] .choices
+  76:0    [5] .choice
+  80:0    [5] .image
+  88:0    [5] .choice span
+  101:0    [5] .choice:hover
+  105:0    [5] .choice:hover img
+  109:0    [5] .choice:hover .choice-label
+  113:0    [5] #action-message
+  122:0    [5] .green-glow
+  128:0    [5] .red-glow
+  134:0    [5] .yellow-glow
+history 360
+  html 17 21
+  head 34 38
+  meta 45 49
+  title 72 77
+  title 91 96
+  link 103 107
+  head 162 166
+  body 170 174
+  img 205 208
+  img 260 263
+  div 328 331
+  p 354 355
+history is a "id"
+style.css has 27 symbols
+  2:0    [5] *
+  6:4    [5] font-family
+  9:0    [5] body
+  19:0    [5] .body
+  23:0    [5] .red-bg
+  27:0    [5] #crt-overlay
+  37:0    [5] #black
+  46:0    [5] #screen
+  50:0    [5] #screen p
+  57:0    [5] #screen span
+  61:0    [5] .user-input
+  72:0    [5] #input
+  76:0    [5] .music-player
+  84:0    [5] #music-name
+  84:0    [5] #music-time
+  84:0    [5] #music-playback
+  88:0    [5] .red-text
+  92:0    [5] ::selection
+  97:0    [5] .noScrollbar
+  102:0    [5] .noScrollbar::-webkit-scrollbar
+  107:0    [5] .break-words
+  118:0    [5] @keyframes fadeOut
+  123:0    [5] @keyframes fadeOut
+  128:0    [5] .fadeOut
+  136:0    [5] @keyframes horizontalScroll
+  142:0    [5] @keyframes horizontalScroll
+  148:0    [5] .horizontalScroll
+style.css has 20 symbols
+  2:0    [5] *
+  9:0    [5] body
+  13:0    [5] header
+  18:0    [5] header > h1
+  23:0    [5] .scoreboard
+  38:0    [5] .badge
+  46:0    [5] #user-label
+  54:0    [5] #comp-label
+  62:0    [5] .result
+  69:0    [5] .choices
+  76:0    [5] .choice
+  80:0    [5] .image
+  88:0    [5] .choice span
+  101:0    [5] .choice:hover
+  105:0    [5] .choice:hover img
+  109:0    [5] .choice:hover .choice-label
+  113:0    [5] #action-message
+  122:0    [5] .green-glow
+  128:0    [5] .red-glow
+  134:0    [5] .yellow-glow
+screen 336
+  html 17 21
+  head 34 38
+  meta 45 49
+  title 72 77
+  title 91 96
+  link 103 107
+  head 162 166
+  body 170 174
+  img 205 208
+  img 260 263
+  div 328 331
+screen is a "id"
+style.css has 27 symbols
+  2:0    [5] *
+  6:4    [5] font-family
+  9:0    [5] body
+  19:0    [5] .body
+  23:0    [5] .red-bg
+  27:0    [5] #crt-overlay
+  37:0    [5] #black
+  46:0    [5] #screen
+  50:0    [5] #screen p
+  57:0    [5] #screen span
+  61:0    [5] .user-input
+  72:0    [5] #input
+  76:0    [5] .music-player
+  84:0    [5] #music-name
+  84:0    [5] #music-time
+  84:0    [5] #music-playback
+  88:0    [5] .red-text
+  92:0    [5] ::selection
+  97:0    [5] .noScrollbar
+  102:0    [5] .noScrollbar::-webkit-scrollbar
+  107:0    [5] .break-words
+  118:0    [5] @keyframes fadeOut
+  123:0    [5] @keyframes fadeOut
+  128:0    [5] .fadeOut
+  136:0    [5] @keyframes horizontalScroll
+  142:0    [5] @keyframes horizontalScroll
+  148:0    [5] .horizontalScroll
+style.css has 20 symbols
+  2:0    [5] *
+  9:0    [5] body
+  13:0    [5] header
+  18:0    [5] header > h1
+  23:0    [5] .scoreboard
+  38:0    [5] .badge
+  46:0    [5] #user-label
+  54:0    [5] #comp-label
+  62:0    [5] .result
+  69:0    [5] .choices
+  76:0    [5] .choice
+  80:0    [5] .image
+  88:0    [5] .choice span
+  101:0    [5] .choice:hover
+  105:0    [5] .choice:hover img
+  109:0    [5] .choice:hover .choice-label
+  113:0    [5] #action-message
+  122:0    [5] .green-glow
+  128:0    [5] .red-glow
+  134:0    [5] .yellow-glow
+history 360
+  html 17 21
+  head 34 38
+  meta 45 49
+  title 72 77
+  title 91 96
+  link 103 107
+  head 162 166
+  body 170 174
+  img 205 208
+  img 260 263
+  div 328 331
+  p 354 355
+history is a "id"
+style.css has 27 symbols
+  2:0    [5] *
+  6:4    [5] font-family
+  9:0    [5] body
+  19:0    [5] .body
+  23:0    [5] .red-bg
+  27:0    [5] #crt-overlay
+  37:0    [5] #black
+  46:0    [5] #screen
+  50:0    [5] #screen p
+  57:0    [5] #screen span
+  61:0    [5] .user-input
+  72:0    [5] #input
+  76:0    [5] .music-player
+  84:0    [5] #music-name
+  84:0    [5] #music-time
+  84:0    [5] #music-playback
+  88:0    [5] .red-text
+  92:0    [5] ::selection
+  97:0    [5] .noScrollbar
+  102:0    [5] .noScrollbar::-webkit-scrollbar
+  107:0    [5] .break-words
+  118:0    [5] @keyframes fadeOut
+  123:0    [5] @keyframes fadeOut
+  128:0    [5] .fadeOut
+  136:0    [5] @keyframes horizontalScroll
+  142:0    [5] @keyframes horizontalScroll
+  148:0    [5] .horizontalScroll
+style.css has 20 symbols
+  2:0    [5] *
+  9:0    [5] body
+  13:0    [5] header
+  18:0    [5] header > h1
+  23:0    [5] .scoreboard
+  38:0    [5] .badge
+  46:0    [5] #user-label
+  54:0    [5] #comp-label
+  62:0    [5] .result
+  69:0    [5] .choices
+  76:0    [5] .choice
+  80:0    [5] .image
+  88:0    [5] .choice span
+  101:0    [5] .choice:hover
+  105:0    [5] .choice:hover img
+  109:0    [5] .choice:hover .choice-label
+  113:0    [5] #action-message
+  122:0    [5] .green-glow
+  128:0    [5] .red-glow
+  134:0    [5] .yellow-glow
+input 423
+  html 17 21
+  head 34 38
+  meta 45 49
+  title 72 77
+  title 91 96
+  link 103 107
+  head 162 166
+  body 170 174
+  img 205 208
+  img 260 263
+  div 328 331
+  p 354 355
+  p 403 404
+  div 415 418
+input is a "id"
+style.css has 27 symbols
+  2:0    [5] *
+  6:4    [5] font-family
+  9:0    [5] body
+  19:0    [5] .body
+  23:0    [5] .red-bg
+  27:0    [5] #crt-overlay
+  37:0    [5] #black
+  46:0    [5] #screen
+  50:0    [5] #screen p
+  57:0    [5] #screen span
+  61:0    [5] .user-input
+  72:0    [5] #input
+  76:0    [5] .music-player
+  84:0    [5] #music-name
+  84:0    [5] #music-time
+  84:0    [5] #music-playback
+  88:0    [5] .red-text
+  92:0    [5] ::selection
+  97:0    [5] .noScrollbar
+  102:0    [5] .noScrollbar::-webkit-scrollbar
+  107:0    [5] .break-words
+  118:0    [5] @keyframes fadeOut
+  123:0    [5] @keyframes fadeOut
+  128:0    [5] .fadeOut
+  136:0    [5] @keyframes horizontalScroll
+  142:0    [5] @keyframes horizontalScroll
+  148:0    [5] .horizontalScroll
+style.css has 20 symbols
+  2:0    [5] *
+  9:0    [5] body
+  13:0    [5] header
+  18:0    [5] header > h1
+  23:0    [5] .scoreboard
+  38:0    [5] .badge
+  46:0    [5] #user-label
+  54:0    [5] #comp-label
+  62:0    [5] .result
+  69:0    [5] .choices
+  76:0    [5] .choice
+  80:0    [5] .image
+  88:0    [5] .choice span
+  101:0    [5] .choice:hover
+  105:0    [5] .choice:hover img
+  109:0    [5] .choice:hover .choice-label
+  113:0    [5] #action-message
+  122:0    [5] .green-glow
+  128:0    [5] .red-glow
+  134:0    [5] .yellow-glow
+history 360
+  html 17 21
+  head 34 38
+  meta 45 49
+  title 72 77
+  title 91 96
+  link 103 107
+  head 162 166
+  body 170 174
+  img 205 208
+  img 260 263
+  div 328 331
+  p 354 355
+history is a "id"
+style.css has 27 symbols
+  2:0    [5] *
+  6:4    [5] font-family
+  9:0    [5] body
+  19:0    [5] .body
+  23:0    [5] .red-bg
+  27:0    [5] #crt-overlay
+  37:0    [5] #black
+  46:0    [5] #screen
+  50:0    [5] #screen p
+  57:0    [5] #screen span
+  61:0    [5] .user-input
+  72:0    [5] #input
+  76:0    [5] .music-player
+  84:0    [5] #music-name
+  84:0    [5] #music-time
+  84:0    [5] #music-playback
+  88:0    [5] .red-text
+  92:0    [5] ::selection
+  97:0    [5] .noScrollbar
+  102:0    [5] .noScrollbar::-webkit-scrollbar
+  107:0    [5] .break-words
+  118:0    [5] @keyframes fadeOut
+  123:0    [5] @keyframes fadeOut
+  128:0    [5] .fadeOut
+  136:0    [5] @keyframes horizontalScroll
+  142:0    [5] @keyframes horizontalScroll
+  148:0    [5] .horizontalScroll
+style.css has 20 symbols
+  2:0    [5] *
+  9:0    [5] body
+  13:0    [5] header
+  18:0    [5] header > h1
+  23:0    [5] .scoreboard
+  38:0    [5] .badge
+  46:0    [5] #user-label
+  54:0    [5] #comp-label
+  62:0    [5] .result
+  69:0    [5] .choices
+  76:0    [5] .choice
+  80:0    [5] .image
+  88:0    [5] .choice span
+  101:0    [5] .choice:hover
+  105:0    [5] .choice:hover img
+  109:0    [5] .choice:hover .choice-label
+  113:0    [5] #action-message
+  122:0    [5] .green-glow
+  128:0    [5] .red-glow
+  134:0    [5] .yellow-glow
+class= 369
+  html 17 21
+  head 34 38
+  meta 45 49
+  title 72 77
+  title 91 96
+  link 103 107
+  head 162 166
+  body 170 174
+  img 205 208
+  img 260 263
+  div 328 331
+  p 354 355
+  p 403 404
+  div 415 418
+  span 431 435
+  span 440 444
+  input 446 451
+  input 527 532
+  div 535 538
+  div 546 549
+  div 556 559
+  span 570 574
+  p 597 598
+  p 623 624
+  p 627 628
+  p 647 648
+  p 651 652
+  p 671 672
+  span 675 679
+  div 687 690
+  script 697 703
+  script 777 783
+  script 790 796
+  script 835 841
+  body 845 849
+  html 853 857
+Invalid Selector
+noScrollbar 376
+  html 17 21
+  head 34 38
+  meta 45 49
+  title 72 77
+  title 91 96
+  link 103 107
+  head 162 166
+  body 170 174
+  img 205 208
+  img 260 263
+  div 328 331
+  p 354 355
+noScrollbar is a "class"
+style.css has 27 symbols
+  2:0    [5] *
+  6:4    [5] font-family
+  9:0    [5] body
+  19:0    [5] .body
+  23:0    [5] .red-bg
+  27:0    [5] #crt-overlay
+  37:0    [5] #black
+  46:0    [5] #screen
+  50:0    [5] #screen p
+  57:0    [5] #screen span
+  61:0    [5] .user-input
+  72:0    [5] #input
+  76:0    [5] .music-player
+  84:0    [5] #music-name
+  84:0    [5] #music-time
+  84:0    [5] #music-playback
+  88:0    [5] .red-text
+  92:0    [5] ::selection
+  97:0    [5] .noScrollbar
+  102:0    [5] .noScrollbar::-webkit-scrollbar
+  107:0    [5] .break-words
+  118:0    [5] @keyframes fadeOut
+  123:0    [5] @keyframes fadeOut
+  128:0    [5] .fadeOut
+  136:0    [5] @keyframes horizontalScroll
+  142:0    [5] @keyframes horizontalScroll
+  148:0    [5] .horizontalScroll
+style.css has 20 symbols
+  2:0    [5] *
+  9:0    [5] body
+  13:0    [5] header
+  18:0    [5] header > h1
+  23:0    [5] .scoreboard
+  38:0    [5] .badge
+  46:0    [5] #user-label
+  54:0    [5] #comp-label
+  62:0    [5] .result
+  69:0    [5] .choices
+  76:0    [5] .choice
+  80:0    [5] .image
+  88:0    [5] .choice span
+  101:0    [5] .choice:hover
+  105:0    [5] .choice:hover img
+  109:0    [5] .choice:hover .choice-label
+  113:0    [5] #action-message
+  122:0    [5] .green-glow
+  128:0    [5] .red-glow
+  134:0    [5] .yellow-glow
+break-words 388
+  html 17 21
+  head 34 38
+  meta 45 49
+  title 72 77
+  title 91 96
+  link 103 107
+  head 162 166
+  body 170 174
+  img 205 208
+  img 260 263
+  div 328 331
+  p 354 355
+break-words is a "class"
+style.css has 27 symbols
+  2:0    [5] *
+  6:4    [5] font-family
+  9:0    [5] body
+  19:0    [5] .body
+  23:0    [5] .red-bg
+  27:0    [5] #crt-overlay
+  37:0    [5] #black
+  46:0    [5] #screen
+  50:0    [5] #screen p
+  57:0    [5] #screen span
+  61:0    [5] .user-input
+  72:0    [5] #input
+  76:0    [5] .music-player
+  84:0    [5] #music-name
+  84:0    [5] #music-time
+  84:0    [5] #music-playback
+  88:0    [5] .red-text
+  92:0    [5] ::selection
+  97:0    [5] .noScrollbar
+  102:0    [5] .noScrollbar::-webkit-scrollbar
+  107:0    [5] .break-words
+  118:0    [5] @keyframes fadeOut
+  123:0    [5] @keyframes fadeOut
+  128:0    [5] .fadeOut
+  136:0    [5] @keyframes horizontalScroll
+  142:0    [5] @keyframes horizontalScroll
+  148:0    [5] .horizontalScroll
+style.css has 20 symbols
+  2:0    [5] *
+  9:0    [5] body
+  13:0    [5] header
+  18:0    [5] header > h1
+  23:0    [5] .scoreboard
+  38:0    [5] .badge
+  46:0    [5] #user-label
+  54:0    [5] #comp-label
+  62:0    [5] .result
+  69:0    [5] .choices
+  76:0    [5] .choice
+  80:0    [5] .image
+  88:0    [5] .choice span
+  101:0    [5] .choice:hover
+  105:0    [5] .choice:hover img
+  109:0    [5] .choice:hover .choice-label
+  113:0    [5] #action-message
+  122:0    [5] .green-glow
+  128:0    [5] .red-glow
+  134:0    [5] .yellow-glow
+input 446
+  html 17 21
+  head 34 38
+  meta 45 49
+  title 72 77
+  title 91 96
+  link 103 107
+  head 162 166
+  body 170 174
+  img 205 208
+  img 260 263
+  div 328 331
+  p 354 355
+  p 403 404
+  div 415 418
+  span 431 435
+  span 440 444
+  input 446 451
+input is a "html tag"
+style.css has 27 symbols
+  2:0    [5] *
+  6:4    [5] font-family
+  9:0    [5] body
+  19:0    [5] .body
+  23:0    [5] .red-bg
+  27:0    [5] #crt-overlay
+  37:0    [5] #black
+  46:0    [5] #screen
+  50:0    [5] #screen p
+  57:0    [5] #screen span
+  61:0    [5] .user-input
+  72:0    [5] #input
+  76:0    [5] .music-player
+  84:0    [5] #music-name
+  84:0    [5] #music-time
+  84:0    [5] #music-playback
+  88:0    [5] .red-text
+  92:0    [5] ::selection
+  97:0    [5] .noScrollbar
+  102:0    [5] .noScrollbar::-webkit-scrollbar
+  107:0    [5] .break-words
+  118:0    [5] @keyframes fadeOut
+  123:0    [5] @keyframes fadeOut
+  128:0    [5] .fadeOut
+  136:0    [5] @keyframes horizontalScroll
+  142:0    [5] @keyframes horizontalScroll
+  148:0    [5] .horizontalScroll
+style.css has 20 symbols
+  2:0    [5] *
+  9:0    [5] body
+  13:0    [5] header
+  18:0    [5] header > h1
+  23:0    [5] .scoreboard
+  38:0    [5] .badge
+  46:0    [5] #user-label
+  54:0    [5] #comp-label
+  62:0    [5] .result
+  69:0    [5] .choices
+  76:0    [5] .choice
+  80:0    [5] .image
+  88:0    [5] .choice span
+  101:0    [5] .choice:hover
+  105:0    [5] .choice:hover img
+  109:0    [5] .choice:hover .choice-label
+  113:0    [5] #action-message
+  122:0    [5] .green-glow
+  128:0    [5] .red-glow
+  134:0    [5] .yellow-glow

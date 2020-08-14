@@ -1,5 +1,0 @@
-{
-	"terminal": "urxvt",
-	"parameters": ["-geometry", "50x20-50+150","-name","floatterm"]
-
-}

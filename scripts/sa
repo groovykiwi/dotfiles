@@ -2,7 +2,7 @@
 
 script_file="$HOME/scripts/$1"
 file_type=$2
-
+editor="code"
 [ -z $2 ] && echo "Usage: $0 <name> <script-type>" && exit
 
 if [ -e $script_file ]; then
@@ -13,7 +13,7 @@ elif [ "$2" == "bash" ]; then
 	printf "Open the script in Sublime? "
 	read answer
 	if [ "$answer" == "y" ]; then
-		subl $script_file
+		$editor $script_file
 		wmctrl -s 2
 	fi
 elif [ "$2" == "python" ]; then
@@ -22,7 +22,7 @@ elif [ "$2" == "python" ]; then
 	printf "Open the script in Sublime? "
 	read answer
 	if [ "$answer" == "y" ]; then
-		subl $script_file
+		$editor $script_file
 		wmctrl -s 2
 	fi
 fi

@@ -1,0 +1,284 @@
+["INFO" - 12:37:27 PM] Extension Name: esbenp.prettier-vscode.
+["INFO" - 12:37:27 PM] Extension Version: 5.1.3.
+["INFO" - 12:37:27 PM] Enabling prettier for languages
+[
+  "css",
+  "graphql",
+  "html",
+  "javascript",
+  "javascriptreact",
+  "json",
+  "json5",
+  "jsonc",
+  "less",
+  "markdown",
+  "mdx",
+  "mongo",
+  "postcss",
+  "scss",
+  "typescript",
+  "typescriptreact",
+  "vue",
+  "yaml"
+]
+["INFO" - 12:37:27 PM] Enabling prettier for range supported languages
+[
+  "graphql",
+  "javascript",
+  "javascriptreact",
+  "json",
+  "typescript",
+  "typescriptreact"
+]
+["INFO" - 12:41:37 PM] Formatting /home/nate/projects/aiterminal/index.html
+["INFO" - 12:41:37 PM] Using ignore file (if present) at /home/nate/projects/.prettierignore
+["INFO" - 12:41:37 PM] Using bundled version of prettier.
+["INFO" - 12:41:37 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "html"
+}
+["INFO" - 12:41:37 PM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 12:41:37 PM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/nate/projects/aiterminal/index.html",
+  "parser": "html"
+}
+["ERROR" - 12:41:37 PM] Error formatting document.
+["ERROR" - 12:41:37 PM] Void elements do not have end tags "input" (16:120)
+  14 |     <div id="screen">
+  15 |         <p id="history" class="noScrollbar break-words"></p>
+> 16 |         <div id="input"><span>$ </span><input maxlength="60"  id="user-input" class="user-input" type="text" autofocus></input></div>
+     |                                                                                                                        ^
+  17 |     </div>
+  18 |     <div>
+  19 |         <span class="music-player"><p id="music-playback">♪ </p> <p id="music-name"></p> <p id="music-time"></p></span>
+SyntaxError: Void elements do not have end tags "input" (16:120)
+  14 |     <div id="screen">
+  15 |         <p id="history" class="noScrollbar break-words"></p>
+> 16 |         <div id="input"><span>$ </span><input maxlength="60"  id="user-input" class="user-input" type="text" autofocus></input></div>
+     |                                                                                                                        ^
+  17 |     </div>
+  18 |     <div>
+  19 |         <span class="music-player"><p id="music-playback">♪ </p> <p id="music-name"></p> <p id="music-time"></p></span>
+	at ct (/home/nate/.vscode-oss/extensions/esbenp.prettier-vscode-5.1.3/node_modules/prettier/parser-html.js:1:16656)
+	at It (/home/nate/.vscode-oss/extensions/esbenp.prettier-vscode-5.1.3/node_modules/prettier/parser-html.js:113:1296)
+	at e (/home/nate/.vscode-oss/extensions/esbenp.prettier-vscode-5.1.3/node_modules/prettier/parser-html.js:113:3247)
+	at Object.parse (/home/nate/.vscode-oss/extensions/esbenp.prettier-vscode-5.1.3/node_modules/prettier/parser-html.js:113:3724)
+	at Object.parse (/home/nate/.vscode-oss/extensions/esbenp.prettier-vscode-5.1.3/node_modules/prettier/index.js:11370:19)
+	at coreFormat (/home/nate/.vscode-oss/extensions/esbenp.prettier-vscode-5.1.3/node_modules/prettier/index.js:14784:25)
+	at format (/home/nate/.vscode-oss/extensions/esbenp.prettier-vscode-5.1.3/node_modules/prettier/index.js:15019:75)
+	at formatWithCursor (/home/nate/.vscode-oss/extensions/esbenp.prettier-vscode-5.1.3/node_modules/prettier/index.js:15035:12)
+	at /home/nate/.vscode-oss/extensions/esbenp.prettier-vscode-5.1.3/node_modules/prettier/index.js:51620:12
+	at Object.format (/home/nate/.vscode-oss/extensions/esbenp.prettier-vscode-5.1.3/node_modules/prettier/index.js:51640:12)
+	at t.default.<anonymous> (/home/nate/.vscode-oss/extensions/esbenp.prettier-vscode-5.1.3/dist/extension.js:1:58387)
+	at Generator.next (<anonymous>)
+	at s (/home/nate/.vscode-oss/extensions/esbenp.prettier-vscode-5.1.3/dist/extension.js:1:53305)
+["INFO" - 12:41:37 PM] Formatting completed in 48.757241ms.
+["INFO" - 12:45:00 PM] Formatting /home/nate/projects/aiterminal/style.css
+["INFO" - 12:45:00 PM] Using ignore file (if present) at /home/nate/projects/.prettierignore
+["INFO" - 12:45:00 PM] Using bundled version of prettier.
+["INFO" - 12:45:00 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "css"
+}
+["INFO" - 12:45:00 PM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 12:45:00 PM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/nate/projects/aiterminal/style.css",
+  "parser": "css"
+}
+["INFO" - 12:45:00 PM] Formatting completed in 73.778681ms.
+["INFO" - 12:45:02 PM] Formatting /home/nate/projects/aiterminal/app.js
+["INFO" - 12:45:02 PM] Using ignore file (if present) at /home/nate/projects/.prettierignore
+["INFO" - 12:45:02 PM] Using bundled version of prettier.
+["INFO" - 12:45:02 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 12:45:02 PM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 12:45:02 PM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/nate/projects/aiterminal/app.js",
+  "parser": "babel"
+}
+["INFO" - 12:45:02 PM] Formatting completed in 174.740255ms.
+["INFO" - 12:45:09 PM] Formatting /home/nate/projects/aiterminal/index.html
+["INFO" - 12:45:09 PM] Using ignore file (if present) at /home/nate/projects/.prettierignore
+["INFO" - 12:45:09 PM] Using bundled version of prettier.
+["INFO" - 12:45:09 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "html"
+}
+["INFO" - 12:45:09 PM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 12:45:09 PM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/nate/projects/aiterminal/index.html",
+  "parser": "html"
+}
+["ERROR" - 12:45:09 PM] Error formatting document.
+["ERROR" - 12:45:09 PM] Void elements do not have end tags "input" (16:120)
+  14 |     <div id="screen">
+  15 |         <p id="history" class="noScrollbar break-words"></p>
+> 16 |         <div id="input"><span>$ </span><input maxlength="60"  id="user-input" class="user-input" type="text" autofocus></input></div>
+     |                                                                                                                        ^
+  17 |     </div>
+  18 |     <div>
+  19 |         <span class="music-player"><p id="music-playback">♪ </p> <p id="music-name"></p> <p id="music-time"></p></span>
+SyntaxError: Void elements do not have end tags "input" (16:120)
+  14 |     <div id="screen">
+  15 |         <p id="history" class="noScrollbar break-words"></p>
+> 16 |         <div id="input"><span>$ </span><input maxlength="60"  id="user-input" class="user-input" type="text" autofocus></input></div>
+     |                                                                                                                        ^
+  17 |     </div>
+  18 |     <div>
+  19 |         <span class="music-player"><p id="music-playback">♪ </p> <p id="music-name"></p> <p id="music-time"></p></span>
+	at ct (/home/nate/.vscode-oss/extensions/esbenp.prettier-vscode-5.1.3/node_modules/prettier/parser-html.js:1:16656)
+	at It (/home/nate/.vscode-oss/extensions/esbenp.prettier-vscode-5.1.3/node_modules/prettier/parser-html.js:113:1296)
+	at e (/home/nate/.vscode-oss/extensions/esbenp.prettier-vscode-5.1.3/node_modules/prettier/parser-html.js:113:3247)
+	at Object.parse (/home/nate/.vscode-oss/extensions/esbenp.prettier-vscode-5.1.3/node_modules/prettier/parser-html.js:113:3724)
+	at Object.parse (/home/nate/.vscode-oss/extensions/esbenp.prettier-vscode-5.1.3/node_modules/prettier/index.js:11370:19)
+	at coreFormat (/home/nate/.vscode-oss/extensions/esbenp.prettier-vscode-5.1.3/node_modules/prettier/index.js:14784:25)
+	at format (/home/nate/.vscode-oss/extensions/esbenp.prettier-vscode-5.1.3/node_modules/prettier/index.js:15019:75)
+	at formatWithCursor (/home/nate/.vscode-oss/extensions/esbenp.prettier-vscode-5.1.3/node_modules/prettier/index.js:15035:12)
+	at /home/nate/.vscode-oss/extensions/esbenp.prettier-vscode-5.1.3/node_modules/prettier/index.js:51620:12
+	at Object.format (/home/nate/.vscode-oss/extensions/esbenp.prettier-vscode-5.1.3/node_modules/prettier/index.js:51640:12)
+	at t.default.<anonymous> (/home/nate/.vscode-oss/extensions/esbenp.prettier-vscode-5.1.3/dist/extension.js:1:58387)
+	at Generator.next (<anonymous>)
+	at s (/home/nate/.vscode-oss/extensions/esbenp.prettier-vscode-5.1.3/dist/extension.js:1:53305)
+["INFO" - 12:45:09 PM] Formatting completed in 83.92008ms.
+["INFO" - 1:14:25 PM] Formatting /home/nate/projects/aiterminal/app.js
+["INFO" - 1:14:25 PM] Using ignore file (if present) at /home/nate/projects/.prettierignore
+["INFO" - 1:14:25 PM] Using bundled version of prettier.
+["INFO" - 1:14:25 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 1:14:25 PM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 1:14:25 PM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/nate/projects/aiterminal/app.js",
+  "parser": "babel"
+}
+["INFO" - 1:14:25 PM] Formatting completed in 158.920732ms.
+["INFO" - 1:14:42 PM] Formatting /home/nate/projects/aiterminal/app.js
+["INFO" - 1:14:42 PM] Using ignore file (if present) at /home/nate/projects/.prettierignore
+["INFO" - 1:14:42 PM] Using bundled version of prettier.
+["INFO" - 1:14:42 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 1:14:42 PM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 1:14:42 PM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/nate/projects/aiterminal/app.js",
+  "parser": "babel"
+}
+["INFO" - 1:14:42 PM] Formatting completed in 172.527953ms.

@@ -34,7 +34,7 @@ else
 
  	# Official Arch repo packages
  	echo "[.] Installing packages"
- 	sudo pacman -S --needed sublime-text gufw xfce4-clipman-plugin xfce4-screenshooter youtube-dl timeshift pavucontrol thunar libratbag curlgnome-disk-utility baobab python cmatrix xcb-util-xrm tumbler python-pywal imagemagick feh slop neofetch firefox pulseaudio rofi playerctl wmctrl xfce4-power-manager polybar redshift fzy trash-cli hidapi g810-led-git xorg-fonts-alias-misc ueberzug pulseaudio-equalizer protonvpn-linux-gui dpkg discord asciidoc betterdiscordctl-git python-scipy colorz python-colorthief
+ 	sudo pacman -S --neededgufw xfce4-clipman-plugin xfce4-screenshooter youtube-dl timeshift pavucontrol thunar libratbag curlgnome-disk-utility baobab python cmatrix xcb-util-xrm tumbler python-pywal imagemagick feh slop neofetch firefox pulseaudio rofi playerctl wmctrl xfce4-power-manager polybar redshift fzy trash-cli hidapi g810-led-git xorg-fonts-alias-misc ueberzug pulseaudio-equalizer protonvpn-linux-guianydesk-bin audacity code
 	
 	# Copies st to ~/ and installs it
 	echo "[.] Installing Suckless Terminal"
@@ -47,7 +47,7 @@ else
 
 	# AUR packages (long compiling)
 	echo "[.] Installing AUR packages"
-	aurlist=(picom-ibhagwan-git mimi-git ytop progress-git spicetify-cli cava expressvpn spotify espanso oomox scrcpy
+	aurlist=(picom-ibhagwan-git mimi-git ytopspicetify-cli cavaspotify espanso oomox scrcpy
 	)
 	tobeinstalled=""
 

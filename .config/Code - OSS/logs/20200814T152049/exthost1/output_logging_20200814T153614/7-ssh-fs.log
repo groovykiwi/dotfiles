@@ -1,0 +1,71 @@
+[INFO]    Created output channel for vscode-sshfs
+[INFO]    Loading configurations...
+[INFO]    Found 0 configurations
+[INFO]    Extension activated, version 1.18.2
+[INFO]    Loading configurations...
+[INFO]    Loading configurations...
+[INFO]    Saving config houlamy.com to 1
+[DEBUG]   	Config location '1' has following configs: 
+[DEBUG]   	Adding the new config to the existing configs
+[INFO]    Loading configurations...
+[DEBUG]   	Updated configs in Global settings.json
+[DEBUG]   	Added configuration houlamy.com from 1
+[INFO]    Found 1 configurations
+[INFO]    Saving config houlamy.com to 1
+[DEBUG]   	Config location '1' has following configs: houlamy.com
+[DEBUG]   	Overwriting config 'houlamy.com' at index 0 with the new config
+[INFO]    Loading configurations...
+[DEBUG]   	Updated configs in Global settings.json
+[DEBUG]   	Added configuration houlamy.com from 1
+[INFO]    Found 1 configurations
+[INFO]    Loading configurations...
+[INFO]    Loading configurations...
+[DEBUG]   	Added configuration houlamy.com from 1
+[INFO]    Found 1 configurations
+[INFO]    Command received to connect houlamy.com
+[INFO]    [createConnection(houlamy.com,config)] Creating a new connection for 'houlamy.com'
+[INFO]    Calculating actual config
+[DEBUG]   	Read private key from /home/nate/.ssh/id_rsa
+[DEBUG]   	Final configuration:
+{
+    "host": "houlamy.com",
+    "label": "Houlamy Vultr",
+    "name": "houlamy.com",
+    "port": 22,
+    "privateKeyPath": "/home/nate/.ssh/id_rsa",
+    "username": "root",
+    "_location": 1,
+    "_locations": [
+        1
+    ],
+    "_calculated": {
+        "host": "houlamy.com",
+        "label": "Houlamy Vultr",
+        "name": "houlamy.com",
+        "port": 22,
+        "privateKeyPath": "/home/nate/.ssh/id_rsa",
+        "username": "root",
+        "_location": 1,
+        "_locations": [
+            1
+        ]
+    },
+    "privateKey": "Buffer(2602)"
+}
+[INFO]    [createSocket(houlamy.com)] Creating socket
+[DEBUG]   [createSocket(houlamy.com)] Connecting to houlamy.com:22
+[INFO]    [createSSH(houlamy.com)] Creating SSH session over the opened socket
+[INFO]    [getSFTP(houlamy.com)] Creating SFTP session using standard sftp subsystem
+[INFO]    Created SSHFileSystem for houlamy.com, reading root directory...
+[DEBUG]   Reading ssh://houlamy.com/.vscode/settings.json
+[DEBUG]   Reading ssh://houlamy.com/.vscode/tasks.json
+[DEBUG]   Reading ssh://houlamy.com/.vscode/launch.json
+[DEBUG]   Reading ssh://houlamy.com/.vscode/settings.json
+[DEBUG]   Reading ssh://houlamy.com/.vscode/tasks.json
+[DEBUG]   Reading ssh://houlamy.com/.vscode/launch.json
+[DEBUG]   Reading ssh://houlamy.com/.vscode/extensions.json
+[INFO]    Loading configurations...
+[DEBUG]   	Added configuration houlamy.com from 1
+[INFO]    Found 1 configurations
+[INFO]    Command received to disconnect houlamy.com
+[INFO]    Command received to disconnect houlamy.com

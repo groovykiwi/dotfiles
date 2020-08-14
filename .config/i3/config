@@ -136,13 +136,13 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 #   
 
 # Software
-exec --no-startup-id redshift
+exec --no-startup-id redshift-gtk
 exec --no-startup-id polybar -r top
 exec  $HOME/scripts/termlayout 
-exec firefox
-exec subl
+exec i3-msg "workspace $ws2; exec firefox; workspace $ws1"
+exec code
 exec spotify
-exec i3-msg "workspace 4: ; exec Thunar; workspace 1: "
+exec i3-msg "workspace $ws4; exec Thunar; workspace $ws1"
 exec --no-startup-id espanso restart
 exec --no-startup-id /usr/lib/kdeconnectd
 exec --no-startup-id kdeconnect-indicator
@@ -181,7 +181,7 @@ client.unfocused        $bg     $bg        $fg   $bg
 client.urgent           $bg     $bg        $fg   $bg       
 
 
-focus_on_window_activation urgent
+focus_on_window_activation focus #urgent
 
 # Remove borders for all window (to move floating use $mod+mouse)
 for_window [class="^.*"] border pixel 0
@@ -203,10 +203,14 @@ for_window [instance="qpaeq"] floating enable border normal
 
 
 # Assign windows to Workspaces
-assign [class="Brave-browser"] $ws2
-assign [class="firefox"] $ws2
+
+#assign [class="Brave-browser"] $ws2
+#assign [class="firefox"] $ws2
+
 assign [class="Sublime"] $ws3
+assign [class="code-oss"] $ws3
 assign [class="Transmission-gtk"] $ws8
+assign [class="discord"] $ws9
 assign [class="Steam"] $ws9
 
 for_window [class="Spotify"] move to workspace $ws10

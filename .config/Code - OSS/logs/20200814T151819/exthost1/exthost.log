@@ -1,0 +1,109 @@
+[2020-08-14 15:18:21.931] [exthost] [info] extension host started
+[2020-08-14 15:18:21.976] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2020-08-14 15:18:21.976] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/debug-auto-launch/dist/extension
+[2020-08-14 15:18:21.978] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"*"}
+[2020-08-14 15:18:21.978] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/emmet/dist/extension
+[2020-08-14 15:18:21.988] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2020-08-14 15:18:21.988] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/git/dist/main
+[2020-08-14 15:18:22.002] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication {"startup":true,"extensionId":{"value":"vscode.github-authentication","_lower":"vscode.github-authentication"},"activationEvent":"*"}
+[2020-08-14 15:18:22.002] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/github-authentication/dist/extension.js
+[2020-08-14 15:18:22.007] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"*"}
+[2020-08-14 15:18:22.007] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/merge-conflict/dist/mergeConflictMain
+[2020-08-14 15:18:22.009] [exthost] [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication {"startup":true,"extensionId":{"value":"vscode.microsoft-authentication","_lower":"vscode.microsoft-authentication"},"activationEvent":"*"}
+[2020-08-14 15:18:22.009] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/microsoft-authentication/dist/extension.js
+[2020-08-14 15:18:22.012] [exthost] [info] ExtensionService#_doActivateExtension vscode.search-result {"startup":true,"extensionId":{"value":"vscode.search-result","_lower":"vscode.search-result"},"activationEvent":"*"}
+[2020-08-14 15:18:22.012] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/search-result/dist/extension.js
+[2020-08-14 15:18:22.013] [exthost] [info] ExtensionService#_doActivateExtension CoenraadS.bracket-pair-colorizer-2 {"startup":true,"extensionId":{"value":"CoenraadS.bracket-pair-colorizer-2","_lower":"coenraads.bracket-pair-colorizer-2"},"activationEvent":"*"}
+[2020-08-14 15:18:22.013] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/nate/.vscode-oss/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/extension
+[2020-08-14 15:18:22.023] [exthost] [info] ExtensionService#_doActivateExtension Equinusocio.vsc-material-theme {"startup":true,"extensionId":{"value":"Equinusocio.vsc-material-theme","_lower":"equinusocio.vsc-material-theme"},"activationEvent":"*"}
+[2020-08-14 15:18:22.023] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/nate/.vscode-oss/extensions/equinusocio.vsc-material-theme-32.8.0/build/material.theme.config
+[2020-08-14 15:18:22.030] [exthost] [info] ExtensionService#_doActivateExtension equinusocio.vsc-material-theme-icons {"startup":true,"extensionId":{"value":"equinusocio.vsc-material-theme-icons","_lower":"equinusocio.vsc-material-theme-icons"},"activationEvent":"*"}
+[2020-08-14 15:18:22.030] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/nate/.vscode-oss/extensions/equinusocio.vsc-material-theme-icons-1.2.0/out/src/extension
+[2020-08-14 15:18:22.038] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode {"startup":true,"extensionId":{"value":"esbenp.prettier-vscode","_lower":"esbenp.prettier-vscode"},"activationEvent":"*"}
+[2020-08-14 15:18:22.038] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/nate/.vscode-oss/extensions/esbenp.prettier-vscode-5.1.3/dist/extension
+[2020-08-14 15:18:22.089] [exthost] [info] ExtensionService#_doActivateExtension PKief.material-icon-theme {"startup":true,"extensionId":{"value":"PKief.material-icon-theme","_lower":"pkief.material-icon-theme"},"activationEvent":"*"}
+[2020-08-14 15:18:22.089] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/nate/.vscode-oss/extensions/pkief.material-icon-theme-4.2.0/dist/extension
+[2020-08-14 15:18:22.094] [exthost] [info] ExtensionService#_doActivateExtension pranaygp.vscode-css-peek {"startup":true,"extensionId":{"value":"pranaygp.vscode-css-peek","_lower":"pranaygp.vscode-css-peek"},"activationEvent":"*"}
+[2020-08-14 15:18:22.094] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/nate/.vscode-oss/extensions/pranaygp.vscode-css-peek-4.0.0/client/out/extension
+[2020-08-14 15:18:22.120] [exthost] [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer {"startup":true,"extensionId":{"value":"ritwickdey.LiveServer","_lower":"ritwickdey.liveserver"},"activationEvent":"*"}
+[2020-08-14 15:18:22.120] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/nate/.vscode-oss/extensions/ritwickdey.liveserver-5.6.1/out/src/extension
+[2020-08-14 15:18:22.340] [exthost] [info] ExtensionService#_doActivateExtension RobbOwen.synthwave-vscode {"startup":true,"extensionId":{"value":"RobbOwen.synthwave-vscode","_lower":"robbowen.synthwave-vscode"},"activationEvent":"*"}
+[2020-08-14 15:18:22.341] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/nate/.vscode-oss/extensions/robbowen.synthwave-vscode-0.1.6/src/extension.js
+[2020-08-14 15:18:22.621] [exthost] [info] ExtensionService#_doActivateExtension vscode.github {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2020-08-14 15:18:22.621] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/github/dist/extension.js
+[2020-08-14 15:18:22.647] [exthost] [info] eager extensions activated
+[2020-08-14 15:18:25.228] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-ssh {"startup":false,"extensionId":{"value":"ms-vscode-remote.remote-ssh","_lower":"ms-vscode-remote.remote-ssh"},"activationEvent":"onCommand:opensshremotes.settings"}
+[2020-08-14 15:18:25.228] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/nate/.vscode-oss/extensions/ms-vscode-remote.remote-ssh-0.51.0/out/extension
+[2020-08-14 15:18:25.301] [exthost] [error] Activating extension ms-vscode-remote.remote-ssh failed due to an error:
+[2020-08-14 15:18:25.305] [exthost] [error] Error: [ms-vscode-remote.remote-ssh]: Proposed API is only available when running out of dev or with the following command line switch: --enable-proposed-api ms-vscode-remote.remote-ssh
+	at a (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:594:75)
+	at Object.t.checkProposedApiEnabled (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:594:437)
+	at Object.registerRemoteAuthorityResolver (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:922:143)
+	at t.activate (/home/nate/.vscode-oss/extensions/ms-vscode-remote.remote-ssh-0.51.0/out/extension.js:127:146365)
+	at Function._callActivateOptional (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:837:509)
+	at Function._callActivate (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:837:160)
+	at /usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:835:703
+	at async Promise.all (index 0)
+[2020-08-14 15:18:59.154] [exthost] [info] extension host started
+[2020-08-14 15:18:59.178] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2020-08-14 15:18:59.179] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/debug-auto-launch/dist/extension
+[2020-08-14 15:18:59.181] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"*"}
+[2020-08-14 15:18:59.181] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/emmet/dist/extension
+[2020-08-14 15:18:59.190] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2020-08-14 15:18:59.190] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/git/dist/main
+[2020-08-14 15:18:59.201] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication {"startup":true,"extensionId":{"value":"vscode.github-authentication","_lower":"vscode.github-authentication"},"activationEvent":"*"}
+[2020-08-14 15:18:59.201] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/github-authentication/dist/extension.js
+[2020-08-14 15:18:59.205] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"*"}
+[2020-08-14 15:18:59.205] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/merge-conflict/dist/mergeConflictMain
+[2020-08-14 15:18:59.206] [exthost] [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication {"startup":true,"extensionId":{"value":"vscode.microsoft-authentication","_lower":"vscode.microsoft-authentication"},"activationEvent":"*"}
+[2020-08-14 15:18:59.206] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/microsoft-authentication/dist/extension.js
+[2020-08-14 15:18:59.209] [exthost] [info] ExtensionService#_doActivateExtension vscode.search-result {"startup":true,"extensionId":{"value":"vscode.search-result","_lower":"vscode.search-result"},"activationEvent":"*"}
+[2020-08-14 15:18:59.209] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/search-result/dist/extension.js
+[2020-08-14 15:18:59.209] [exthost] [info] ExtensionService#_doActivateExtension CoenraadS.bracket-pair-colorizer-2 {"startup":true,"extensionId":{"value":"CoenraadS.bracket-pair-colorizer-2","_lower":"coenraads.bracket-pair-colorizer-2"},"activationEvent":"*"}
+[2020-08-14 15:18:59.209] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/nate/.vscode-oss/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/extension
+[2020-08-14 15:18:59.220] [exthost] [info] ExtensionService#_doActivateExtension Equinusocio.vsc-material-theme {"startup":true,"extensionId":{"value":"Equinusocio.vsc-material-theme","_lower":"equinusocio.vsc-material-theme"},"activationEvent":"*"}
+[2020-08-14 15:18:59.220] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/nate/.vscode-oss/extensions/equinusocio.vsc-material-theme-32.8.0/build/material.theme.config
+[2020-08-14 15:18:59.225] [exthost] [info] ExtensionService#_doActivateExtension equinusocio.vsc-material-theme-icons {"startup":true,"extensionId":{"value":"equinusocio.vsc-material-theme-icons","_lower":"equinusocio.vsc-material-theme-icons"},"activationEvent":"*"}
+[2020-08-14 15:18:59.225] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/nate/.vscode-oss/extensions/equinusocio.vsc-material-theme-icons-1.2.0/out/src/extension
+[2020-08-14 15:18:59.232] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode {"startup":true,"extensionId":{"value":"esbenp.prettier-vscode","_lower":"esbenp.prettier-vscode"},"activationEvent":"*"}
+[2020-08-14 15:18:59.232] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/nate/.vscode-oss/extensions/esbenp.prettier-vscode-5.1.3/dist/extension
+[2020-08-14 15:18:59.289] [exthost] [info] ExtensionService#_doActivateExtension PKief.material-icon-theme {"startup":true,"extensionId":{"value":"PKief.material-icon-theme","_lower":"pkief.material-icon-theme"},"activationEvent":"*"}
+[2020-08-14 15:18:59.289] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/nate/.vscode-oss/extensions/pkief.material-icon-theme-4.2.0/dist/extension
+[2020-08-14 15:18:59.296] [exthost] [info] ExtensionService#_doActivateExtension pranaygp.vscode-css-peek {"startup":true,"extensionId":{"value":"pranaygp.vscode-css-peek","_lower":"pranaygp.vscode-css-peek"},"activationEvent":"*"}
+[2020-08-14 15:18:59.296] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/nate/.vscode-oss/extensions/pranaygp.vscode-css-peek-4.0.0/client/out/extension
+[2020-08-14 15:18:59.323] [exthost] [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer {"startup":true,"extensionId":{"value":"ritwickdey.LiveServer","_lower":"ritwickdey.liveserver"},"activationEvent":"*"}
+[2020-08-14 15:18:59.323] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/nate/.vscode-oss/extensions/ritwickdey.liveserver-5.6.1/out/src/extension
+[2020-08-14 15:18:59.524] [exthost] [info] ExtensionService#_doActivateExtension RobbOwen.synthwave-vscode {"startup":true,"extensionId":{"value":"RobbOwen.synthwave-vscode","_lower":"robbowen.synthwave-vscode"},"activationEvent":"*"}
+[2020-08-14 15:18:59.524] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/nate/.vscode-oss/extensions/robbowen.synthwave-vscode-0.1.6/src/extension.js
+[2020-08-14 15:18:59.790] [exthost] [info] ExtensionService#_doActivateExtension vscode.github {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2020-08-14 15:18:59.790] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/github/dist/extension.js
+[2020-08-14 15:18:59.814] [exthost] [info] eager extensions activated
+[2020-08-14 15:19:11.406] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features {"startup":false,"extensionId":{"value":"vscode.typescript-language-features","_lower":"vscode.typescript-language-features"},"activationEvent":"onLanguage:javascript"}
+[2020-08-14 15:19:11.406] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/typescript-language-features/dist/extension
+[2020-08-14 15:19:11.416] [exthost] [info] ExtensionService#_doActivateExtension ecmel.vscode-html-css {"startup":false,"extensionId":{"value":"ecmel.vscode-html-css","_lower":"ecmel.vscode-html-css"},"activationEvent":"onLanguage:javascript"}
+[2020-08-14 15:19:11.416] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/nate/.vscode-oss/extensions/ecmel.vscode-html-css-0.2.3/dist/extension
+[2020-08-14 15:19:17.182] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-containers {"startup":false,"extensionId":{"value":"ms-vscode-remote.remote-containers","_lower":"ms-vscode-remote.remote-containers"},"activationEvent":"onStartupFinished"}
+[2020-08-14 15:19:17.182] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/nate/.vscode-oss/extensions/ms-vscode-remote.remote-containers-0.128.0/dist/extension
+[2020-08-14 15:19:17.259] [exthost] [error] Activating extension ms-vscode-remote.remote-containers failed due to an error:
+[2020-08-14 15:19:17.260] [exthost] [error] Error: [ms-vscode-remote.remote-containers]: Proposed API is only available when running out of dev or with the following command line switch: --enable-proposed-api ms-vscode-remote.remote-containers
+	at a (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:594:75)
+	at Object.t.checkProposedApiEnabled (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:594:437)
+	at Object.registerRemoteAuthorityResolver (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:922:143)
+	at t.activate (/home/nate/.vscode-oss/extensions/ms-vscode-remote.remote-containers-0.128.0/dist/extension.js:1:262176)
+	at Function._callActivateOptional (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:837:509)
+	at Function._callActivate (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:837:160)
+	at /usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:835:703
+	at async Promise.all (index 0)
+	at async h.$activate (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:843:297)
+[2020-08-14 15:19:23.705] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-ssh {"startup":false,"extensionId":{"value":"ms-vscode-remote.remote-ssh","_lower":"ms-vscode-remote.remote-ssh"},"activationEvent":"onCommand:opensshremotes.settings"}
+[2020-08-14 15:19:23.705] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/nate/.vscode-oss/extensions/ms-vscode-remote.remote-ssh-0.51.0/out/extension
+[2020-08-14 15:19:23.796] [exthost] [error] Activating extension ms-vscode-remote.remote-ssh failed due to an error:
+[2020-08-14 15:19:23.800] [exthost] [error] Error: [ms-vscode-remote.remote-ssh]: Proposed API is only available when running out of dev or with the following command line switch: --enable-proposed-api ms-vscode-remote.remote-ssh
+	at a (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:594:75)
+	at Object.t.checkProposedApiEnabled (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:594:437)
+	at Object.registerRemoteAuthorityResolver (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:922:143)
+	at t.activate (/home/nate/.vscode-oss/extensions/ms-vscode-remote.remote-ssh-0.51.0/out/extension.js:127:146365)
+	at Function._callActivateOptional (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:837:509)
+	at Function._callActivate (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:837:160)
+	at /usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:835:703
+	at async Promise.all (index 0)

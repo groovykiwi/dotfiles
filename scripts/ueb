@@ -6,3 +6,4 @@ source "`ueberzug library`"
     ImageLayer::add [identifier]="image" [path]="$1" [x]="$2" [y]="$3" [width]="$4" [scaler]="contain" 
     read
 } | ImageLayer
+clear

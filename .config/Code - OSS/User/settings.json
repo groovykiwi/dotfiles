@@ -1,0 +1,32 @@
+{
+  "editor.fontSize": 20,
+  "editor.fontFamily": "'Fira Code', monospace",
+  "editor.wordWrap": "on",
+  "workbench.colorTheme": "Material Theme Darker High Contrast",
+  "editor.tabSize": 2,
+  "workbench.iconTheme": "material-icon-theme",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.formatOnSave": true,
+  "prettier.singleQuote": true,
+  "editor.renameOnType": true,
+  "window.customMenuBarAltFocus": false,
+  "sshfs.configs": [
+    {
+      "host": "houlamy.com",
+      "label": "Vultr Websites",
+      "name": "vultr-web",
+      "port": 22,
+      "privateKeyPath": "/home/nate/.ssh/id_rsa",
+      "root": "/var/www",
+      "username": "root"
+    },
+    {
+      "host": "houlamy.com",
+      "label": "Vultr Configs",
+      "name": "vultr-configs",
+      "privateKeyPath": "/home/nate/.ssh/id_rsa",
+      "root": "/etc/nginx/",
+      "username": "root"
+    }
+  ]
+}

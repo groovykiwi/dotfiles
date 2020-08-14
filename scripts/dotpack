@@ -3,7 +3,11 @@ C1='\033[1;36m'
 NC='\033[0m'
 
 HOME="/home/nate"
-[ "$1" == "print" ] && cat $HOME/dotfiles/packages | sed -n 's/^\s\+//g; /sudo pacman -S\s.*$/ p' && echo "" && cat $HOME/dotfiles/packages | sed -n 's/^\s\+//g; /aurlist=(/ p' && exit
+
+[ -z $1 ] && echo -e  "\nUsage: $0 (list) (p/pamac) <package> (r/remove)\n" && exit
+
+[ "$1" == "list" ] && cat $HOME/dotfiles/packages | sed -n 's/^\s\+//g; /sudo pacman -S\s.*$/ p' && echo "" && cat $HOME/dotfiles/packages | sed -n 's/^\s\+//g; /aurlist=(/ p' && exit
+
 if [ "$1" == "pamac" ] || [ "$1" == "p" ];then
 	text=$(cat $HOME/dotfiles/packages | sed -n 's/^\s\+//g; /aurlist=(/ p')
 	line=$(cat $HOME/dotfiles/packages | sed -n 's/^\s\+//g; /aurlist=(/ =')
@@ -13,7 +17,7 @@ else
 	line=$(cat $HOME/dotfiles/packages | sed -n 's/^\s\+//g; /sudo pacman -S\s.*$/ =')
 fi
 
-[ -z $1 ] && echo -e  "\nUsage: $0 (p/pamac) <package> (r/remove)\n" && exit
+
 
 # For pacman.d hooks, uses the last install package
 [ "$1" == "l" ] || [ "$1" == "last" ] && set -- "$(grep -i installed /var/log/pacman.log | tail -1 | cut -d' ' -f4)"

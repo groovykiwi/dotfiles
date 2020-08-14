@@ -1,0 +1,24 @@
+{
+  "folders": [
+    {
+      "path": "/home/nate/projects"
+    },
+    {
+      "path": "/home/nate/dotfiles/.config"
+    },
+    {
+      "path": "/home/nate/dotfiles/scripts"
+    },
+    {
+      "name": "SSH FS - vultr-configs",
+      "uri": "ssh://vultr-configs/"
+    },
+    {
+      "name": "SSH FS - vultr-web",
+      "uri": "ssh://vultr-web/"
+    }
+  ],
+  "settings": {
+    "git.ignoreLimitWarning": true
+  }
+}

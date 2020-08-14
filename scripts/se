@@ -1,6 +1,7 @@
 #!/bin/bash
 # SCRIPT EDIT
 # Easily edits scripts using fzy
+editor="code"
 
 [ "$1" == "-h" ] || [ "$1" == "--help" ]  && echo -e "\noptional arguments:
   -d,                 Put script in the trash
@@ -14,4 +15,4 @@ fzy -l 15
 )
 [ "$1" == "-d" ] && trash-put /home/nate/scripts/$name && echo "Moved $name to trash" && exit
 [ "$1" == "-l" ] && sudo ln -s /home/nate/scripts/$name /usr/bin && echo "Added $name to /usr/bin" && exit
-! [ -z $name ] && subl "/home/nate/scripts/$name" && wmctrl -s 2
+! [ -z $name ] && $editor "/home/nate/scripts/$name" && wmctrl -s 2

@@ -1,0 +1,34 @@
+[2020-08-14 15:20:52.773] [sharedprocess] [info] main {"machineId":"ef6eaabb028b46b12b77f25dd02de8836fa915fac6b516dc434b8377d54b05dc","windowId":2}
+[2020-08-14 15:21:32.784] [sharedprocess] [info] Starting to clean up unused language packs.
+[2020-08-14 15:33:39.817] [sharedprocess] [info] Uninstalling extension: ms-vscode-remote.vscode-remote-extensionpack
+[2020-08-14 15:33:39.820] [sharedprocess] [info] Uninstalling extension: ms-vscode-remote.remote-containers
+[2020-08-14 15:33:39.820] [sharedprocess] [info] Uninstalling extension: ms-vscode-remote.remote-ssh
+[2020-08-14 15:33:39.820] [sharedprocess] [info] Uninstalling extension: ms-vscode-remote.remote-wsl
+[2020-08-14 15:33:39.820] [sharedprocess] [info] Uninstalling extension: ms-vscode-remote.remote-ssh-edit
+[2020-08-14 15:33:39.875] [sharedprocess] [info] Successfully uninstalled extension: ms-vscode-remote.remote-containers
+[2020-08-14 15:33:39.879] [sharedprocess] [info] Successfully uninstalled extension: ms-vscode-remote.remote-ssh
+[2020-08-14 15:33:39.882] [sharedprocess] [info] Successfully uninstalled extension: ms-vscode-remote.remote-wsl
+[2020-08-14 15:33:39.884] [sharedprocess] [info] Successfully uninstalled extension: ms-vscode-remote.remote-ssh-edit
+[2020-08-14 15:33:40.487] [sharedprocess] [info] Successfully uninstalled extension: ms-vscode-remote.vscode-remote-extensionpack
+[2020-08-14 15:34:00.514] [sharedprocess] [info] Installing extension: ms-vscode-remote.remote-ssh-nightly
+[2020-08-14 15:34:01.853] [sharedprocess] [info] Downloaded extension: ms-vscode-remote.remote-ssh-nightly /home/nate/.config/Code - OSS/CachedExtensionVSIXs/ms-vscode-remote.remote-ssh-nightly-2020.8.18598
+[2020-08-14 15:34:01.962] [sharedprocess] [info] Extracted extension to /home/nate/.vscode-oss/extensions/.ms-vscode-remote.remote-ssh-nightly-2020.8.18598: ms-vscode-remote.remote-ssh-nightly
+[2020-08-14 15:34:01.963] [sharedprocess] [info] Renamed to /home/nate/.vscode-oss/extensions/ms-vscode-remote.remote-ssh-nightly-2020.8.18598
+[2020-08-14 15:34:01.963] [sharedprocess] [info] Installation completed. ms-vscode-remote.remote-ssh-nightly
+[2020-08-14 15:34:02.194] [sharedprocess] [info] Installing extension: ms-vscode-remote.remote-ssh-edit-nightly
+[2020-08-14 15:34:02.482] [sharedprocess] [info] Downloaded extension: ms-vscode-remote.remote-ssh-edit-nightly /home/nate/.config/Code - OSS/CachedExtensionVSIXs/ms-vscode-remote.remote-ssh-edit-nightly-2020.8.18598
+[2020-08-14 15:34:02.497] [sharedprocess] [info] Extracted extension to /home/nate/.vscode-oss/extensions/.ms-vscode-remote.remote-ssh-edit-nightly-2020.8.18598: ms-vscode-remote.remote-ssh-edit-nightly
+[2020-08-14 15:34:02.497] [sharedprocess] [info] Renamed to /home/nate/.vscode-oss/extensions/ms-vscode-remote.remote-ssh-edit-nightly-2020.8.18598
+[2020-08-14 15:34:02.497] [sharedprocess] [info] Installation completed. ms-vscode-remote.remote-ssh-edit-nightly
+[2020-08-14 15:34:02.500] [sharedprocess] [info] Extensions installed successfully: ms-vscode-remote.remote-ssh-edit-nightly
+[2020-08-14 15:34:02.501] [sharedprocess] [info] Extensions installed successfully: ms-vscode-remote.remote-ssh-nightly
+[2020-08-14 15:34:43.584] [sharedprocess] [info] Uninstalling extension: ms-vscode-remote.remote-ssh-nightly
+[2020-08-14 15:34:43.585] [sharedprocess] [info] Uninstalling extension: ms-vscode-remote.remote-ssh-edit-nightly
+[2020-08-14 15:34:43.608] [sharedprocess] [info] Successfully uninstalled extension: ms-vscode-remote.remote-ssh-edit-nightly
+[2020-08-14 15:34:43.842] [sharedprocess] [info] Successfully uninstalled extension: ms-vscode-remote.remote-ssh-nightly
+[2020-08-14 15:35:59.422] [sharedprocess] [info] Installing extension: kelvin.vscode-sshfs
+[2020-08-14 15:36:00.345] [sharedprocess] [info] Downloaded extension: kelvin.vscode-sshfs /home/nate/.config/Code - OSS/CachedExtensionVSIXs/kelvin.vscode-sshfs-1.18.2
+[2020-08-14 15:36:00.400] [sharedprocess] [info] Extracted extension to /home/nate/.vscode-oss/extensions/.kelvin.vscode-sshfs-1.18.2: kelvin.vscode-sshfs
+[2020-08-14 15:36:00.400] [sharedprocess] [info] Renamed to /home/nate/.vscode-oss/extensions/kelvin.vscode-sshfs-1.18.2
+[2020-08-14 15:36:00.401] [sharedprocess] [info] Installation completed. kelvin.vscode-sshfs
+[2020-08-14 15:36:00.404] [sharedprocess] [info] Extensions installed successfully: kelvin.vscode-sshfs

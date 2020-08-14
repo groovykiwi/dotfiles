@@ -1,0 +1,279 @@
+[INFO]    Created output channel for vscode-sshfs
+[INFO]    Loading configurations...
+[DEBUG]   	Added configuration houlamy.com from 1
+[INFO]    Found 1 configurations
+[INFO]    Extension activated, version 1.18.2
+[INFO]    Loading configurations...
+[DEBUG]   	Added configuration houlamy.com from 1
+[INFO]    Found 1 configurations
+[INFO]    Command received to connect houlamy.com
+[INFO]    [createConnection(houlamy.com,config)] Creating a new connection for 'houlamy.com'
+[INFO]    Calculating actual config
+[DEBUG]   	Read private key from /home/nate/.ssh/id_rsa
+[DEBUG]   	Final configuration:
+{
+    "host": "houlamy.com",
+    "label": "Houlamy Vultr",
+    "name": "houlamy.com",
+    "port": 22,
+    "privateKeyPath": "/home/nate/.ssh/id_rsa",
+    "username": "root",
+    "_location": 1,
+    "_locations": [
+        1
+    ],
+    "_calculated": {
+        "host": "houlamy.com",
+        "label": "Houlamy Vultr",
+        "name": "houlamy.com",
+        "port": 22,
+        "privateKeyPath": "/home/nate/.ssh/id_rsa",
+        "username": "root",
+        "_location": 1,
+        "_locations": [
+            1
+        ]
+    },
+    "privateKey": "Buffer(2602)"
+}
+[INFO]    [createSocket(houlamy.com)] Creating socket
+[DEBUG]   [createSocket(houlamy.com)] Connecting to houlamy.com:22
+[ERROR]   Error while connecting to SSH FS houlamy.com:
+getaddrinfo ENOTFOUND houlamy.com
+Logged at:
+	at /home/nate/.vscode-oss/extensions/kelvin.vscode-sshfs-1.18.2/dist/extension.js:1:26896
+	at processTicksAndRejections (internal/process/task_queues.js:85:5)
+[ERROR]   getaddrinfo ENOTFOUND houlamy.com
+Error: getaddrinfo ENOTFOUND houlamy.com
+	at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:60:26)
+Logged at:
+	at /home/nate/.vscode-oss/extensions/kelvin.vscode-sshfs-1.18.2/dist/extension.js:1:26962
+	at processTicksAndRejections (internal/process/task_queues.js:85:5)
+[DEBUG]   Reading ssh://houlamy.com/.vscode/settings.json
+[DEBUG]   Reading ssh://houlamy.com/.vscode/tasks.json
+[DEBUG]   Reading ssh://houlamy.com/.vscode/launch.json
+[DEBUG]   Reading ssh://houlamy.com/.vscode/settings.json
+[DEBUG]   Reading ssh://houlamy.com/.vscode/tasks.json
+[DEBUG]   Reading ssh://houlamy.com/.vscode/launch.json
+[DEBUG]   Reading ssh://houlamy.com/.vscode/extensions.json
+[INFO]    Command received to configure houlamy.com
+[INFO]    Loading configurations...
+[INFO]    Loading configurations...
+[INFO]    Loading configurations...
+[INFO]    Saving config houlamy.com to 1
+[DEBUG]   	Config location '1' has following configs: houlamy.com
+[DEBUG]   	Overwriting config 'houlamy.com' at index 0 with the new config
+[INFO]    Loading configurations...
+[DEBUG]   	Updated configs in Global settings.json
+[DEBUG]   	Added configuration houlamy.com from 1
+[INFO]    Found 1 configurations
+[INFO]    Loading configurations...
+[INFO]    Command received to disconnect houlamy.com
+[INFO]    Loading configurations...
+[DEBUG]   	Added configuration houlamy.com from 1
+[INFO]    Found 1 configurations
+[INFO]    Loading configurations...
+[DEBUG]   	Added configuration houlamy.com from 1
+[INFO]    Found 1 configurations
+[INFO]    Command received to connect houlamy.com
+[INFO]    [createConnection(houlamy.com,config)] Creating a new connection for 'houlamy.com'
+[INFO]    Calculating actual config
+[DEBUG]   	Read private key from /home/nate/.ssh/id_rsa
+[DEBUG]   	Final configuration:
+{
+    "host": "houlamy.com",
+    "label": "Houlamy Vultr",
+    "name": "houlamy.com",
+    "port": 22,
+    "privateKeyPath": "/home/nate/.ssh/id_rsa",
+    "root": "/var/www",
+    "username": "root",
+    "_location": 1,
+    "_locations": [
+        1
+    ],
+    "_calculated": {
+        "host": "houlamy.com",
+        "label": "Houlamy Vultr",
+        "name": "houlamy.com",
+        "port": 22,
+        "privateKeyPath": "/home/nate/.ssh/id_rsa",
+        "root": "/var/www",
+        "username": "root",
+        "_location": 1,
+        "_locations": [
+            1
+        ]
+    },
+    "privateKey": "Buffer(2602)"
+}
+[INFO]    [createSocket(houlamy.com)] Creating socket
+[DEBUG]   [createSocket(houlamy.com)] Connecting to houlamy.com:22
+[INFO]    [createSSH(houlamy.com)] Creating SSH session over the opened socket
+[INFO]    [getSFTP(houlamy.com)] Creating SFTP session using standard sftp subsystem
+[INFO]    Created SSHFileSystem for houlamy.com, reading root directory...
+[DEBUG]   Reading ssh://houlamy.com/.vscode/settings.json
+[DEBUG]   Reading ssh://houlamy.com/.vscode/tasks.json
+[DEBUG]   Reading ssh://houlamy.com/.vscode/launch.json
+[DEBUG]   Reading ssh://houlamy.com/.vscode/settings.json
+[DEBUG]   Reading ssh://houlamy.com/.vscode/tasks.json
+[DEBUG]   Reading ssh://houlamy.com/.vscode/launch.json
+[DEBUG]   Reading ssh://houlamy.com/.vscode/extensions.json
+[INFO]    Loading configurations...
+[INFO]    Saving config houlamy.com to 1
+[DEBUG]   	Config location '1' has following configs: houlamy.com
+[DEBUG]   	Overwriting config 'houlamy.com' at index 0 with the new config
+[INFO]    Loading configurations...
+[DEBUG]   	Updated configs in Global settings.json
+[DEBUG]   	Added configuration houlamy.com from 1
+[INFO]    Found 1 configurations
+[INFO]    Loading configurations...
+[INFO]    Command received to disconnect houlamy.com
+[INFO]    [createConnection(houlamy.com,config)] Closing connection to 'houlamy.com' due to no active filesystems/terminals
+[INFO]    Loading configurations...
+[INFO]    Saving config vultr-web to 1
+[DEBUG]   	Saving vultr-web will try to overwrite old config houlamy.com
+[DEBUG]   	Config location '1' has following configs: houlamy.com
+[DEBUG]   	Overwriting config 'houlamy.com' at index 0 with the new config
+[INFO]    Loading configurations...
+[DEBUG]   	Updated configs in Global settings.json
+[DEBUG]   	Added configuration vultr-web from 1
+[INFO]    Found 1 configurations
+[INFO]    Loading configurations...
+[INFO]    Saving config vultr-configs to 1
+[DEBUG]   	Config location '1' has following configs: vultr-web
+[DEBUG]   	Adding the new config to the existing configs
+[INFO]    Loading configurations...
+[DEBUG]   	Updated configs in Global settings.json
+[DEBUG]   	Added configuration vultr-web from 1
+[DEBUG]   	Added configuration vultr-configs from 1
+[INFO]    Found 2 configurations
+[INFO]    Saving config vultr-configs to 1
+[DEBUG]   	Config location '1' has following configs: vultr-web, vultr-configs
+[DEBUG]   	Overwriting config 'vultr-configs' at index 1 with the new config
+[INFO]    Loading configurations...
+[DEBUG]   	Updated configs in Global settings.json
+[DEBUG]   	Added configuration vultr-web from 1
+[DEBUG]   	Added configuration vultr-configs from 1
+[INFO]    Found 2 configurations
+[INFO]    Loading configurations...
+[INFO]    Saving config vultr-web to 1
+[DEBUG]   	Config location '1' has following configs: vultr-web, vultr-configs
+[DEBUG]   	Overwriting config 'vultr-web' at index 0 with the new config
+[INFO]    Loading configurations...
+[DEBUG]   	Updated configs in Global settings.json
+[DEBUG]   	Added configuration vultr-web from 1
+[DEBUG]   	Added configuration vultr-configs from 1
+[INFO]    Found 2 configurations
+[INFO]    Loading configurations...
+[INFO]    Command received to connect vultr-configs
+[INFO]    [createConnection(vultr-configs,config)] Creating a new connection for 'vultr-configs'
+[INFO]    Calculating actual config
+[DEBUG]   	Read private key from /home/nate/.ssh/id_rsa
+[DEBUG]   	Final configuration:
+{
+    "host": "houlamy.com",
+    "label": "Vultr Configs",
+    "name": "vultr-configs",
+    "privateKeyPath": "/home/nate/.ssh/id_rsa",
+    "root": "/etc/nginx/",
+    "username": "root",
+    "_location": 1,
+    "_locations": [
+        1
+    ],
+    "_calculated": {
+        "host": "houlamy.com",
+        "label": "Vultr Configs",
+        "name": "vultr-configs",
+        "privateKeyPath": "/home/nate/.ssh/id_rsa",
+        "root": "/etc/nginx/",
+        "username": "root",
+        "_location": 1,
+        "_locations": [
+            1
+        ]
+    },
+    "privateKey": "Buffer(2602)"
+}
+[INFO]    [createSocket(vultr-configs)] Creating socket
+[DEBUG]   [createSocket(vultr-configs)] Connecting to houlamy.com:22
+[INFO]    [createSSH(vultr-configs)] Creating SSH session over the opened socket
+[INFO]    [getSFTP(vultr-configs)] Creating SFTP session using standard sftp subsystem
+[INFO]    Created SSHFileSystem for vultr-configs, reading root directory...
+[INFO]    Command received to connect vultr-web
+[DEBUG]   Reading ssh://vultr-configs/.vscode/settings.json
+[DEBUG]   Reading ssh://vultr-configs/.vscode/tasks.json
+[DEBUG]   Reading ssh://vultr-configs/.vscode/launch.json
+[DEBUG]   Reading ssh://vultr-configs/.vscode/settings.json
+[DEBUG]   Reading ssh://vultr-configs/.vscode/tasks.json
+[DEBUG]   Reading ssh://vultr-configs/.vscode/launch.json
+[DEBUG]   Reading ssh://vultr-configs/.vscode/extensions.json
+[INFO]    Command received to connect vultr-web
+[INFO]    [createConnection(vultr-web,config)] Creating a new connection for 'vultr-web'
+[INFO]    Calculating actual config
+[DEBUG]   	Read private key from /home/nate/.ssh/id_rsa
+[DEBUG]   	Final configuration:
+{
+    "host": "houlamy.com",
+    "label": "Vultr Websites",
+    "name": "vultr-web",
+    "port": 22,
+    "privateKeyPath": "/home/nate/.ssh/id_rsa",
+    "root": "/var/www",
+    "username": "root",
+    "_location": 1,
+    "_locations": [
+        1
+    ],
+    "_calculated": {
+        "host": "houlamy.com",
+        "label": "Vultr Websites",
+        "name": "vultr-web",
+        "port": 22,
+        "privateKeyPath": "/home/nate/.ssh/id_rsa",
+        "root": "/var/www",
+        "username": "root",
+        "_location": 1,
+        "_locations": [
+            1
+        ]
+    },
+    "privateKey": "Buffer(2602)"
+}
+[INFO]    [createSocket(vultr-web)] Creating socket
+[DEBUG]   [createSocket(vultr-web)] Connecting to houlamy.com:22
+[INFO]    [createSSH(vultr-web)] Creating SSH session over the opened socket
+[INFO]    [getSFTP(vultr-web)] Creating SFTP session using standard sftp subsystem
+[INFO]    Created SSHFileSystem for vultr-web, reading root directory...
+[DEBUG]   Reading ssh://vultr-web/.vscode/settings.json
+[DEBUG]   Reading ssh://vultr-web/.vscode/tasks.json
+[DEBUG]   Reading ssh://vultr-web/.vscode/launch.json
+[DEBUG]   Reading ssh://vultr-web/.vscode/settings.json
+[DEBUG]   Reading ssh://vultr-web/.vscode/tasks.json
+[DEBUG]   Reading ssh://vultr-web/.vscode/launch.json
+[DEBUG]   Reading ssh://vultr-configs/.vscode/extensions.json
+[DEBUG]   Reading ssh://vultr-web/.vscode/extensions.json
+[DEBUG]   Reading ssh://vultr-web/aiterminal/style.css
+[DEBUG]   Reading ssh://vultr-web/aiterminal/style.css
+[DEBUG]   Writing 2681 bytes to ssh://vultr-web/aiterminal/style.css
+[DEBUG]   Reading ssh://vultr-web/aiterminal/style.css
+[DEBUG]   Writing 2681 bytes to ssh://vultr-web/aiterminal/style.css
+[DEBUG]   Reading ssh://vultr-web/aiterminal/style.css
+[DEBUG]   Writing 2681 bytes to ssh://vultr-web/aiterminal/style.css
+[DEBUG]   Reading ssh://vultr-web/aiterminal/style.css
+[DEBUG]   Writing 2668 bytes to ssh://vultr-web/aiterminal/style.css
+[DEBUG]   Reading ssh://vultr-web/aiterminal/style.css
+[DEBUG]   Writing 2670 bytes to ssh://vultr-web/aiterminal/style.css
+[DEBUG]   Reading ssh://vultr-web/aiterminal/style.css
+[DEBUG]   Writing 2668 bytes to ssh://vultr-web/aiterminal/style.css
+[INFO]    Loading configurations...
+[INFO]    Loading configurations...
+[INFO]    Loading configurations...
+[DEBUG]   	Added configuration vultr-web from 1
+[DEBUG]   	Added configuration vultr-configs from 1
+[INFO]    Found 2 configurations
+[INFO]    Loading configurations...
+[DEBUG]   	Added configuration vultr-web from 1
+[DEBUG]   	Added configuration vultr-configs from 1
+[INFO]    Found 2 configurations
