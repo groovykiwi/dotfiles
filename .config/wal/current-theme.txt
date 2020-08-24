@@ -1,2 +1,2 @@
 dark
-pywal -pa 230 -i pics/walls/wave.png -s 0.4
+bpw -a 240 -f base16-classic -i pics/walls/feather.jpg

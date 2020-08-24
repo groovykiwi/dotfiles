@@ -1,47 +1,46 @@
 #!/bin/bash
-while getopts scd flag
-do
-    case "${flag}" in
-        c) connect="True";;
-		s) state="True";;
-		d) disconnect="True";;
-    esac
+while getopts scd flag; do
+  case "${flag}" in
+  c) connect="True" ;;
+  s) state="True" ;;
+  d) disconnect="True" ;;
+  esac
 done
 
 # STATUS
 if [[ "$state" == "True" ]]; then
-	status=$(expressvpn status 2>/dev/null)
-	[[ "$status" == "Not connected" ]] || [[ -z $status ]] && echo "" || echo ""
+  status=$(expressvpn status 2>/dev/null)
+  [[ "$status" == "Not connected" ]] || [[ -z $status ]] && echo "" || echo ""
 fi
 
 # CONNECT
 if [[ "$connect" == "True" ]]; then
-	
-	# Start expressvpn daemon if not running already
-	! [[ -z $(systemctl status expressvpn | grep inactive) ]] && gksu systemctl start expressvpn && sleep 1
 
-	location=$(expressvpn list all | sed -e '/-----.*$/d ; /ALIAS.*$/d; /Recommended.*$/d; s/.*Y$/ &/g; s/Y$/star/g'| rofi -font "Fira Code Nerd Font 15" -dmenu -i -p 'Recommended Locations' -location 3 -lines 5 -width 45 -yoffset 40)
-	
-	if ! [[ -z $location ]] && ! [[ $location == "refresh" ]]; then
-		
-		# Check if VPN is already connected to a server
-		status=$(expressvpn status 2>/dev/null)
-		! [[ "$status" == "Not connected" ]] || ! [[ -z $status ]] && expressvpn disconnect
-		
-		# Clean rofi output and connect to server
-		clean_location=$(echo "$location" | sed 's/\s\+/ /g; s/ //'| cut -d' ' -f1 )
-		expressvpn connect $clean_location
+  # Start expressvpn daemon if not running already
+  ! [[ -z $(systemctl status expressvpn | grep inactive) ]] && gksu systemctl start expressvpn && sleep 1
 
-	elif [[ $location == "refresh" ]]; then
-		expressvpn refresh && /$HOME/scripts/expressvpn_module -c
+  location=$(expressvpn list all | sed -e '/-----.*$/d ; /ALIAS.*$/d; /Recommended.*$/d; s/.*Y$/ &/g; s/Y$/star/g' | rofi -font "Fira Code Nerd Font 15" -dmenu -i -p 'Recommended Locations' -location 3 -lines 5 -width 45 -yoffset 40)
 
-	else
-		[[ -z $(systemctl status expressvpn | grep inactive) ]] && sudo systemctl stop expressvpn
-	fi
+  if ! [[ -z $location ]] && ! [[ $location == "refresh" ]]; then
+
+    # Check if VPN is already connected to a server
+    status=$(expressvpn status 2>/dev/null)
+    ! [[ "$status" == "Not connected" ]] || ! [[ -z $status ]] && expressvpn disconnect
+
+    # Clean rofi output and connect to server
+    clean_location=$(echo "$location" | sed 's/\s\+/ /g; s/ //' | cut -d' ' -f1)
+    expressvpn connect $clean_location
+
+  elif [[ $location == "refresh" ]]; then
+    expressvpn refresh && /$HOME/scripts/expressvpn_module -c
+
+  else
+    [[ -z $(systemctl status expressvpn | grep inactive) ]] && sudo systemctl stop expressvpn
+  fi
 fi
 
 # DISCONNECT
 if [[ "$disconnect" == "True" ]]; then
-	expressvpn disconnect
-	[[ -z $(systemctl status expressvpn | grep inactive) ]] && gksu systemctl stop expressvpn
+  expressvpn disconnect
+  [[ -z $(systemctl status expressvpn | grep inactive) ]] && gksu systemctl stop expressvpn
 fi

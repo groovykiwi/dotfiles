@@ -4,20 +4,18 @@ NC='\033[0m'
 
 HOME="/home/nate"
 
-[ -z $1 ] && echo -e  "\nUsage: $0 (list) (p/pamac) <package> (r/remove)\n" && exit
+[ -z $1 ] && echo -e "\nUsage: $0 (list) (p/pamac) <package> (r/remove)\n" && exit
 
 [ "$1" == "list" ] && cat $HOME/dotfiles/packages | sed -n 's/^\s\+//g; /sudo pacman -S\s.*$/ p' && echo "" && cat $HOME/dotfiles/packages | sed -n 's/^\s\+//g; /aurlist=(/ p' && exit
 
-if [ "$1" == "pamac" ] || [ "$1" == "p" ];then
-	text=$(cat $HOME/dotfiles/packages | sed -n 's/^\s\+//g; /aurlist=(/ p')
-	line=$(cat $HOME/dotfiles/packages | sed -n 's/^\s\+//g; /aurlist=(/ =')
-	set -- "${@:2:3}"
+if [ "$1" == "pamac" ] || [ "$1" == "p" ]; then
+  text=$(cat $HOME/dotfiles/packages | sed -n 's/^\s\+//g; /aurlist=(/ p')
+  line=$(cat $HOME/dotfiles/packages | sed -n 's/^\s\+//g; /aurlist=(/ =')
+  set -- "${@:2:3}"
 else
-	text=$(cat $HOME/dotfiles/packages | sed -n 's/^\s\+//g; /sudo pacman -S\s.*$/ p')
-	line=$(cat $HOME/dotfiles/packages | sed -n 's/^\s\+//g; /sudo pacman -S\s.*$/ =')
+  text=$(cat $HOME/dotfiles/packages | sed -n 's/^\s\+//g; /sudo pacman -S\s.*$/ p')
+  line=$(cat $HOME/dotfiles/packages | sed -n 's/^\s\+//g; /sudo pacman -S\s.*$/ =')
 fi
-
-
 
 # For pacman.d hooks, uses the last install package
 [ "$1" == "l" ] || [ "$1" == "last" ] && set -- "$(grep -i installed /var/log/pacman.log | tail -1 | cut -d' ' -f4)"
@@ -25,18 +23,17 @@ fi
 
 regex="\s$1($|\s)"
 if [ "$2" == "r" ] || [ "$2" == "remove" ]; then
-	if [[ $text =~ $regex  ]]; then
-	 	sed -i "$line s/\s\?$1\s\?//" $HOME/dotfiles/packages
-		echo -e "\nRemoved ${C1}$1${NC} from dotfiles packages\n"
-		exit
-	else
-		echo -e "\n${C1}$1${NC} was not found in dotfiles packages\n" && exit
-	fi
+  if [[ $text =~ $regex ]]; then
+    sed -i "$line s/\s\?$1\s\?//" $HOME/dotfiles/packages
+    echo -e "\nRemoved ${C1}$1${NC} from dotfiles packages\n"
+    exit
+  else
+    echo -e "\n${C1}$1${NC} was not found in dotfiles packages\n" && exit
+  fi
 fi
 
-[[ $text =~ $regex  ]] && echo -e "\n${C1}$1${NC} is already present in dotfiles packages\n" && exit
+[[ $text =~ $regex ]] && echo -e "\n${C1}$1${NC} is already present in dotfiles packages\n" && exit
 
 new=$(echo $text $1)
 
 sed -i "$line s/$text/$new/" $HOME/dotfiles/packages && echo -e "\nAdded ${C1}$1${NC} to dotfiles packages\n"
-

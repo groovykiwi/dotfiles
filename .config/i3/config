@@ -37,15 +37,15 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 mode "resize" {
-        bindsym h resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym j resize shrink height 10 px or 10 ppt
-        bindsym l resize grow width 10 px or 10 ppt
+        bindsym h resize shrink width 60 px or 60 ppt
+        bindsym k resize grow height 60 px or 60 ppt
+        bindsym j resize shrink height 60 px or 60 ppt
+        bindsym l resize grow width 60 px or 60 ppt
 
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+        bindsym Left resize shrink width 60 px or 60 ppt
+        bindsym Down resize grow height 60 px or 60 ppt
+        bindsym Up resize shrink height 60 px or 60 ppt
+        bindsym Right resize grow width 60 px or 60 ppt
 
         bindsym Return mode "default"
         bindsym Escape mode "default"
@@ -89,16 +89,16 @@ bindsym XF86AudioPrev exec playerctl -p spotify previous
 #  \_/\_/ \___/|_|  |_|\_\___/ .__/ \__,_|\___\___||___/
 #                            |_|                        
 
-set $ws1 "1: "
-set $ws2 "2: "
-set $ws3 "3: "
-set $ws4 "4: "
+set $ws1 "1:"
+set $ws2 "2:"
+set $ws3 "3:"
+set $ws4 "4:"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
-set $ws8 "8: "
-set $ws9 "9: "
-set $ws10 "10: "
+set $ws8 "8:"
+set $ws9 "9:"
+set $ws10 "10:"
 
 # switch to workspace
 bindsym $mod+Control+Left workspace prev
@@ -139,15 +139,15 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 exec --no-startup-id redshift-gtk
 exec --no-startup-id polybar -r top
 exec  $HOME/scripts/termlayout 
-exec i3-msg "workspace $ws2; exec firefox; workspace $ws1"
+exec i3-msg "workspace $ws2; exec firefox"
 exec code
 exec spotify
-exec i3-msg "workspace $ws4; exec Thunar; workspace $ws1"
+exec i3-msg "workspace $ws4; exec Thunar" 
 exec --no-startup-id espanso restart
 exec --no-startup-id /usr/lib/kdeconnectd
 exec --no-startup-id kdeconnect-indicator
 exec --no-startup-id protonvpn-tray
-
+exec i3-msg "workspace $ws1"
 # System Processes
 exec_always --no-startup-id dunst -sep_color "$bg" -lb "$bg" -nb "$bg" -cb "$bg" -lf "$fg" -cf "$fg" -nf "$fg" -lfr "$bg" -nfr "$bg" -cfr 
 exec_always --no-startup-id $HOME/scripts/i3-alternating-layout/alternating_layouts.py
@@ -168,46 +168,49 @@ exec --no-startup-id tumbler #Thumbnails in Thunar
 #
 
 font pango:SF Pro Text 13
-gaps inner 10
+gaps inner 5
 #smart_gaps on
+focus_on_window_activation urgent #focus
+
 
 # Window Colors
-set_from_resource $fg i3wm.color7 #f0f0f0
+set_from_resource $fg i3wm.color7 #ffffff
 set_from_resource $bg i3wm.color0 #000000
-#                       border  background text  indicator
-client.focused          $bg     $bg        $fg   $bg       
+set_from_resource $c1 i3wm.color1 #ff0000
+
+#Window state           border  background text  indicator
+client.focused          $bg     $c1        $fg   $c1       
 client.focused_inactive $bg     $bg        $fg   $bg       
 client.unfocused        $bg     $bg        $fg   $bg       
 client.urgent           $bg     $bg        $fg   $bg       
 
 
-focus_on_window_activation focus #urgent
 
-# Remove borders for all window (to move floating use $mod+mouse)
-for_window [class="^.*"] border pixel 0
 
-for_window [class="Pavucontrol"] floating enable border normal
-for_window [class="firefox" instance="Places"] floating enable border normal
-for_window [class="G213colors-gui"] floating enable border normal
-for_window [class="Piper"] floating enable border normal
-for_window [class="Tk"] floating enable border normal
-for_window [class="Cm-rgb-gui"] floating enable border normal
-for_window [class="Cm-rgb-monitor-gui"] floating enable border normal
+# Set borders for all windows
+for_window [class="^.*"] border pixel 1
+
+# add "border normal" if you want a title bar
+for_window [class="Pavucontrol"] floating enable 
+for_window [class="firefox" instance="Places"] floating enable 
+for_window [class="G213colors-gui"] floating enable 
+for_window [class="Piper"] floating enable
+for_window [class="Tk"] floating enable 
+for_window [class="Cm-rgb-gui"] floating enable 
+for_window [class="Cm-rgb-monitor-gui"] floating enable 
 for_window [class="scrcpy"] floating enable
-for_window [class="Baobab"] floating enable border normal
-for_window [class="Nm.*"] floating enable border normal
+for_window [class="Baobab"] floating enable 
+for_window [class="Nm.*"] floating enable 
+for_window [class="empty-folder-cleaner"] floating enable 
 
-for_window [instance="floatterm"] floating enable border normal
-for_window [instance="spotify-lyrics"] floating enable border normal
-for_window [instance="qpaeq"] floating enable border normal
+for_window [instance="floatterm"] floating enable 
+for_window [instance="spotify-lyrics"] floating enable 
+for_window [instance="qpaeq"] floating enable 
 
 
 # Assign windows to Workspaces
 
-#assign [class="Brave-browser"] $ws2
-#assign [class="firefox"] $ws2
 
-assign [class="Sublime"] $ws3
 assign [class="code-oss"] $ws3
 assign [class="Transmission-gtk"] $ws8
 assign [class="discord"] $ws9

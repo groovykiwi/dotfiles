@@ -1,0 +1,106 @@
+#!/bin/bash
+
+#For this to work you need to:
+#	- Set pywal.rasi as a theme in rofi
+#	- Install the Vimix grub theme once
+#	- Install slick greeter and add theme-name=pywal-oomox and background=/etc/lightdm/background.png to /etc/lightdm/slick-greeter.conf
+
+NC='\033[0m' # No Color
+ACCENT='\033[1;31m'
+HOME=/home/nate
+
+while getopts i:a:f:s:b:ghlt flag; do
+  case "${flag}" in
+  i) path=${OPTARG} ;;
+  a) opacity=${OPTARG} ;;
+  s) saturation=${OPTARG} ;;
+  b) backend=${OPTARG} ;;
+  f) theme=${OPTARG} ;;
+  t) toggle="True" ;;
+  l) light="True" ;;
+  g) grub="True" ;;
+  h) help="True" ;;
+  esac
+done
+
+# HELP
+[ -z $1 ] && echo 'Usage: bpw -i [IMAGE]
+Try "bpw -h" for more information.' && exit
+if [[ "$help" == "True" ]]; then
+  echo ' bpw - Makes pywal changes persistent and changes other aspect of the system.
+
+optional arguments:
+  -h, --help    Show this help message and exit
+  -a 0-255      Set terminal background transparency
+  -s 0-1        Set the saturation of colors
+  -f            Use a builtin-theme
+  -l            Generate a light theme
+  -b [backend]  Select the color backend (wal, haishoku, colorthief, colorz)			
+  -g            Apply wallpaper to grub
+  -t            Toggle between dark and light theme
+'
+
+# DARK LIGHT TOGGLE
+elif [[ "$toggle" == "True" ]]; then
+
+  theme=$(cat $HOME/.config/wal/current-theme.txt | sed '2q;d')
+  if [ "$(cat $HOME/.config/wal/current-theme.txt | sed '1q;d')" == "dark" ]; then
+    theme+=" -l" && sudo $theme
+  else
+    light_theme=$(echo "$theme" | sed 's/-l//g') && sudo $light_theme
+  fi
+  exit
+
+# NEW THEME
+else
+
+  error_flag=False
+
+  string="wal "
+
+  [ -z $path ] && echo "No path to the wallpaper has been set." && exit
+  [ -n "$opacity" ] && string+="-a $opacity "
+  [ -n "$saturation" ] && string+="--saturate $saturation "
+  [ -n "$backend" ] && string+="--backend $backend "
+  [ -n "$theme" ] && string+="-f $theme "
+  [ "$light" == "True" ] && string+="-l" && echo "light" >$HOME/.config/wal/current-theme.txt || echo "dark" >$HOME/.config/wal/current-theme.txt
+
+  echo "bpw $@" >>$HOME/.config/wal/current-theme.txt
+
+  $string
+
+  exit_code=$?
+
+  if [[ "$error_flag" == "False" ]] && [[ $exit_code -eq 0 ]]; then
+
+    #GTK THEME : pywal-oomox in .themes
+    sudo /opt/oomox/plugins/theme_oomox/gtk-theme/change_color.sh $HOME/.cache/wal/colors-oomox -o pywal-oomox -t $HOME/.themes >/dev/null && echo -e "\n${NC}[${ACCENT}I${NC}] ${ACCENT}Updated${NC}: GTK+ Theme."
+
+    #XRESOURCES
+    sudo cat "$HOME/.cache/wal/colors.Xresources" >$HOME/.Xresources && sudo xrdb $HOME/.Xresources && echo -e "${NC}[${ACCENT}I${NC}] ${ACCENT}Updated${NC}: Xresources colors."
+
+    #SPOTIFY : spicetify
+    spicetify update >/dev/null && echo -e "${NC}[${ACCENT}I${NC}] ${ACCENT}Updated${NC}: Spicetify Theme." && ! [[ -z $(pgrep spotify) ]] && killall spotify && i3-msg exec spotify >/dev/null
+
+    #FIREFOX : userChrome
+    cssfolder=$(\ls $HOME/.mozilla/firefox/ | grep '.*default-release')
+    sudo cat $HOME/.cache/wal/colors-userChrome >$HOME/.mozilla/firefox/$cssfolder/chrome/userChrome.css
+
+    #ROFI : pywal.rasi in rofi themes
+    sudo cp $HOME/.cache/wal/colors-rofi-dark.rasi /usr/share/rofi/themes/pywal.rasi && echo -e "${NC}[${ACCENT}I${NC}] ${ACCENT}Updated${NC}: Rofi Theme."
+
+    #GRUB
+    wal_path=$(cat $HOME/.cache/wal/wal)
+    [[ "$grub" == "True" ]] && magick convert $wal_path -set colorspace RGB /usr/share/grub/themes/Vimix/background.png && echo -e "${NC}[${ACCENT}I${NC}] ${ACCENT}Updated${NC}: Grub's Background."
+
+    #SLICK GREETER WALLPAPER
+    sudo magick convert $wal_path /usr/share/slick-greeter/slick-greeter.png && echo -e "${NC}[${ACCENT}I${NC}] ${ACCENT}Updated${NC}: Slick-greeter's background."
+
+    #I3 / DUNST
+    killall dunst
+    i3-msg restart >/dev/null && echo -e "${NC}[${ACCENT}I${NC}] ${ACCENT}Reloaded${NC}: i3.\n"
+
+    #PREVIEW COLORS
+    wal --preview
+  fi
+fi

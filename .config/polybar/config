@@ -11,8 +11,9 @@
 type = internal/i3
 format = <label-state> <label-mode>
 index-sort = true
-wrapping-scroll = false
 strip-wsnumbers = true
+enable-scroll = false
+wrapping-scroll = false
 label-mode-underline = ${colors.accent}
 
 ; Focused = Active workspace on focused monitor
@@ -77,7 +78,7 @@ tail = false
 label = "%output%"
 interval = 0
 exec = $HOME/scripts/oad status
-click-left = i3-msg exec $HOME/scripts/oad
+click-left = i3-msg exec $HOME/scripts/oad toggle
 click-right = $HOME/scripts/oad pavu
 click-middle = qpaeq
 scroll-up = $HOME/scripts/vol up
@@ -137,8 +138,8 @@ menu-0-3-foreground = #aa2222
 transparent = #00000000
 background = ${xrdb:color0:#000000}
 foreground = ${xrdb:color15:#ffffff}
-accent = ${xrdb:color2:#ff0000}
-accent2 = ${xrdb:color3:#ffff00}
+accent = ${xrdb:color1:#ff0000}
+accent2 = ${xrdb:color4:#ffff00}
 
 [values]
 margin = 2

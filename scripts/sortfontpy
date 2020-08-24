@@ -1,7 +1,0 @@
-#!/usr/bin/env python
-icons = open( "icons.txt", "r")
-text = open( "treated.txt", "r")
-textlines= text.read().splitlines()
-for i, line in enumerate(icons):
-	print(textlines[i],line, end='')
-

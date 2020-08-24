@@ -72,7 +72,7 @@ if ${use_color} ; then
 	if [[ ${EUID} == 0 ]] ; then
 		PS1='\[\033[01;31m\][\h\[\033[01;36m\] \W\[\033[01;31m\]]\$\[\033[00m\] '
 	else
-		PS1='\[\033[01;31m\][ \u \[\033[01;37m\]\W \[\033[01;31m\]]\[\033[01;32m\] $ \[\033[00m\]'
+		PS1='\[\033[01;31m\][ \u \[\033[01;37m\]\W \[\033[01;31m\]]\[\033[01;33m\] $ \[\033[00m\]'
 	fi
 
 	alias ls='ls --color=auto'
@@ -154,18 +154,37 @@ export TERMINAL='st'
 
 # Aliases
 alias sudo='sudo '
-alias cp='cp -v'
-alias mv='mv -v'
+
+# Quality of life
+alias fuck='sudo $(history -p !!)'
+alias p='sudo pacman'
+
+# Movement
+alias ..='cd ..'
+alias ...='cd .. && cd ..'
+alias home='cd ~'
+alias dl='cd ~/dl'
+alias docs='cd ~/docs'
+alias pics='cd ~/pics'
+
+# File Management
+alias rm='rm -i'
+alias cp='cp -v -i'
+alias mv='mv -v -i'
 alias ls='ls -Shv --color=always'
 alias lsa='ls -AFhv --color=always'
 alias lsaa='ls -lAFhv --color=always | less -R -X -F'
 alias del='trash-put'
+alias search='find -iname'
+
+# Configs
+alias brc='vim ~/.bashrc'
+alias sbrc='source ~/.bashrc'
+
+# Software Specific
 alias polybar='i3-msg exec "polybar -r top" >/dev/null'
 alias gits='git status'
 alias gitc='git commit'
 alias gita='git add'
 alias gitp='git push origin master'
-alias search='find -iname'
-alias fuck='sudo $(history -p !!)'
-alias p='sudo pacman'
 alias houlamy='ssh houlamy.com'

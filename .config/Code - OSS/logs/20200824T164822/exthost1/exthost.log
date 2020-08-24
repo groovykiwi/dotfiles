@@ -1,0 +1,40 @@
+[2020-08-24 16:48:24.221] [exthost] [info] extension host started
+[2020-08-24 16:48:24.240] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2020-08-24 16:48:24.240] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/debug-auto-launch/dist/extension
+[2020-08-24 16:48:24.244] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"*"}
+[2020-08-24 16:48:24.244] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/emmet/dist/extension
+[2020-08-24 16:48:24.258] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2020-08-24 16:48:24.258] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/git/dist/main
+[2020-08-24 16:48:24.276] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication {"startup":true,"extensionId":{"value":"vscode.github-authentication","_lower":"vscode.github-authentication"},"activationEvent":"*"}
+[2020-08-24 16:48:24.277] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/github-authentication/dist/extension.js
+[2020-08-24 16:48:24.284] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"*"}
+[2020-08-24 16:48:24.284] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/merge-conflict/dist/mergeConflictMain
+[2020-08-24 16:48:24.287] [exthost] [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication {"startup":true,"extensionId":{"value":"vscode.microsoft-authentication","_lower":"vscode.microsoft-authentication"},"activationEvent":"*"}
+[2020-08-24 16:48:24.287] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/microsoft-authentication/dist/extension.js
+[2020-08-24 16:48:24.292] [exthost] [info] ExtensionService#_doActivateExtension vscode.search-result {"startup":true,"extensionId":{"value":"vscode.search-result","_lower":"vscode.search-result"},"activationEvent":"*"}
+[2020-08-24 16:48:24.292] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/search-result/dist/extension.js
+[2020-08-24 16:48:24.294] [exthost] [info] ExtensionService#_doActivateExtension christian-kohler.path-intellisense {"startup":true,"extensionId":{"value":"christian-kohler.path-intellisense","_lower":"christian-kohler.path-intellisense"},"activationEvent":"*"}
+[2020-08-24 16:48:24.294] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/nate/.vscode-oss/extensions/christian-kohler.path-intellisense-2.2.1/out/extension.js
+[2020-08-24 16:48:24.318] [exthost] [info] ExtensionService#_doActivateExtension CoenraadS.bracket-pair-colorizer-2 {"startup":true,"extensionId":{"value":"CoenraadS.bracket-pair-colorizer-2","_lower":"coenraads.bracket-pair-colorizer-2"},"activationEvent":"*"}
+[2020-08-24 16:48:24.318] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/nate/.vscode-oss/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/extension
+[2020-08-24 16:48:24.341] [exthost] [info] ExtensionService#_doActivateExtension Equinusocio.vsc-material-theme {"startup":true,"extensionId":{"value":"Equinusocio.vsc-material-theme","_lower":"equinusocio.vsc-material-theme"},"activationEvent":"*"}
+[2020-08-24 16:48:24.341] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/nate/.vscode-oss/extensions/equinusocio.vsc-material-theme-32.8.0/build/material.theme.config
+[2020-08-24 16:48:24.362] [exthost] [info] ExtensionService#_doActivateExtension equinusocio.vsc-material-theme-icons {"startup":true,"extensionId":{"value":"equinusocio.vsc-material-theme-icons","_lower":"equinusocio.vsc-material-theme-icons"},"activationEvent":"*"}
+[2020-08-24 16:48:24.362] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/nate/.vscode-oss/extensions/equinusocio.vsc-material-theme-icons-1.2.0/out/src/extension
+[2020-08-24 16:48:24.375] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode {"startup":true,"extensionId":{"value":"esbenp.prettier-vscode","_lower":"esbenp.prettier-vscode"},"activationEvent":"*"}
+[2020-08-24 16:48:24.375] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/nate/.vscode-oss/extensions/esbenp.prettier-vscode-5.1.3/dist/extension
+[2020-08-24 16:48:24.448] [exthost] [info] ExtensionService#_doActivateExtension naumovs.color-highlight {"startup":true,"extensionId":{"value":"naumovs.color-highlight","_lower":"naumovs.color-highlight"},"activationEvent":"*"}
+[2020-08-24 16:48:24.448] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/nate/.vscode-oss/extensions/naumovs.color-highlight-2.3.0/dist/extension
+[2020-08-24 16:48:24.458] [exthost] [info] ExtensionService#_doActivateExtension PKief.material-icon-theme {"startup":true,"extensionId":{"value":"PKief.material-icon-theme","_lower":"pkief.material-icon-theme"},"activationEvent":"*"}
+[2020-08-24 16:48:24.458] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/nate/.vscode-oss/extensions/pkief.material-icon-theme-4.2.0/dist/extension
+[2020-08-24 16:48:24.464] [exthost] [info] ExtensionService#_doActivateExtension pranaygp.vscode-css-peek {"startup":true,"extensionId":{"value":"pranaygp.vscode-css-peek","_lower":"pranaygp.vscode-css-peek"},"activationEvent":"*"}
+[2020-08-24 16:48:24.464] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/nate/.vscode-oss/extensions/pranaygp.vscode-css-peek-4.0.0/client/out/extension
+[2020-08-24 16:48:24.518] [exthost] [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer {"startup":true,"extensionId":{"value":"ritwickdey.LiveServer","_lower":"ritwickdey.liveserver"},"activationEvent":"*"}
+[2020-08-24 16:48:24.519] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/nate/.vscode-oss/extensions/ritwickdey.liveserver-5.6.1/out/src/extension
+[2020-08-24 16:48:24.983] [exthost] [info] ExtensionService#_doActivateExtension RobbOwen.synthwave-vscode {"startup":true,"extensionId":{"value":"RobbOwen.synthwave-vscode","_lower":"robbowen.synthwave-vscode"},"activationEvent":"*"}
+[2020-08-24 16:48:24.983] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/nate/.vscode-oss/extensions/robbowen.synthwave-vscode-0.1.8/src/extension.js
+[2020-08-24 16:48:25.292] [exthost] [info] ExtensionService#_doActivateExtension vscode.github {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2020-08-24 16:48:25.292] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/github/dist/extension.js
+[2020-08-24 16:48:25.334] [exthost] [info] eager extensions activated
+[2020-08-24 16:59:09.123] [exthost] [info] ExtensionService#_doActivateExtension vscode.css-language-features {"startup":false,"extensionId":{"value":"vscode.css-language-features","_lower":"vscode.css-language-features"},"activationEvent":"onLanguage:css"}
+[2020-08-24 16:59:09.123] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/css-language-features/client/dist/node/cssClientMain

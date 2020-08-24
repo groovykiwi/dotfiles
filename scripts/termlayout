@@ -7,7 +7,7 @@ bold=$(tput bold)
 normal=$(tput sgr0)
 
 wmctrl -s 0 && i3-msg "focus parent, focus parent, focus parent, focus parent, focus parent,  kill "
-i3-msg "workspace 1: ; append_layout ~/.config/i3/workspace_1.json" >/dev/null
+i3-msg "workspace 1:; append_layout ~/.config/i3/workspace_1.json" >/dev/null
 
 st -n ranger -e sh -c "ranger;bash" &
 st -n main -e sh -c "
@@ -18,4 +18,4 @@ neofetch;
 bash" &
 st -n top -e sh -c "ytop -m;bash" &
 
-#echo "" >> $HOME/.config/picom.conf
+touch -m $HOME/.config/picom.conf

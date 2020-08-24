@@ -1,0 +1,3 @@
+#!/bin/bash
+[ -z $1 ] && echo "Usage: rpush <local file> <server dir> " && exit
+rsync -azP $1 root@houlamy.com:$2

@@ -1,8 +1,4 @@
 #!/bin/bash
 term_status=$(pgrep floatterm)
 
-if [ -n $term_status ]; then
-	st -n floatterm -g 50x20-50+150
-else
-	wmctrl -x -R floatterm
-fi
+[ -n $term_status ] && st -n floatterm -g 50x20-50+150 || wmctrl -x -R floatterm
