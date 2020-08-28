@@ -96,10 +96,6 @@ done
 [ -d /etc/pulse ] && echo "Found /etc/pulse" && sudo rm -rf /etc/pulse && echo "Deleted /etc/pulse"
 sudo ln -s $HOME/dotfiles/etc/pulse /etc/ && echo -e "Created symlink with etc/pulse \n"
 
-# pacman.d
-[ -d /etc/pacman.d/hooks ] && echo "Found /etc/pacman.d/hooks" && sudo rm -rf /etc/pacman.d/hooks && echo "Deleted /etc/pacman.d/hooks"
-sudo ln -s $HOME/dotfiles/etc/pacman.d/hooks /etc/pacman.d && echo -e "Created symlink with etc/pacman.d/hooks \n"
-
 # .bashrc
 [ -f $HOME/.bashrc ] && echo "Found .bashrc" && rm $HOME/.bashrc && echo "Deleted .bashrc"
 ln -s $HOME/dotfiles/.bashrc $HOME && echo -e "Symlinked .bashrc \n" && source $HOME/.bashrc

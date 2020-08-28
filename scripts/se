@@ -9,11 +9,11 @@ editor="code"
   -h, --help          Show this help message and exit\n" && exit
 
 name=$(
-  for entry in "/home/nate/scripts"/*; do ! [ -d $entry ] && ! [[ $entry =~ .*\..* ]] && echo $entry; done \
+  for entry in "$HOME/scripts"/*; do ! [ -d $entry ] && ! [[ $entry =~ .*\..* ]] && echo $entry; done \
     | sed 's/.*scripts\///g' \
     | fzy -l 15
 )
 
 [ "$1" == "-d" ] && trash-put /home/nate/scripts/$name && echo "Moved $name to trash" && exit
 [ "$1" == "-l" ] && sudo ln -s /home/nate/scripts/$name /usr/bin && echo "Added $name to /usr/bin" && exit
-! [ -z $name ] && $editor "/home/nate/scripts/$name" && wmctrl -s 2
+! [ -z $name ] && $editor "$HOME/scripts/$name" && wmctrl -s 2

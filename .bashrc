@@ -175,7 +175,7 @@ alias ls='ls -Shv --color=always'
 alias lsa='ls -AFhv --color=always'
 alias lsaa='ls -lAFhv --color=always | less -R -X -F'
 alias del='trash-put'
-alias search='find -iname'
+alias search='find -L . -iname'
 
 # Configs
 alias brc='vim ~/.bashrc'

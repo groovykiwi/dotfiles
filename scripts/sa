@@ -1,4 +1,5 @@
 #!/bin/bash
+#SCRIPT ADD
 
 script_file="$HOME/scripts/$1"
 file_type=$2
@@ -12,17 +13,11 @@ elif [ "$2" == "bash" ]; then
   chmod +x $script_file
   printf "Open the script in ${editor}? "
   read answer
-  if [ "$answer" == "y" ]; then
-    $editor $script_file
-    wmctrl -s 2
-  fi
+  [ "$answer" == "y" ] && $editor $script_file && wmctrl -s 2
 elif [ "$2" == "python" ]; then
   echo "#!/usr/bin/env python" >$script_file
   chmod +x $script_file
-  printf "Open the script in Sublime? "
+  printf "Open the script in ${editor}? "
   read answer
-  if [ "$answer" == "y" ]; then
-    $editor $script_file
-    wmctrl -s 2
-  fi
+  [ "$answer" == "y" ] && $editor $script_file && wmctrl -s 2
 fi

@@ -2,29 +2,42 @@
     "telemetry.machineId": "ef6eaabb028b46b12b77f25dd02de8836fa915fac6b516dc434b8377d54b05dc",
     "openedPathsList": {
         "workspaces3": [
-            "file:///home/nate/dotfiles",
             "file:///home/nate/projects/mywebsite",
+            "file:///home/nate/projects/words-defined",
+            "file:///home/nate/projects/word-define",
+            "file:///home/nate/projects/projects",
+            "file:///home/nate/projects/restapi",
+            "file:///home/nate/projects/learnnode",
+            "file:///home/nate/projects",
+            "file:///home/nate/dotfiles",
             "file:///home/nate/scripts",
             "file:///home/nate/.config/polybar",
-            "file:///home/nate/projects",
             "file:///home/nate/projects/learn-node",
-            "file:///home/nate/projects/word-define",
             "file:///home/nate/docs/github-repos"
         ],
         "files2": [
-            "file:///home/nate/.config/picom.conf",
-            "file:///home/nate/scripts/dotpack",
-            "file:///home/nate/scripts/se",
-            "file:///home/nate/.mozilla/firefox/j8o0u69x.default-release/chrome/userChrome.css",
+            "file:///home/nate/dotfiles/scripts/router-reboot",
             "file:///home/nate/scripts/sa",
-            "file:///home/nate/.config/spicetify/Themes/pywal/color.ini",
+            "file:///home/nate/scripts/dotpack",
+            "file:///home/nate/dotfiles/config",
+            "file:///home/nate/dotfiles/packages",
+            "file:///home/nate/scripts/wintitle",
+            "file:///home/nate/.config/polybar/config",
+            "file:///home/nate/.config/neofetch/config.conf",
+            "file:///home/nate/.config/i3/config",
+            "file:///home/nate/scripts/se",
+            "file:///home/nate/scripts/ce",
+            "file:///home/nate/projects/clock/app.js",
+            "file:///home/nate/projects/learnnode/http.js",
             "file:///home/nate/scripts/bpw",
+            "file:///home/nate/scripts/tcl",
+            "file:///home/nate/.config/picom.conf",
+            "file:///home/nate/.mozilla/firefox/j8o0u69x.default-release/chrome/userChrome.css",
+            "file:///home/nate/.config/spicetify/Themes/pywal/color.ini",
             "file:///home/nate/.config/spicetify/Themes/pywal/user.css",
             "file:///home/nate/scripts/darktoggle",
             "file:///home/nate/.config/wal/templates/colors-userChrome",
             "file:///home/nate/scripts/termlayout",
-            "file:///home/nate/.config/polybar/config",
-            "file:///home/nate/.config/i3/config",
             "file:///home/nate/dotfiles/.config/wal/templates/colors-userChrome",
             "file:///home/nate/scripts/oad",
             "file:///home/nate/scripts/pywal",
@@ -37,7 +50,6 @@
             "file:///home/nate/dotfiles/.config/wal/colorschemes/dark/myscheme.json",
             "file:///home/nate/projects/word-define/index.html",
             "file:///home/nate/projects/word-define/app.js",
-            "file:///home/nate/projects/clock/app.js",
             "file:///home/nate/scripts/rpush",
             "file:///home/nate/scripts/rpull",
             "file:///home/nate/scripts/audio-fix",
@@ -47,7 +59,6 @@
             "file:///home/nate/scripts/bruh",
             "file:///home/nate/dotfiles/scripts/ipad-monitor",
             "file:///home/nate/scripts/vol",
-            "file:///home/nate/scripts/wintitle",
             "file:///home/nate/scripts/i3win"
         ]
     },
@@ -79,7 +90,7 @@
                         "label": "Open Wor&&kspace..."
                     },
                     {
-                        "id": "",
+                        "id": "submenuitem.24",
                         "label": "Open &&Recent",
                         "submenu": {
                             "items": [
@@ -94,24 +105,89 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "fsPath": "/home/nate/dotfiles",
-                                        "external": "file:///home/nate/dotfiles",
-                                        "path": "/home/nate/dotfiles",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/dotfiles"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
                                         "external": "file:///home/nate/projects/mywebsite",
                                         "path": "/home/nate/projects/mywebsite",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
                                     "label": "~/projects/mywebsite"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/nate/projects/words-defined",
+                                        "path": "/home/nate/projects/words-defined",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/projects/words-defined"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/nate/projects/word-define",
+                                        "path": "/home/nate/projects/word-define",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/projects/word-define"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/nate/projects/projects",
+                                        "path": "/home/nate/projects/projects",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/projects/projects"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/nate/projects/restapi",
+                                        "path": "/home/nate/projects/restapi",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/projects/restapi"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/nate/projects/learnnode",
+                                        "path": "/home/nate/projects/learnnode",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/projects/learnnode"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/nate/projects",
+                                        "path": "/home/nate/projects",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/projects"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/nate/dotfiles",
+                                        "path": "/home/nate/dotfiles",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/dotfiles"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -136,95 +212,18 @@
                                     "label": "~/.config/polybar"
                                 },
                                 {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/nate/projects",
-                                        "path": "/home/nate/projects",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/projects"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/nate/projects/learn-node",
-                                        "path": "/home/nate/projects/learn-node",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/projects/learn-node"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/nate/projects/word-define",
-                                        "path": "/home/nate/projects/word-define",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/projects/word-define"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/nate/docs/github-repos",
-                                        "path": "/home/nate/docs/github-repos",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/docs/github-repos"
-                                },
-                                {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/nate/.config/picom.conf",
-                                        "path": "/home/nate/.config/picom.conf",
+                                        "external": "file:///home/nate/dotfiles/scripts/router-reboot",
+                                        "path": "/home/nate/dotfiles/scripts/router-reboot",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/.config/picom.conf"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/nate/scripts/dotpack",
-                                        "path": "/home/nate/scripts/dotpack",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/scripts/dotpack"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/nate/scripts/se",
-                                        "path": "/home/nate/scripts/se",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/scripts/se"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/nate/.mozilla/firefox/j8o0u69x.default-release/chrome/userChrome.css",
-                                        "path": "/home/nate/.mozilla/firefox/j8o0u69x.default-release/chrome/userChrome.css",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.mozilla/firefox/j8o0u69x.default-release/chrome/userChrome.css"
+                                    "label": "~/dotfiles/scripts/router-reboot"
                                 },
                                 {
                                     "id": "openRecentFile",
@@ -241,56 +240,89 @@
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/nate/.config/spicetify/Themes/pywal/color.ini",
-                                        "path": "/home/nate/.config/spicetify/Themes/pywal/color.ini",
+                                        "external": "file:///home/nate/scripts/dotpack",
+                                        "path": "/home/nate/scripts/dotpack",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/.config/spicetify/Themes/pywal/color.ini"
+                                    "label": "~/scripts/dotpack"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/nate/scripts/bpw",
-                                        "path": "/home/nate/scripts/bpw",
+                                        "external": "file:///home/nate/dotfiles/config",
+                                        "path": "/home/nate/dotfiles/config",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/scripts/bpw"
+                                    "label": "~/dotfiles/config"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/nate/.config/spicetify/Themes/pywal/user.css",
-                                        "path": "/home/nate/.config/spicetify/Themes/pywal/user.css",
+                                        "external": "file:///home/nate/dotfiles/packages",
+                                        "path": "/home/nate/dotfiles/packages",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/.config/spicetify/Themes/pywal/user.css"
+                                    "label": "~/dotfiles/packages"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/nate/scripts/darktoggle",
-                                        "path": "/home/nate/scripts/darktoggle",
+                                        "external": "file:///home/nate/scripts/wintitle",
+                                        "path": "/home/nate/scripts/wintitle",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/scripts/darktoggle"
+                                    "label": "~/scripts/wintitle"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/nate/.config/wal/templates/colors-userChrome",
-                                        "path": "/home/nate/.config/wal/templates/colors-userChrome",
+                                        "external": "file:///home/nate/.config/polybar/config",
+                                        "path": "/home/nate/.config/polybar/config",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/.config/wal/templates/colors-userChrome"
+                                    "label": "~/.config/polybar/config"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/nate/.config/neofetch/config.conf",
+                                        "path": "/home/nate/.config/neofetch/config.conf",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config/neofetch/config.conf"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/nate/.config/i3/config",
+                                        "path": "/home/nate/.config/i3/config",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config/i3/config"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/nate/scripts/se",
+                                        "path": "/home/nate/scripts/se",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/scripts/se"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -333,7 +365,8 @@
                     },
                     {
                         "id": "workbench.action.files.saveAll",
-                        "label": "Save A&&ll"
+                        "label": "Save A&&ll",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -343,7 +376,7 @@
                         "label": "A&&uto Save"
                     },
                     {
-                        "id": "",
+                        "id": "submenuitem.23",
                         "label": "&&Preferences",
                         "submenu": {
                             "items": [
@@ -404,7 +437,7 @@
                     },
                     {
                         "id": "workbench.action.closeFolder",
-                        "label": "Close &&Folder"
+                        "label": "Close &&Workspace"
                     },
                     {
                         "id": "workbench.action.closeWindow",
@@ -578,7 +611,7 @@
                         "id": "vscode.menubar.separator"
                     },
                     {
-                        "id": "",
+                        "id": "submenuitem.15",
                         "label": "&&Appearance",
                         "submenu": {
                             "items": [
@@ -592,7 +625,7 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleCenteredLayout",
-                                    "label": "Centered Layout"
+                                    "label": "&&Centered Layout"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -660,7 +693,7 @@
                         }
                     },
                     {
-                        "id": "",
+                        "id": "submenuitem.21",
                         "label": "Editor &&Layout",
                         "submenu": {
                             "items": [
@@ -814,7 +847,7 @@
                         "id": "vscode.menubar.separator"
                     },
                     {
-                        "id": "",
+                        "id": "submenuitem.26",
                         "label": "Switch &&Editor",
                         "submenu": {
                             "items": [
@@ -863,7 +896,7 @@
                         }
                     },
                     {
-                        "id": "",
+                        "id": "submenuitem.27",
                         "label": "Switch &&Group",
                         "submenu": {
                             "items": [
@@ -1064,7 +1097,7 @@
                         "label": "Toggle &&Breakpoint"
                     },
                     {
-                        "id": "",
+                        "id": "submenuitem.22",
                         "label": "&&New Breakpoint",
                         "submenu": {
                             "items": [
@@ -1119,7 +1152,8 @@
                     },
                     {
                         "id": "workbench.action.terminal.split",
-                        "label": "&&Split Terminal"
+                        "label": "&&Split Terminal",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1655,8 +1689,11 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/nate/dotfiles",
-            "backupPath": "/home/nate/.config/Code - OSS/Backups/0cf8b23417f098b52d96a3f707a86f17",
+            "workspaceIdentifier": {
+                "id": "906be3c794bcbc7b4ca235574b73699e",
+                "configURIPath": "file:///home/nate/.config/Code%20-%20OSS/Workspaces/1598368729045/workspace.json"
+            },
+            "backupPath": "/home/nate/.config/Code - OSS/Backups/906be3c794bcbc7b4ca235574b73699e",
             "uiState": {
                 "mode": 1,
                 "x": 5,
@@ -1668,6 +1705,6 @@
         "openedWindows": []
     },
     "theme": "vs-dark",
-    "themeBackground": "#262335",
+    "themeBackground": "#292d3e",
     "pickerWorkingDir": "/home/nate/projects"
 }

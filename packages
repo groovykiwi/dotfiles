@@ -26,7 +26,7 @@ sudo pacman -Syuu
 
 # ARCH REPO PACKAGES
 echo "[.] Installing packages"
-sudo pacman -S --needed gufw xfce4-clipman-plugin xfce4-screenshooter youtube-dl timeshift pavucontrol thunar libratbag curlgnome-disk-utility baobab python xcb-util-xrm tumbler python-pywal imagemagick feh slop neofetch firefox pulseaudio rofi playerctl wmctrl xfce4-power-manager polybar redshift fzy trash-cli hidapi xorg-fonts-alias-misc ueberzug pulseaudio-equalizer protonvpn-linux-gui anydesk-bin audacity code noto-fonts-emoji
+sudo pacman -S --needed gufw xfce4-clipman-plugin xfce4-screenshooter timeshift pavucontrol thunar libratbag curlgnome-disk-utility baobab python xcb-util-xrm tumbler python-pywal imagemagick feh slop neofetch firefox pulseaudio rofi playerctl wmctrl xfce4-power-manager polybar redshift fzy trash-cli hidapi xorg-fonts-alias-misc ueberzug pulseaudio-equalizer protonvpn-linux-gui anydesk-bin code noto-fonts-emoji postman-bin
 
 # SUCKLESS TERMINAL
 echo "[.] Installing Suckless Terminal"
@@ -35,20 +35,19 @@ cd $HOME/st && sudo rm config.h && sudo make clean install
 
 # PYTHON PACKAGES
 echo "[.] Installing pip packages"
-sudo pip install i3-py powerline-shell
+sudo pip install i3-py
 
 # AUR PACKAGES (LONG COMPILING)
-echo "[.] Installing AUR packages"
-aurlist=(picom-ibhagwan-git mimi-git ytop spicetify-cli cavaspotify espanso oomox scrcpy
+aurlist=(picom-ibhagwan-git mimi-git ytop spicetify-cli spotify espanso oomox scrcpy
 )
-
 tobeinstalled=""
 
-echo "[.] Checking for already installed packages..."
+echo "[.] Checking for already installed AUR packages..."
 for i in ${aurlist[@]}; do
   [ -z $(pamac list -i | cut -d' ' -f1 | grep -w "$i") ] && tobeinstalled+="$i "
 done
 
+echo "[.] Installing AUR packages"
 pamac build $tobeinstalled
 
 # EXIT
