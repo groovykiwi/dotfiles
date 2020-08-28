@@ -1,0 +1,162 @@
+["INFO" - 4:01:23 PM] Extension Name: esbenp.prettier-vscode.
+["INFO" - 4:01:23 PM] Extension Version: 5.2.1.
+["INFO" - 4:01:23 PM] Enabling prettier for languages
+[
+  "ansible",
+  "css",
+  "graphql",
+  "home-assistant",
+  "html",
+  "javascript",
+  "javascriptreact",
+  "json",
+  "json5",
+  "jsonc",
+  "less",
+  "markdown",
+  "mdx",
+  "mongo",
+  "postcss",
+  "scss",
+  "typescript",
+  "typescriptreact",
+  "vue",
+  "yaml"
+]
+["INFO" - 4:01:23 PM] Enabling prettier for range supported languages
+[
+  "graphql",
+  "javascript",
+  "javascriptreact",
+  "json",
+  "typescript",
+  "typescriptreact"
+]
+["INFO" - 4:32:52 PM] Formatting /home/nate/.config/Code - OSS/Workspaces/1598368729045/workspace.json
+["INFO" - 4:32:53 PM] Using ignore file (if present) at undefined
+["INFO" - 4:32:53 PM] Using bundled version of prettier.
+["INFO" - 4:32:53 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "json"
+}
+["INFO" - 4:32:53 PM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 4:32:53 PM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/nate/.config/Code - OSS/Workspaces/1598368729045/workspace.json",
+  "parser": "json"
+}
+["INFO" - 4:32:53 PM] Formatting completed in 473.4014ms.
+["INFO" - 4:32:53 PM] Enabling prettier for languages
+[
+  "ansible",
+  "css",
+  "graphql",
+  "home-assistant",
+  "html",
+  "javascript",
+  "javascriptreact",
+  "json",
+  "json5",
+  "jsonc",
+  "less",
+  "markdown",
+  "mdx",
+  "mongo",
+  "postcss",
+  "scss",
+  "typescript",
+  "typescriptreact",
+  "vue",
+  "yaml"
+]
+["INFO" - 4:32:53 PM] Enabling prettier for range supported languages
+[
+  "graphql",
+  "javascript",
+  "javascriptreact",
+  "json",
+  "typescript",
+  "typescriptreact"
+]
+["INFO" - 4:32:53 PM] Formatting /home/nate/.config/Code - OSS/Workspaces/1598368729045/workspace.json
+["INFO" - 4:32:53 PM] Using ignore file (if present) at undefined
+["INFO" - 4:32:53 PM] Using bundled version of prettier.
+["INFO" - 4:32:53 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "json"
+}
+["INFO" - 4:32:53 PM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 4:32:53 PM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/nate/.config/Code - OSS/Workspaces/1598368729045/workspace.json",
+  "parser": "json"
+}
+["INFO" - 4:32:53 PM] Formatting completed in 17.974503ms.
+["INFO" - 4:32:53 PM] Enabling prettier for languages
+[
+  "ansible",
+  "css",
+  "graphql",
+  "home-assistant",
+  "html",
+  "javascript",
+  "javascriptreact",
+  "json",
+  "json5",
+  "jsonc",
+  "less",
+  "markdown",
+  "mdx",
+  "mongo",
+  "postcss",
+  "scss",
+  "typescript",
+  "typescriptreact",
+  "vue",
+  "yaml"
+]
+["INFO" - 4:32:53 PM] Enabling prettier for range supported languages
+[
+  "graphql",
+  "javascript",
+  "javascriptreact",
+  "json",
+  "typescript",
+  "typescriptreact"
+]

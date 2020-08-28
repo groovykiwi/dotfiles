@@ -1,0 +1,10 @@
+{
+  "folders": [
+    {
+      "path": "/home/nate/projects/mywebsite"
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "mywebsite"
+  }
+}

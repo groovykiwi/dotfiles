@@ -1,0 +1,13 @@
+#!/bin/bash
+#CONFIG EDIT
+
+editor="code"
+
+file=$(
+  find ~/dotfiles/.config/ -type f -iname "config*" ! -iname "*.code" \
+  | sed 's/.*config\///g' \
+  | fzy -l 15
+)
+
+! [ -z $file ] && $editor $file
+

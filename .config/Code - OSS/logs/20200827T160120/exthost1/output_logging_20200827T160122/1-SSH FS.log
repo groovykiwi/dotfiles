@@ -1,0 +1,166 @@
+[INFO]    Created output channel for vscode-sshfs
+[INFO]    Loading configurations...
+[DEBUG]   	Added configuration vultr-web from 1
+[DEBUG]   	Added configuration vultr-configs from 1
+[DEBUG]   	Added configuration vultr-scripts from 1
+[INFO]    Found 3 configurations
+[INFO]    Extension activated, version 1.18.3
+[DEBUG]   Reading ssh://vultr-configs/.vscode/settings.json
+[DEBUG]   Reading ssh://vultr-configs/.vscode/tasks.json
+[DEBUG]   Reading ssh://vultr-configs/.vscode/launch.json
+[DEBUG]   Reading ssh://vultr-configs/.vscode/settings.json
+[DEBUG]   Reading ssh://vultr-configs/.vscode/tasks.json
+[DEBUG]   Reading ssh://vultr-configs/.vscode/launch.json
+[DEBUG]   Reading ssh://vultr-web/.vscode/settings.json
+[DEBUG]   Reading ssh://vultr-web/.vscode/tasks.json
+[DEBUG]   Reading ssh://vultr-web/.vscode/launch.json
+[DEBUG]   Reading ssh://vultr-web/.vscode/settings.json
+[DEBUG]   Reading ssh://vultr-web/.vscode/tasks.json
+[DEBUG]   Reading ssh://vultr-web/.vscode/launch.json
+[DEBUG]   Reading ssh://vultr-configs/.vscode/extensions.json
+[DEBUG]   Reading ssh://vultr-web/.vscode/extensions.json
+[INFO]    [createConnection(vultr-configs,config)] Creating a new connection for 'vultr-configs'
+[INFO]    [createConnection(vultr-web,config)] Creating a new connection for 'vultr-web'
+[INFO]    Calculating actual config
+[INFO]    Calculating actual config
+[DEBUG]   	Read private key from /home/nate/.ssh/id_rsa
+[DEBUG]   	Final configuration:
+{
+    "host": "houlamy.com",
+    "label": "Vultr Websites",
+    "name": "vultr-web",
+    "port": 22,
+    "privateKeyPath": "/home/nate/.ssh/id_rsa",
+    "root": "/var/www",
+    "username": "root",
+    "_location": 1,
+    "_locations": [
+        1
+    ],
+    "_calculated": {
+        "host": "houlamy.com",
+        "label": "Vultr Websites",
+        "name": "vultr-web",
+        "port": 22,
+        "privateKeyPath": "/home/nate/.ssh/id_rsa",
+        "root": "/var/www",
+        "username": "root",
+        "_location": 1,
+        "_locations": [
+            1
+        ]
+    },
+    "privateKey": "Buffer(2602)"
+}
+[INFO]    [createSocket(vultr-web)] Creating socket
+[DEBUG]   [createSocket(vultr-web)] Connecting to houlamy.com:22
+[DEBUG]   	Read private key from /home/nate/.ssh/id_rsa
+[DEBUG]   	Final configuration:
+{
+    "host": "houlamy.com",
+    "label": "Vultr Configs",
+    "name": "vultr-configs",
+    "privateKeyPath": "/home/nate/.ssh/id_rsa",
+    "root": "/etc/nginx/",
+    "username": "root",
+    "_location": 1,
+    "_locations": [
+        1
+    ],
+    "_calculated": {
+        "host": "houlamy.com",
+        "label": "Vultr Configs",
+        "name": "vultr-configs",
+        "privateKeyPath": "/home/nate/.ssh/id_rsa",
+        "root": "/etc/nginx/",
+        "username": "root",
+        "_location": 1,
+        "_locations": [
+            1
+        ]
+    },
+    "privateKey": "Buffer(2602)"
+}
+[INFO]    [createSocket(vultr-configs)] Creating socket
+[DEBUG]   [createSocket(vultr-configs)] Connecting to houlamy.com:22
+[INFO]    [createSSH(vultr-configs)] Creating SSH session over the opened socket
+[INFO]    [createSSH(vultr-web)] Creating SSH session over the opened socket
+[INFO]    [getSFTP(vultr-web)] Creating SFTP session using standard sftp subsystem
+[INFO]    [getSFTP(vultr-configs)] Creating SFTP session using standard sftp subsystem
+[INFO]    [SSHFileSystem(/var/www)] SSHFileSystem created
+[INFO]    Created SSHFileSystem for vultr-web, reading root directory...
+[INFO]    [SSHFileSystem(/etc/nginx/)] SSHFileSystem created
+[INFO]    Created SSHFileSystem for vultr-configs, reading root directory...
+[DEBUG]   [SSHFileSystem(/var/www)] Ignored FileNotFound error for: ssh://vultr-web/.vscode/settings.json
+[DEBUG]   [SSHFileSystem(/var/www)] Ignored FileNotFound error for: ssh://vultr-web/.vscode/tasks.json
+[DEBUG]   [SSHFileSystem(/var/www)] Ignored FileNotFound error for: ssh://vultr-web/.vscode/launch.json
+[DEBUG]   [SSHFileSystem(/var/www)] Ignored FileNotFound error for: ssh://vultr-web/.vscode/settings.json
+[DEBUG]   [SSHFileSystem(/var/www)] Ignored FileNotFound error for: ssh://vultr-web/.vscode/tasks.json
+[DEBUG]   [SSHFileSystem(/var/www)] Ignored FileNotFound error for: ssh://vultr-web/.vscode/launch.json
+[DEBUG]   [SSHFileSystem(/var/www)] Ignored FileNotFound error for: ssh://vultr-web/.vscode/settings.json
+[DEBUG]   [SSHFileSystem(/var/www)] Ignored FileNotFound error for: ssh://vultr-web/.vscode/tasks.json
+[DEBUG]   [SSHFileSystem(/var/www)] Ignored FileNotFound error for: ssh://vultr-web/.vscode/launch.json
+[DEBUG]   [SSHFileSystem(/var/www)] Ignored FileNotFound error for: ssh://vultr-web/.vscode/settings.json
+[DEBUG]   [SSHFileSystem(/var/www)] Ignored FileNotFound error for: ssh://vultr-web/.vscode/tasks.json
+[DEBUG]   [SSHFileSystem(/var/www)] Ignored FileNotFound error for: ssh://vultr-web/.vscode/launch.json
+[DEBUG]   [SSHFileSystem(/var/www)] Ignored FileNotFound error for: ssh://vultr-web/.vscode
+[DEBUG]   [SSHFileSystem(/etc/nginx/)] Ignored FileNotFound error for: ssh://vultr-configs/.vscode/settings.json
+[DEBUG]   [SSHFileSystem(/etc/nginx/)] Ignored FileNotFound error for: ssh://vultr-configs/.vscode/tasks.json
+[DEBUG]   [SSHFileSystem(/etc/nginx/)] Ignored FileNotFound error for: ssh://vultr-configs/.vscode/launch.json
+[DEBUG]   [SSHFileSystem(/etc/nginx/)] Ignored FileNotFound error for: ssh://vultr-configs/.vscode/settings.json
+[DEBUG]   [SSHFileSystem(/etc/nginx/)] Ignored FileNotFound error for: ssh://vultr-configs/.vscode/tasks.json
+[DEBUG]   [SSHFileSystem(/etc/nginx/)] Ignored FileNotFound error for: ssh://vultr-configs/.vscode/launch.json
+[DEBUG]   [SSHFileSystem(/etc/nginx/)] Ignored FileNotFound error for: ssh://vultr-configs/.vscode/settings.json
+[DEBUG]   [SSHFileSystem(/etc/nginx/)] Ignored FileNotFound error for: ssh://vultr-configs/.vscode/tasks.json
+[DEBUG]   [SSHFileSystem(/etc/nginx/)] Ignored FileNotFound error for: ssh://vultr-configs/.vscode/launch.json
+[DEBUG]   [SSHFileSystem(/etc/nginx/)] Ignored FileNotFound error for: ssh://vultr-configs/.vscode/settings.json
+[DEBUG]   [SSHFileSystem(/etc/nginx/)] Ignored FileNotFound error for: ssh://vultr-configs/.vscode/tasks.json
+[DEBUG]   [SSHFileSystem(/etc/nginx/)] Ignored FileNotFound error for: ssh://vultr-configs/.vscode/launch.json
+[DEBUG]   [SSHFileSystem(/etc/nginx/)] Ignored FileNotFound error for: ssh://vultr-configs/.vscode
+[DEBUG]   [SSHFileSystem(/var/www)] Ignored FileNotFound error for: ssh://vultr-web/.vscode/extensions.json
+[DEBUG]   [SSHFileSystem(/var/www)] Ignored FileNotFound error for: ssh://vultr-web/.vscode/extensions.json
+[DEBUG]   [SSHFileSystem(/var/www)] Ignored FileNotFound error for: ssh://vultr-web/.git/config
+[DEBUG]   [SSHFileSystem(/var/www)] Ignored FileNotFound error for: ssh://vultr-web/.git/config
+[DEBUG]   [SSHFileSystem(/var/www)] Ignored FileNotFound error for: ssh://vultr-web/node_modules
+[DEBUG]   [SSHFileSystem(/etc/nginx/)] Ignored FileNotFound error for: ssh://vultr-configs/.vscode/extensions.json
+[DEBUG]   [SSHFileSystem(/etc/nginx/)] Ignored FileNotFound error for: ssh://vultr-configs/.vscode/extensions.json
+[DEBUG]   [SSHFileSystem(/etc/nginx/)] Ignored FileNotFound error for: ssh://vultr-configs/.git/config
+[DEBUG]   [SSHFileSystem(/etc/nginx/)] Ignored FileNotFound error for: ssh://vultr-configs/.git/config
+[DEBUG]   [SSHFileSystem(/etc/nginx/)] Ignored FileNotFound error for: ssh://vultr-configs/node_modules
+[DEBUG]   [SSHFileSystem(/var/www)] Ignored FileNotFound error for: ssh://vultr-web/pom.xml
+[DEBUG]   [SSHFileSystem(/etc/nginx/)] Ignored FileNotFound error for: ssh://vultr-configs/pom.xml
+[ERROR]   [createSSH(vultr-web)] Keepalive timeout
+[ERROR]   [createSSH(vultr-configs)] Keepalive timeout
+[INFO]    [createConnection(vultr-web,config)] Closing connection to 'vultr-web' due to no active filesystems/terminals
+[INFO]    [createConnection(vultr-configs,config)] Closing connection to 'vultr-configs' due to no active filesystems/terminals
+[INFO]    Command received to disconnect vultr-configs
+[ERROR]   Error handling uri: ssh://vultr-web/
+[ERROR]   Connection closed
+JSON: {}
+Error: Connection closed
+	at r (/home/nate/.vscode-oss/extensions/kelvin.vscode-sshfs-1.18.3/dist/5.extension.js:1:1315)
+	at /home/nate/.vscode-oss/extensions/kelvin.vscode-sshfs-1.18.3/dist/5.extension.js:1:1466
+	at new Promise (<anonymous>)
+Logged at:
+	at /home/nate/.vscode-oss/extensions/kelvin.vscode-sshfs-1.18.3/dist/5.extension.js:1:1657
+[INFO]    Command received to disconnect vultr-configs
+[ERROR]   Error handling uri: ssh://vultr-web/.vscode
+[ERROR]   Connection closed
+JSON: {}
+Error: Connection closed
+	at r (/home/nate/.vscode-oss/extensions/kelvin.vscode-sshfs-1.18.3/dist/5.extension.js:1:1315)
+	at /home/nate/.vscode-oss/extensions/kelvin.vscode-sshfs-1.18.3/dist/5.extension.js:1:1466
+	at new Promise (<anonymous>)
+Logged at:
+	at /home/nate/.vscode-oss/extensions/kelvin.vscode-sshfs-1.18.3/dist/5.extension.js:1:1657
+[ERROR]   Error handling uri: ssh://vultr-web/
+[ERROR]   Connection closed
+JSON: {}
+Error: Connection closed
+	at r (/home/nate/.vscode-oss/extensions/kelvin.vscode-sshfs-1.18.3/dist/5.extension.js:1:1315)
+	at /home/nate/.vscode-oss/extensions/kelvin.vscode-sshfs-1.18.3/dist/5.extension.js:1:1466
+	at new Promise (<anonymous>)
+Logged at:
+	at /home/nate/.vscode-oss/extensions/kelvin.vscode-sshfs-1.18.3/dist/5.extension.js:1:1657
+[INFO]    Command received to disconnect vultr-web
+[INFO]    Command received to disconnect vultr-web

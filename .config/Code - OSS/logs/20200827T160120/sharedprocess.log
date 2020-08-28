@@ -1,0 +1,8 @@
+[2020-08-27 16:01:23.832] [sharedprocess] [info] main {"machineId":"ef6eaabb028b46b12b77f25dd02de8836fa915fac6b516dc434b8377d54b05dc","windowId":2}
+[2020-08-27 16:01:25.643] [sharedprocess] [info] Installing extension: esbenp.prettier-vscode
+[2020-08-27 16:01:32.637] [sharedprocess] [info] Downloaded extension: esbenp.prettier-vscode /home/nate/.config/Code - OSS/CachedExtensionVSIXs/esbenp.prettier-vscode-5.3.0
+[2020-08-27 16:01:32.761] [sharedprocess] [info] Extracted extension to /home/nate/.vscode-oss/extensions/.esbenp.prettier-vscode-5.3.0: esbenp.prettier-vscode
+[2020-08-27 16:01:32.762] [sharedprocess] [info] Renamed to /home/nate/.vscode-oss/extensions/esbenp.prettier-vscode-5.3.0
+[2020-08-27 16:01:32.762] [sharedprocess] [info] Installation completed. esbenp.prettier-vscode
+[2020-08-27 16:01:32.785] [sharedprocess] [info] Extensions installed successfully: esbenp.prettier-vscode
+[2020-08-27 16:02:03.858] [sharedprocess] [info] Starting to clean up unused language packs.
