@@ -124,3 +124,49 @@ Open repository: /home/nate/dotfiles
 > git ls-files --stage -- /home/nate/dotfiles/config
 > git cat-file -s 1fd616db8a35855b50a8886c0656677d658b0bb8
 > git check-ignore -v -z --stdin
+> git status -z -u
+> git ls-files --stage -- /home/nate/dotfiles/config
+> git symbolic-ref --short HEAD
+> git cat-file -s 1fd616db8a35855b50a8886c0656677d658b0bb8
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git show --textconv :config
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :packages
+> git ls-files --stage -- /home/nate/dotfiles/packages
+> git cat-file -s 26d2ef8237eb6b6f7d0bf0022f71051be55d3e6a
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template

@@ -26,7 +26,7 @@ sudo pacman -Syuu
 
 # ARCH REPO PACKAGES
 echo "[.] Installing packages"
-sudo pacman -S --noconfirm --needed thunar gufw xfce4-clipman-plugin xfce4-screenshooter timeshift pavucontrol thunar curlgnome-disk-utility baobab python tumbler python-pywal imagemagick feh slop neofetch firefox pulseaudio rofi playerctl wmctrl xfce4-power-manager polybar redshift fzy trash-cli hidapi xorg-fonts-alias-misc ueberzug pulseaudio-equalizer code noto-fonts-emoji 
+sudo pacman -S --noconfirm --needed thunar gufw xfce4-clipman-plugin xfce4-screenshooter timeshift pavucontrol thunar baobab python tumbler python-pywal imagemagick feh slop neofetch firefox pulseaudio rofi playerctl wmctrl xfce4-power-manager polybar redshift fzy trash-cli hidapi xorg-fonts-alias-misc ueberzug pulseaudio-equalizer code noto-fonts-emoji 
 
 # SUCKLESS TERMINAL
 echo "[.] Installing Suckless Terminal"
