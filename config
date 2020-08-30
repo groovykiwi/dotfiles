@@ -67,6 +67,9 @@ if [ "$theming" = "True" ]; then
   sudo cp -r $HOME/dotfiles/theming/spicetify/* $HOME/.config/spicetify/Themes/
   sudo cp -r $HOME/dotfiles/theming/slick-greeter/* /usr/share/slick-greeter/
 
+  # User specific
+  sudo cp -r $HOME/dotfiles/theming/walls $HOME/pics/
+
   # Symlink myfonts folder
   [ -d /usr/share/fonts/myfonts ] \
     && echo "Found /usr/share/fonts/myfonts" \
