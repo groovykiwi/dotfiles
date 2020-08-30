@@ -2,7 +2,7 @@
   "editor.fontSize": 20,
   "editor.fontFamily": "'FiraCode Nerd Font','Consolas', monospace",
   "editor.wordWrap": "on",
-  "workbench.colorTheme": "Material Theme Palenight High Contrast",
+  "workbench.colorTheme": "SynthWave '84",
   "editor.tabSize": 2,
   "workbench.iconTheme": "material-icon-theme",
   "liveServer.settings.donotShowInfoMsg": true,
@@ -72,5 +72,7 @@
   "materialTheme.accent": "Red",
   "workbench.startupEditor": "newUntitledFile",
   "window.zoomLevel": -1,
-  "javascript.updateImportsOnFileMove.enabled": "always"
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false
 }

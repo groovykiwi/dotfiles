@@ -16,17 +16,26 @@
             "file:///home/nate/docs/github-repos"
         ],
         "files2": [
+            "file:///home/nate/dotfiles/packages",
+            "file:///home/nate/dotfiles/config",
+            "file:///home/nate/dotfiles/scripts/dotfiles/config",
+            "file:///home/nate/convo-master-discord-bot/strings.py",
+            "file:///home/nate/convo-master-discord-bot/test.py",
+            "file:///home/nate/convo-master-discord-bot/strings.txt",
+            "file:///home/nate/convo-master-discord-bot/bot.py",
+            "file:///home/nate/convo-master-discord-bot/README.md",
+            "file:///home/nate/.config/i3/config",
+            "file:///home/nate/scripts/se",
+            "file:///home/nate/i3/config",
+            "file:///home/nate/scripts/ce",
+            "file:///home/nate/dotfiles/scripts/polybar-spotify/i3/config",
+            "file:///home/nate/dotfiles/scripts/polybar-spotify/spotify_status.py",
             "file:///home/nate/dotfiles/scripts/router-reboot",
             "file:///home/nate/scripts/sa",
             "file:///home/nate/scripts/dotpack",
-            "file:///home/nate/dotfiles/config",
-            "file:///home/nate/dotfiles/packages",
             "file:///home/nate/scripts/wintitle",
             "file:///home/nate/.config/polybar/config",
             "file:///home/nate/.config/neofetch/config.conf",
-            "file:///home/nate/.config/i3/config",
-            "file:///home/nate/scripts/se",
-            "file:///home/nate/scripts/ce",
             "file:///home/nate/projects/clock/app.js",
             "file:///home/nate/projects/learnnode/http.js",
             "file:///home/nate/scripts/bpw",
@@ -218,34 +227,12 @@
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/nate/dotfiles/scripts/router-reboot",
-                                        "path": "/home/nate/dotfiles/scripts/router-reboot",
+                                        "external": "file:///home/nate/dotfiles/packages",
+                                        "path": "/home/nate/dotfiles/packages",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/dotfiles/scripts/router-reboot"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/nate/scripts/sa",
-                                        "path": "/home/nate/scripts/sa",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/scripts/sa"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/nate/scripts/dotpack",
-                                        "path": "/home/nate/scripts/dotpack",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/scripts/dotpack"
+                                    "label": "~/dotfiles/packages"
                                 },
                                 {
                                     "id": "openRecentFile",
@@ -262,45 +249,67 @@
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/nate/dotfiles/packages",
-                                        "path": "/home/nate/dotfiles/packages",
+                                        "external": "file:///home/nate/dotfiles/scripts/dotfiles/config",
+                                        "path": "/home/nate/dotfiles/scripts/dotfiles/config",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/dotfiles/packages"
+                                    "label": "~/dotfiles/scripts/dotfiles/config"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/nate/scripts/wintitle",
-                                        "path": "/home/nate/scripts/wintitle",
+                                        "external": "file:///home/nate/convo-master-discord-bot/strings.py",
+                                        "path": "/home/nate/convo-master-discord-bot/strings.py",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/scripts/wintitle"
+                                    "label": "~/convo-master-discord-bot/strings.py"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/nate/.config/polybar/config",
-                                        "path": "/home/nate/.config/polybar/config",
+                                        "external": "file:///home/nate/convo-master-discord-bot/test.py",
+                                        "path": "/home/nate/convo-master-discord-bot/test.py",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/.config/polybar/config"
+                                    "label": "~/convo-master-discord-bot/test.py"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/nate/.config/neofetch/config.conf",
-                                        "path": "/home/nate/.config/neofetch/config.conf",
+                                        "external": "file:///home/nate/convo-master-discord-bot/strings.txt",
+                                        "path": "/home/nate/convo-master-discord-bot/strings.txt",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/.config/neofetch/config.conf"
+                                    "label": "~/convo-master-discord-bot/strings.txt"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/nate/convo-master-discord-bot/bot.py",
+                                        "path": "/home/nate/convo-master-discord-bot/bot.py",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/convo-master-discord-bot/bot.py"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/nate/convo-master-discord-bot/README.md",
+                                        "path": "/home/nate/convo-master-discord-bot/README.md",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/convo-master-discord-bot/README.md"
                                 },
                                 {
                                     "id": "openRecentFile",
@@ -365,8 +374,7 @@
                     },
                     {
                         "id": "workbench.action.files.saveAll",
-                        "label": "Save A&&ll",
-                        "enabled": false
+                        "label": "Save A&&ll"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -637,8 +645,7 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "Show &&Side Bar",
-                                    "checked": true
+                                    "label": "Show &&Side Bar"
                                 },
                                 {
                                     "id": "workbench.action.toggleStatusbarVisibility",
@@ -1705,6 +1712,6 @@
         "openedWindows": []
     },
     "theme": "vs-dark",
-    "themeBackground": "#292d3e",
+    "themeBackground": "#262335",
     "pickerWorkingDir": "/home/nate/projects"
 }

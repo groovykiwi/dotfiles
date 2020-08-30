@@ -1,0 +1,128 @@
+file:///home/nate/dotfiles/config {"mtime":1598535476232,"ctime":1593789110315,"size":4431,"etag":"35jbrk6mf4it","orphaned":false}
+#!/bin/bash
+
+NC='\033[0m' # No Color
+C1='\033[1;31m'
+
+while getopts h flag; do
+  case "${flag}" in
+  h) help="True" ;;
+  esac
+done
+
+[ "$help" = "True" ] && echo -e "\nUsage: ./config
+
+Install dotfiles to your system (the dotfiles folder NEEDS to be in your home directory)
+
+Optional arguments:
+  -h,         Displays this message and exit. \n" && exit
+
+# VALIDATION
+echo "Are you sure you want to proceed? To cancel press Ctrl+C, to continue press ENTER" && read answer
+
+# BACKUP .CONFIG
+echo "Do you want to backup your current config files? (y/n)" && read answer
+
+[ "$answer" = "y" ] && backup="True" || backup="False"
+
+if [ $backup = "True" ]; then
+
+  [ -d $HOME/.backup ] && echo -e "\nA previous backup (~/.backup) has been found, it will be overwritten. To cancel press Ctrl+C, to continue press ENTER" && read answer
+
+  echo "Backing up to ~/.backup"
+  sudo rm -rf $HOME/.backup
+  mkdir $HOME/.backup
+  sudo cp -p -r $HOME/.config/ /etc/ $HOME/{.Xresources,.bashrc,.bash_profile,.profile} $HOME/.backup/
+  echo "Backup is finished.\n"
+
+else
+  echo "No backup will be made."
+fi
+
+# RENAME & DELETE HOME DIRECTORIES
+echo "Do you want to clean up default home directories (renaming, deleting)? (y/n)" && read answer
+
+[ "$answer" = "y" ] && rename="True" || rename="False"
+
+if [ "$rename" = "True" ]; then
+  mv -v $HOME/Downloads $HOME/dl
+  mv -v $HOME/Documents $HOME/docs
+  mv -v $HOME/Pictures $HOME/pics
+
+  [ -d $HOME/Public ] && rm -rf $HOME/Public
+  [ -d $HOME/Templates ] && rm -rf $HOME/Templates
+  [ -d $HOME/Videos ] && rm -rf $HOME/Videos
+  [ -d $HOME/Music ] && rm -rf $HOME/Music
+  [ -d $HOME/Desktop ] && rm -rf $HOME/Desktop
+fi
+
+# INSTALLS THEMES & FONTS IN DOTFILES/FILES FOLDER
+echo "Install themes and fonts from dotfiles/theming folder? (y/n)" && read answer
+
+[ "$answer" = "y" ] && theming="True" || theming="False"
+
+if [ "$theming" = "True" ]; then
+
+  # App specific themes
+  sudo cp -r $HOME/dotfiles/theming/BetterDiscord/* $HOME/.config/BetterDiscord/
+  sudo cp -r $HOME/dotfiles/theming/spicetify/* $HOME/.config/spicetify/Themes/
+  sudo cp -r $HOME/dotfiles/theming/slick-greeter/* /usr/share/slick-greeter/
+
+  # Symlink myfonts folder
+  [ -d /usr/share/fonts/myfonts ] \
+    && echo "Found /usr/share/fonts/myfonts" \
+    && sudo rm -rf /usr/share/fonts/myfonts \
+    && echo "Deleted /usr/share/fonts/myfonts"
+
+  sudo ln -s $HOME/dotfiles/theming/myfonts /usr/share/fonts/ \
+    && echo -e "Created symlink with myfonts \n" \
+    && fc-cache
+fi
+
+# SYMLINK CONFIGS
+
+# .config files
+for entry in ".config"/*; do
+  rm -rf "$HOME/$entry" && echo "Deleted $HOME/$entry"
+  ln -s "$HOME/dotfiles/$entry" "$HOME/$entry" && echo -e "Created symlink with $entry \n"
+done
+
+# slick-greeter
+for entry in "etc/lightdm"/*; do
+  sudo rm -rf "/$entry" && echo "/$entry"
+  sudo ln -s "$HOME/dotfiles/$entry" "/$entry" && echo -e "Created symlink with $entry \n"
+done
+
+# pulse
+[ -d /etc/pulse ] && echo "Found /etc/pulse" && sudo rm -rf /etc/pulse && echo "Deleted /etc/pulse"
+sudo ln -s $HOME/dotfiles/etc/pulse /etc/ && echo -e "Created symlink with etc/pulse \n"
+
+# .bashrc
+[ -f $HOME/.bashrc ] && echo "Found .bashrc" && rm $HOME/.bashrc && echo "Deleted .bashrc"
+ln -s $HOME/dotfiles/.bashrc $HOME && echo -e "Symlinked .bashrc \n" && source $HOME/.bashrc
+
+# .bash_profile
+[ -f $HOME/.bash_profile ] && echo "Found .bash_profile" && rm $HOME/.bash_profile && echo "Deleted .bash_profile"
+ln -s $HOME/dotfiles/.bash_profile $HOME && echo -e "Symlinked .bash_profile \n" && source $HOME/.bash_profile
+
+# .profile
+[ -f $HOME/.profile ] && echo "Found .profile" && rm $HOME/.profile && echo "Deleted .profile"
+ln -s $HOME/dotfiles/.profile $HOME && echo -e "Symlinked .profile \n" && source $HOME/.profile
+
+# .Xresources
+[ -f $HOME/.Xresources ] && echo "Found .Xresources" && rm $HOME/.Xresources && echo "Deleted .Xresources"
+ln -s $HOME/dotfiles/.Xresources $HOME && echo "Symlinked .Xresources " && xrdb $HOME/.Xresources
+
+# SYMLINK SCRIPTS
+[ -d $HOME/scripts ] && echo "Found ~/scripts" && rm -rf $HOME/scripts && echo "Deleted ~/scripts"
+ln -s $HOME/dotfiles/scripts $HOME && echo -e "Symlinked scripts folder \n"
+
+# MISC
+
+# Disable dunst autostart via systemd so that it's started by i3 with Xresources colors
+echo "[.] Disabling Dunst autostartup"
+systemctl --user disable dunst
+systemctl --user stop dunst
+
+# Default Theme
+$HOME/scripts/bpw -i $HOME/dotfiles/theming/walls/feather.jpg -a 240 -f base16-classic

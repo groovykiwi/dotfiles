@@ -1,0 +1,13 @@
+[INFO]    Created output channel for vscode-sshfs
+[INFO]    Loading configurations...
+[DEBUG]   	Added configuration vultr-web from 1
+[DEBUG]   	Added configuration vultr-configs from 1
+[DEBUG]   	Added configuration vultr-scripts from 1
+[INFO]    Found 3 configurations
+[INFO]    Extension activated, version 1.18.3
+[DEBUG]   Reading ssh://ata/main/index.html
+[ERROR]   Error while connecting to SSH FS ata:
+Couldn't find a configuration with the name 'ata'
+[ERROR]   Couldn't find a configuration with the name 'ata'
+JSON: {}
+[DEBUG]   Reading ssh://ata/main/main.css

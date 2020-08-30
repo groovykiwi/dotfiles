@@ -1,0 +1,48 @@
+[INFO]    Created output channel for vscode-sshfs
+[INFO]    Loading configurations...
+[DEBUG]   	Added configuration vultr-web from 1
+[DEBUG]   	Added configuration vultr-configs from 1
+[DEBUG]   	Added configuration vultr-scripts from 1
+[INFO]    Found 3 configurations
+[INFO]    Extension activated, version 1.18.3
+[DEBUG]   Reading ssh://vultr-configs/sites-available/main
+[INFO]    [createConnection(vultr-configs,config)] Creating a new connection for 'vultr-configs'
+[INFO]    Calculating actual config
+[DEBUG]   	Read private key from /home/nate/.ssh/id_rsa
+[DEBUG]   	Final configuration:
+{
+    "host": "houlamy.com",
+    "label": "Vultr Configs",
+    "name": "vultr-configs",
+    "privateKeyPath": "/home/nate/.ssh/id_rsa",
+    "root": "/etc/nginx/",
+    "username": "root",
+    "_location": 1,
+    "_locations": [
+        1
+    ],
+    "_calculated": {
+        "host": "houlamy.com",
+        "label": "Vultr Configs",
+        "name": "vultr-configs",
+        "privateKeyPath": "/home/nate/.ssh/id_rsa",
+        "root": "/etc/nginx/",
+        "username": "root",
+        "_location": 1,
+        "_locations": [
+            1
+        ]
+    },
+    "privateKey": "Buffer(2602)"
+}
+[INFO]    [createSocket(vultr-configs)] Creating socket
+[DEBUG]   [createSocket(vultr-configs)] Connecting to houlamy.com:22
+[INFO]    [createSSH(vultr-configs)] Creating SSH session over the opened socket
+[INFO]    [getSFTP(vultr-configs)] Creating SFTP session using standard sftp subsystem
+[INFO]    [SSHFileSystem(/etc/nginx/)] SSHFileSystem created
+[INFO]    Created SSHFileSystem for vultr-configs, reading root directory...
+[INFO]    Loading configurations...
+[DEBUG]   	Added configuration vultr-web from 1
+[DEBUG]   	Added configuration vultr-configs from 1
+[DEBUG]   	Added configuration vultr-scripts from 1
+[INFO]    Found 3 configurations

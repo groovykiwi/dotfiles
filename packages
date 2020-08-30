@@ -26,7 +26,7 @@ sudo pacman -Syuu
 
 # ARCH REPO PACKAGES
 echo "[.] Installing packages"
-sudo pacman -S --needed gufw xfce4-clipman-plugin xfce4-screenshooter timeshift pavucontrol thunar libratbag curlgnome-disk-utility baobab python xcb-util-xrm tumbler python-pywal imagemagick feh slop neofetch firefox pulseaudio rofi playerctl wmctrl xfce4-power-manager polybar redshift fzy trash-cli hidapi xorg-fonts-alias-misc ueberzug pulseaudio-equalizer protonvpn-linux-gui anydesk-bin code noto-fonts-emoji postman-bin
+sudo pacman -S --noconfirm --needed thunar gufw xfce4-clipman-plugin xfce4-screenshooter timeshift pavucontrol thunar curlgnome-disk-utility baobab python tumbler python-pywal imagemagick feh slop neofetch firefox pulseaudio rofi playerctl wmctrl xfce4-power-manager polybar redshift fzy trash-cli hidapi xorg-fonts-alias-misc ueberzug pulseaudio-equalizer code noto-fonts-emoji 
 
 # SUCKLESS TERMINAL
 echo "[.] Installing Suckless Terminal"
@@ -38,17 +38,17 @@ echo "[.] Installing pip packages"
 sudo pip install i3-py
 
 # AUR PACKAGES (LONG COMPILING)
-aurlist=(picom-ibhagwan-git mimi-git ytop spicetify-cli spotify espanso oomox scrcpy
-)
-tobeinstalled=""
-
-echo "[.] Checking for already installed AUR packages..."
-for i in ${aurlist[@]}; do
-  [ -z $(pamac list -i | cut -d' ' -f1 | grep -w "$i") ] && tobeinstalled+="$i "
-done
-
 echo "[.] Installing AUR packages"
-pamac build $tobeinstalled
+yay -S --skippgpcheck --needed picom-ibhagwan-git mimi-git ytop spotify spicetify-cli espanso oomox scrcpy
+# aurlist=(picom-ibhagwan-git mimi-git ytop spicetify-cli spotify espanso oomox scrcpy
+# )
+# tobeinstalled=""
+
+# echo "[.] Checking for already installed AUR packages..."
+# for i in ${aurlist[@]}; do
+#   [ -z $(pamac list -i | cut -d' ' -f1 | grep -w "$i") ] && tobeinstalled+="$i "
+# done
+# pamac build $tobeinstalled
 
 # EXIT
 echo "Now run ./config to finish the dotfiles install

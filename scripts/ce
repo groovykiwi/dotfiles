@@ -8,6 +8,7 @@ file=$(
   | sed 's/.*config\///g' \
   | fzy -l 15
 )
+file="$HOME/.config/$file"
 
-! [ -z $file ] && $editor $file
+! [ -z $file ] && $editor $file && wmctrl -s 2
 
