@@ -39,7 +39,7 @@ sudo pip install i3-py
 
 # AUR PACKAGES (LONG COMPILING)
 echo "[.] Installing AUR packages"
-yay -S --skippgpcheck --needed picom-ibhagwan-git mimi-git ytop spotify spicetify-cli espanso oomox scrcpy
+yay -S --needed --mflags "--skippgpcheck" picom-ibhagwan-git mimi-git ytop spotify spicetify-cli espanso oomox scrcpy
 # aurlist=(picom-ibhagwan-git mimi-git ytop spicetify-cli spotify espanso oomox scrcpy
 # )
 # tobeinstalled=""
